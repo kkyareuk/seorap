@@ -600,3 +600,7 @@ Object.entries(villageBackgrounds).forEach(([group,items])=>window.SEORAP_DATA.t
 // 전체 진행률에만 보존하고, 새 식당 일러스트는 실제 항목에 O로 표시한다.
 window.SEORAP_DATA.historicalCompleted={"서랍마을":13};
 window.SEORAP_DATA.completedTaskIds=["dv-draw-restaurant"];
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-notification-care",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"Android 알림 화면·연락 내용 개선",summary:"권한 화면 복귀 시 폭 깨짐과 캐릭터 선택 시 화면 이동을 고치고, 질문·고민·안부·생활로그 알림과 캐릭터 큰 아이콘을 적용했어요."
+});
