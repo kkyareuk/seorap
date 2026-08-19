@@ -436,7 +436,7 @@ window.SEORAP_DATA.gptPrompt=`당신은 사용자의 서랍마을과 그 밖의 
 1. 오류나 디자인 문제는 CSS를 끝에 계속 덧붙여 가리지 말고, 구조·상태·데이터·이벤트·기존 스타일을 살펴 근본 원인을 고친다.
 2. 사용자가 수정을 요청하면 가능한 범위에서 실제 수정과 검증까지 마친다. 완료한 변경은 따로 재촉하지 않아도 해당 저장소에 커밋하고 main에 반영한다.
 3. 서랍마을을 수정할 때는 영어·일본어 번역도 함께 이어서 진행하고, 마지막에 각 언어의 번역 진행률을 알려준다.
-4. 확정된 새 작업이나 완료된 작업이 생기면 작업판에도 반영하고, 작업판 변경 역시 커밋해 main에 반영한다.
+4. 확정된 새 작업이나 완료된 작업이 생기면 작업판에도 반영한다. 완료된 항목은 삭제하지 않고 O 완료 상태로 남겨 진행률에 포함하며, 작업판 변경 역시 커밋해 main에 반영한다.
 5. 이번 요청과 무관한 사용자 파일이나 변경은 건드리거나 커밋하지 않는다.
 6. 마지막에는 무엇을 바꿨는지, 무엇을 검증했는지, 커밋과 main 반영 여부를 간단히 알려준다.`;
 
@@ -556,7 +556,7 @@ window.SEORAP_DATA.tasks.push(
   ].map(([id,title,summary],index)=>({id:`dv-sfx-v5-${id}`,project:"서랍마을",section:"sound",subsection:index<3?"interface-sfx":index<9?"food-sfx":index<28?"life-sfx":"ambient-sfx",title:`${title} 녹음하기`,summary:`ASMR 기준: ${summary} 피크를 낮추고 갑자기 튀는 고역과 큰 저음을 제거해요.`}))
 );
 
-// v6: 작업판은 완료 체크용이 아니라 제작 자산과 디렉팅을 찾는 카탈로그다.
+// v7: 제작 자료는 완료 뒤에도 O 상태로 남겨 전체 진행률과 함께 확인한다.
 const villageBackgrounds={
   city:[
     ["central","도심 중심가 배경","화면 중앙을 가르는 넓은 대로와 양쪽의 서로 다른 높이 건물, 멀리 보이는 거대한 시계탑 하나로 도시의 중심을 보여요."],
@@ -595,3 +595,8 @@ Object.entries(villageBackgrounds).forEach(([group,items])=>window.SEORAP_DATA.t
   id:`dv-art-background-${group}-${id}`,project:"서랍마을",section:"art",subsection:"village-background",group,title:`${title} 그리기`,summary,
   direction:{concept:summary,details:"세로형 마을 지도에서 길과 큰 랜드마크가 먼저 읽히게 하고, 캐릭터와 건물 아이콘이 올라갈 중앙·하단 공간은 복잡한 장식 없이 남겨 주세요.",avoid:["모든 건물을 같은 크기로 반복하기","캐릭터 아이콘 뒤에서 얼굴을 가리는 강한 무늬","사진처럼 흐린 배경만 사용하기"]}
 }))));
+
+// 이전 작업판에서 이미 완료했던 13개는 개별 항목 기록이 지워진 탓에
+// 전체 진행률에만 보존하고, 새 식당 일러스트는 실제 항목에 O로 표시한다.
+window.SEORAP_DATA.historicalCompleted={"서랍마을":13};
+window.SEORAP_DATA.completedTaskIds=["dv-draw-restaurant"];
