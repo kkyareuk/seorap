@@ -1,5 +1,5 @@
 window.SEORAP_DATA={
-  projects:[{id:"drawer-village",name:"서랍마을",description:"캐릭터 생활 관찰 게임"}],
+  projects:[{id:"drawer-village",name:"서랍마을",description:"캐릭터 생활 관찰 게임"},{id:"other-projects",name:"기타 프로젝트",description:"앞으로 추가할 사이트·앱·창작 프로젝트"}],
   directionLabels:{
     concept:"전체 인상",silhouette:"형태와 실루엣",facade:"정면 배치",palette:"색과 재질",details:"구체적인 소품과 생활감",small:"작은 지도에서 반드시 남길 것",avoid:"피해야 할 것"
   },
@@ -228,3 +228,130 @@ window.SEORAP_DATA={
 - 코드 문법과 이미지 경로를 확인하고 main에 커밋·푸시한다.
 - 사용자가 단순히 의견을 묻는 중이라면 확정된 할 일로 오해해 추가하지 않는다.`
 };
+
+Object.assign(window.SEORAP_DATA,{
+  sections:[
+    {id:"art",label:"그림",icon:"✦",subsections:[
+      {id:"building-exterior",label:"건물 외관"},{id:"building-interior",label:"건물 내부"},{id:"preference-icons",label:"취향사전 아이콘"},{id:"ui",label:"UI·기타"}
+    ]},
+    {id:"audio",label:"음악·소리",icon:"♪",subsections:[
+      {id:"music",label:"음악"},{id:"sfx",label:"효과음"}
+    ]},
+    {id:"release",label:"출시",icon:"↑",subsections:[
+      {id:"play-store",label:"Google Play"},{id:"web",label:"웹사이트"},{id:"testing",label:"테스트"}
+    ]},
+    {id:"docs",label:"문서·이메일",icon:"□",subsections:[
+      {id:"email",label:"이메일"},{id:"store-copy",label:"스토어 문구"},{id:"policy",label:"정책·안내"}
+    ]}
+  ],
+  completedBase:{"서랍마을:docs:email":1},
+  documents:[
+    {
+      id:"dv-closed-beta-invite",project:"서랍마을",section:"docs",subsection:"email",title:"비공개 베타테스트 참여 안내",description:"테스트 계정을 등록한 뒤 참여자에게 그대로 붙여넣어 보내는 이메일입니다.",
+      content:`[서랍마을] 비공개 베타테스트 참여 안내
+
+안녕하세요! 서랍마을 개발자입니다.
+
+먼저 서랍마을: 캐릭터 생활 시뮬레이터 비공개 베타테스트에 신청해주셔서 감사합니다.
+
+신청해주신 Google 계정을 테스트 사용자로 등록해드렸습니다. 아래 링크를 통해 Google Play에서 서랍마을을 설치하고 테스트에 참여해주세요!
+
+Google Play 설치 링크
+https://play.google.com/store/apps/details?id=com.drawervillage.app
+
+테스트 중에는 자유롭게 게임을 이용해주시면 됩니다. 플레이하시면서 오류가 발생하거나 불편한 점, 개선되었으면 하는 부분을 발견하셨다면 제보해주시면 정식 출시 준비에 큰 도움이 됩니다.
+
+또한 Google Play 비공개 테스트 진행을 위해 테스트 참여 후 14일 동안 참여 상태를 유지해주시길 부탁드립니다. 가능하면 테스트 기간 중 앱을 삭제하거나 테스트에서 탈퇴하지 말아주세요.
+
+베타테스트에 참여해주셔서 정말 감사합니다!
+
+서랍마을 개발자 드림`
+    }
+  ]
+});
+
+window.SEORAP_DATA.tasks.forEach(task=>{
+  task.section=task.section||"art";
+  task.subsection=task.subsection||"building-exterior";
+  task.checkLabel=task.checkLabel||"완료";
+});
+
+window.SEORAP_DATA.tasks.push(
+  {id:"dv-art-interior-home",project:"서랍마을",section:"art",subsection:"building-interior",title:"기본 주택 내부 세트 그리기",checkLabel:"그렸어요",summary:"거실·현관·침실·주방·욕실이 한 집의 구조와 재질로 이어지는 기본 내부 세트."},
+  {id:"dv-art-interior-cafe",project:"서랍마을",section:"art",subsection:"building-interior",title:"카페 내부 그리기",checkLabel:"그렸어요",summary:"로스터, 주문대, 창가 2인석이 실제 동선으로 이어지는 작은 로스터리 내부."},
+  {id:"dv-art-interior-restaurant",project:"서랍마을",section:"art",subsection:"building-interior",title:"음식점 내부 그리기",checkLabel:"그렸어요",summary:"조리 공간과 손님 좌석이 분리되지만 따뜻한 생활감이 이어지는 가족 식당 내부."},
+  {id:"dv-art-interior-hospital",project:"서랍마을",section:"art",subsection:"building-interior",title:"병원 내부 그리기",checkLabel:"그렸어요",summary:"접수대·대기석·진료실 입구와 접근 가능한 이동 폭이 분명한 병원 내부."},
+  {id:"dv-art-interior-theater",project:"서랍마을",section:"art",subsection:"building-interior",title:"공연장 내부 그리기",checkLabel:"그렸어요",summary:"로비·매표·객석 입구가 연결되고 공연 전후의 조명이 다른 공연장 내부."},
+  {id:"dv-art-interior-shop",project:"서랍마을",section:"art",subsection:"building-interior",title:"옷가게 내부 그리기",checkLabel:"그렸어요",summary:"행거·거울·피팅룸·계산대가 좁은 공간에서 겹치지 않는 편집숍 내부."},
+  {id:"dv-art-interior-school",project:"서랍마을",section:"art",subsection:"building-interior",title:"학교 내부 세트 그리기",checkLabel:"그렸어요",summary:"교실·복도·급식실·도서 공간이 같은 학교의 재질과 창 구조를 공유하는 세트."},
+  {id:"dv-art-interior-library",project:"서랍마을",section:"art",subsection:"building-interior",title:"도서관 내부 그리기",checkLabel:"그렸어요",summary:"서가 사이 통로, 열람석, 어린이 공간과 계단이 실제로 이어지는 공공도서관 내부."},
+  {id:"dv-art-pref-food",project:"서랍마을",section:"art",subsection:"preference-icons",title:"취향사전 음식 아이콘 세트 그리기",checkLabel:"그렸어요",summary:"밥·면·국물·구이·튀김·샐러드·디저트를 작은 크기에서도 구분하는 투명 아이콘 세트."},
+  {id:"dv-art-pref-drink",project:"서랍마을",section:"art",subsection:"preference-icons",title:"취향사전 음료 아이콘 세트 그리기",checkLabel:"그렸어요",summary:"물·커피·차·주스·탄산·술의 용기와 표면 차이를 살린 투명 아이콘 세트."},
+  {id:"dv-art-pref-hobby",project:"서랍마을",section:"art",subsection:"preference-icons",title:"취향사전 취미 아이콘 세트 그리기",checkLabel:"그렸어요",summary:"독서·게임·음악·운동·공예·여행 등 취미 분류용 투명 아이콘 세트."},
+  {id:"dv-art-pref-fashion",project:"서랍마을",section:"art",subsection:"preference-icons",title:"취향사전 패션 아이콘 세트 그리기",checkLabel:"그렸어요",summary:"옷 종류와 스타일을 작은 실루엣만으로 구분하는 투명 아이콘 세트."},
+  {id:"dv-art-pref-object",project:"서랍마을",section:"art",subsection:"preference-icons",title:"취향사전 소지품 아이콘 세트 그리기",checkLabel:"그렸어요",summary:"선물·구매·소지품 장면에 함께 쓰는 생활 물건 투명 아이콘 세트."},
+  {id:"dv-art-ui-menu",project:"서랍마을",section:"art",subsection:"ui",title:"메인 메뉴 아이콘 최종본 그리기",checkLabel:"그렸어요",summary:"집·캐릭터·취향·관계·루틴·마을·상점·설정을 같은 선 굵기와 면 처리로 통일."},
+  {id:"dv-art-ui-action",project:"서랍마을",section:"art",subsection:"ui",title:"생활 행동 아이콘 세트 그리기",checkLabel:"그렸어요",summary:"먹기·마시기·씻기·면도·수면·청소·이동 등 현재 행동 위에 표시할 투명 아이콘."},
+  {id:"dv-art-ui-empty",project:"서랍마을",section:"art",subsection:"ui",title:"사진 미등록 빈 상태 그림 그리기",checkLabel:"그렸어요",summary:"프로필·SD·LD·건물 사진이 없을 때 실제 사진처럼 오해되지 않는 중립 빈 상태 세트."},
+  {id:"dv-art-ui-store",project:"서랍마을",section:"art",subsection:"ui",title:"상점 상품 대표 그림 그리기",checkLabel:"그렸어요",summary:"캐릭터 슬롯·마을 슬롯·응원 선물·직업 확장팩을 서로 다른 실루엣으로 구분하는 대표 그림."},
+
+  {id:"dv-music-observe",project:"서랍마을",section:"audio",subsection:"music",title:"관찰 화면 잔잔한 루프 음악 만들기",summary:"대사와 생활 효과음을 덮지 않는 60~90초 길이의 아주 조용한 기본 루프."},
+  {id:"dv-music-home",project:"서랍마을",section:"audio",subsection:"music",title:"집 화면 포근한 루프 음악 만들기",summary:"실내의 느린 시간감을 살리되 멜로디 반복이 피곤하지 않은 작은 편성 루프."},
+  {id:"dv-music-relationship",project:"서랍마을",section:"audio",subsection:"music",title:"관계 화면 루프 음악 만들기",summary:"연애에만 치우치지 않고 우정·가족·긴장 관계에도 어울리는 중립적이고 섬세한 루프."},
+  {id:"dv-music-town",project:"서랍마을",section:"audio",subsection:"music",title:"마을 화면 산책 루프 음악 만들기",summary:"작은 상점과 이동을 가볍게 받쳐 주며 밝지만 들뜨지 않는 낮 시간 루프."},
+  {id:"dv-music-night",project:"서랍마을",section:"audio",subsection:"music",title:"밤·수면 시간 루프 음악 만들기",summary:"고음과 강한 저음을 줄이고 자연스럽게 잠잠해지는 야간용 루프."},
+  {id:"dv-sfx-wood-button",project:"서랍마을",section:"audio",subsection:"sfx",title:"나무 버튼 누름 소리 녹음하기",summary:"손톱 소리가 아니라 손가락으로 작은 나무 조각을 눌렀다 놓는 짧고 둔한 틱. 가까이 녹음하되 고역을 부드럽게."},
+  {id:"dv-sfx-paper-tab",project:"서랍마을",section:"audio",subsection:"sfx",title:"종이 탭 넘김 소리 녹음하기",summary:"얇은 종이 한 장을 손끝으로 넘기는 0.2~0.4초 소리. 구김과 찢김 없이 작은 마찰만 남기기."},
+  {id:"dv-sfx-save",project:"서랍마을",section:"audio",subsection:"sfx",title:"저장·확인 소리 녹음하기",summary:"나무 단추가 홈에 가볍게 맞는 두 박자 소리. 성공 알림처럼 반짝이거나 크지 않게."},
+  {id:"dv-sfx-door-open",project:"서랍마을",section:"audio",subsection:"sfx",title:"큰 메뉴 이동 문 여는 소리 녹음하기",summary:"집·캐릭터·관계 같은 큰 메뉴에 들어갈 때 쓰는 작은 목재 방문 소리. 손잡이와 경첩을 짧게, 울림은 최소화."},
+  {id:"dv-sfx-door-close",project:"서랍마을",section:"audio",subsection:"sfx",title:"큰 메뉴 이동 문 닫는 소리 녹음하기",summary:"큰 메뉴에서 나올 때 쓰는 부드러운 문 닫힘. 쾅 소리 없이 문틀에 천천히 닿는 저음만."},
+  {id:"dv-sfx-drawer",project:"서랍마을",section:"audio",subsection:"sfx",title:"서랍·패널 여닫는 소리 녹음하기",summary:"작은 나무 서랍을 5~10cm 움직이는 마찰음. 시작과 멈춤이 들리되 레일 소리는 거칠지 않게."},
+  {id:"dv-sfx-crispy",project:"서랍마을",section:"audio",subsection:"sfx",title:"바삭한 음식 먹는 소리 녹음하기",summary:"과자·튀김용 한입과 짧은 씹기. 입소리는 줄이고 식감만 가까이, 2~3가지 변형 녹음."},
+  {id:"dv-sfx-soft-food",project:"서랍마을",section:"audio",subsection:"sfx",title:"부드러운 음식 먹는 소리 녹음하기",summary:"빵·케이크·부드러운 밥용. 바삭함 없이 포크나 접시의 작은 접촉과 한두 번의 조용한 씹기."},
+  {id:"dv-sfx-noodle",project:"서랍마을",section:"audio",subsection:"sfx",title:"면 음식 먹는 소리 녹음하기",summary:"짧은 면 흡입과 그릇·젓가락 접촉을 따로 녹음. 과장된 먹방처럼 길거나 크게 만들지 않기."},
+  {id:"dv-sfx-soup",project:"서랍마을",section:"audio",subsection:"sfx",title:"국물 음식 먹는 소리 녹음하기",summary:"숟가락이 그릇에 닿는 소리와 작은 후루룩을 분리 녹음. 뜨거운 국물과 차가운 국물 변형 준비."},
+  {id:"dv-sfx-water",project:"서랍마을",section:"audio",subsection:"sfx",title:"물·차 마시는 소리 녹음하기",summary:"컵을 드는 소리, 한 모금, 아주 작은 꿀꺽을 분리해 녹음. 목소리와 입소리는 최소화."},
+  {id:"dv-sfx-carbonated",project:"서랍마을",section:"audio",subsection:"sfx",title:"탄산음료 마시는 소리 녹음하기",summary:"뚜껑·기포·한 모금을 별도 파일로 녹음해 상황에 맞게 조합할 수 있게 하기."},
+  {id:"dv-sfx-shower",project:"서랍마을",section:"audio",subsection:"sfx",title:"물 씻기 생활 소리 녹음하기",summary:"수도꼭지, 세면, 짧은 샤워 물줄기를 각각 조용한 근접음으로 녹음."},
+  {id:"dv-sfx-fabric",project:"서랍마을",section:"audio",subsection:"sfx",title:"침구·옷감 생활 소리 녹음하기",summary:"이불을 당기기, 옷을 접기, 소파에 앉기의 부드러운 천 마찰을 각각 녹음."},
+  {id:"dv-sfx-dishes",project:"서랍마을",section:"audio",subsection:"sfx",title:"식기 생활 소리 녹음하기",summary:"컵·접시·수저를 내려놓는 소리를 재질별로 작게 녹음하고 날카로운 충돌음은 제외."},
+
+  {id:"dv-release-internal",project:"서랍마을",section:"release",subsection:"play-store",title:"Google Play 내부 테스트 최신 빌드 올리기",summary:"최신 versionCode의 AAB를 내부 테스트 트랙에 올리고 처리 완료와 대상 국가를 확인."},
+  {id:"dv-release-closed",project:"서랍마을",section:"release",subsection:"play-store",title:"비공개 테스트 참여자 등록 확인하기",summary:"신청 Google 계정, 참여 링크, 14일 유지 안내가 서로 맞는지 확인."},
+  {id:"dv-release-listing",project:"서랍마을",section:"release",subsection:"play-store",title:"Play 스토어 등록정보 최종 점검하기",summary:"앱 이름·짧은 설명·상세 설명·아이콘·스크린샷·연락처·개인정보처리방침 점검."},
+  {id:"dv-release-web-smoke",project:"서랍마을",section:"release",subsection:"web",title:"사이트 배포 뒤 핵심 화면 점검하기",summary:"모바일과 데스크톱에서 사진 로딩, 메뉴 이동, 캐릭터 저장, 설정 연동을 실제 도메인으로 확인."},
+  {id:"dv-release-device",project:"서랍마을",section:"release",subsection:"testing",title:"실기기 앱 핵심 기능 점검하기",summary:"새 설치와 업데이트 설치를 나눠 사진·버튼·설정·오프라인 캐시·뒤로가기를 확인."},
+  {id:"dv-release-feedback",project:"서랍마을",section:"release",subsection:"testing",title:"베타 피드백 처리 목록 정리하기",summary:"재현 조건과 수정 버전을 기록하고 해결된 항목은 작업판에서 제거해 진행률에 반영."}
+);
+
+window.SEORAP_DATA.tasks.push(
+  {id:"dv-doc-release-email",project:"서랍마을",section:"docs",subsection:"email",title:"정식 출시 안내 이메일 쓰기",summary:"베타 참여자에게 감사와 정식 출시 링크, 업데이트 방법을 알려 주는 붙여넣기용 이메일."},
+  {id:"dv-doc-store-description",project:"서랍마을",section:"docs",subsection:"store-copy",title:"스토어 상세 설명 최종본 쓰기",summary:"게임의 실제 기능, 기기 저장 방식, 베타 상태를 과장 없이 설명하는 Google Play용 본문."},
+  {id:"dv-doc-test-guide",project:"서랍마을",section:"docs",subsection:"policy",title:"베타테스터 오류 제보 안내 쓰기",summary:"기기·앱 버전·재현 순서·화면 캡처를 부담 없이 보내도록 안내하는 짧은 문서."},
+  {id:"dv-doc-release-faq",project:"서랍마을",section:"docs",subsection:"policy",title:"출시 전 자주 묻는 질문 정리하기",summary:"사진 저장, 기기 변경, 테스트 참여, 업데이트, 데이터 삭제 질문의 확정 답변 모음."}
+);
+
+window.SEORAP_DATA.gptPrompt=`당신은 사용자의 서랍마을과 그 밖의 웹사이트·앱·창작 프로젝트를 실제로 수정하고 관리하는 장기 작업 파트너다.
+
+[공통 구현 원칙]
+1. CSS 규칙을 파일 끝에 계속 덧붙여 증상을 가리지 않는다. 먼저 DOM 구조, 데이터 흐름, 상태 저장, 이벤트, 기존 CSS 우선순위와 중복 규칙을 찾아 근본 원인을 고친다. 새 규칙이 기존 규칙을 대체한다면 안전한 범위에서 낡은 우회 규칙도 정리한다.
+2. 변경 요청은 분석만 하고 멈추지 말고 실제 파일 수정, 필요한 검증, 커밋과 main 반영까지 한 작업으로 끝낸다. 사용자가 매번 커밋이나 main 푸시를 다시 말하게 하지 않는다.
+3. 커밋에는 이번 작업의 파일만 명시적으로 넣는다. 사용자의 다른 수정, 빌드 파일, 임시 파일, 개인 자료를 섞거나 삭제하지 않는다.
+4. 테스트하지 않은 내용을 검증했다고 말하지 않는다. 실패하거나 확인하지 못한 부분은 마지막에 정확히 알린다.
+
+[서랍마을 전용 규칙]
+1. 서랍마을 기능이나 문구를 수정할 때마다 같은 작업에서 영어와 일본어 번역도 계속 추가하고, 완료 뒤 각 언어의 정확한 번역 수와 백분율을 보고한다.
+2. 웹 변경은 캐시 버전을 갱신해 실제 도메인과 앱 WebView가 낡은 파일을 계속 보지 않게 한다.
+3. 앱에 포함되는 변경이면 versionCode와 versionName을 올리고 내부 테스트용 AAB를 만든다. 빌드 파일 이름에 버전과 핵심 변경 내용을 표시한다.
+4. 간단 설정과 고급 설정처럼 같은 질문이 여러 화면에 있으면 별도 값을 만들지 않고 하나의 기준 저장값을 공유한다. 어느 쪽에서 바꾸어도 즉시 다른 쪽에 반영되게 한다.
+
+[작업판 동기화]
+1. 작업판 저장소는 https://github.com/kkyareuk/seorap 이고 기본 브랜치는 main이다. 서랍마을과 다른 프로젝트의 확정된 미완료 결과물을 project, section, subsection으로 분류한다.
+2. 결과물 하나당 체크 하나만 둔다. 세부 절차를 여러 체크박스로 쪼개지 않는다.
+3. 그림 디렉팅은 전체 인상, 실루엣과 구조, 정면 배치, 색 비율과 재질, 소품의 정확한 위치와 수, 작은 크기에서 남길 특징, 피해야 할 것을 구체적으로 쓴다. 귀엽게·따뜻하게 같은 추상어 한 줄로 끝내지 않는다.
+4. 사용자가 완료했다고 알리거나 함께 문제를 해결하면 활성 task에서는 제거하고 해당 분류의 completedBase를 1 올려 누적 완료/전체 진행률을 보존한다.
+5. 대화에서 확정된 새 작업, 녹음할 효과음, 출시 준비, 반복해서 쓸 이메일·문서가 생기면 작업판에도 반영한다. 단순 아이디어 상담은 확정 작업으로 오해해 넣지 않는다.
+6. 작업판을 바꾼 뒤에도 별도 요청을 기다리지 말고 검증한 다음 main에 커밋·푸시한다.
+
+[보고]
+마지막 답변에는 고친 근본 원인, 검증 결과, 서랍마을 번역률, 앱 빌드 경로(해당 시), 실제 main에 반영된 저장소와 커밋 해시를 짧고 분명하게 적는다.`;
