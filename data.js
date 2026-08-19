@@ -1,0 +1,72 @@
+window.WORKBOARD_DATA={
+  project:{
+    id:"drawer-village",
+    name:"서랍마을",
+    description:"서랍 속 캐릭터 생활 관찰 게임",
+    goal:"AI 임시 자산을 직접 만든 그림과 소리로 차근차근 교체하고, 번역과 앱 출시 상태까지 한곳에서 확인해요."
+  },
+  art:[
+    {id:"building-cafe",title:"카페",category:"AI 건물",image:"assets/buildings/cafe.png",priority:"높음",ai:true,brief:"간판과 큰 창, 따뜻한 조명이 작은 지도에서도 카페로 바로 읽히게 그려요."},
+    {id:"building-restaurant",title:"음식점",category:"AI 건물",image:"assets/buildings/restaurant.png",priority:"높음",ai:true,brief:"식당 입구와 간판, 창 안쪽의 테이블이 한눈에 보이는 대표 건물이 필요해요."},
+    {id:"building-hospital",title:"병원",category:"AI 건물",image:"assets/buildings/hospital.png",priority:"높음",ai:true,brief:"과장된 응급 표시보다 깨끗한 외벽과 안내 표식으로 병원임을 구분해요."},
+    {id:"building-office",title:"사무실",category:"AI 건물",image:"assets/buildings/office.png",priority:"보통",ai:true,brief:"회사·연구소·방송국에도 함께 쓸 수 있는 단정한 업무용 건물로 그려요."},
+    {id:"building-shop",title:"상점",category:"AI 건물",image:"assets/buildings/shop.png",priority:"높음",ai:true,brief:"쇼윈도와 작은 차양을 살리고, 옷가게·잡화점에도 공통으로 쓸 수 있게 만들어요."},
+    {id:"building-school",title:"학교",category:"AI 건물",image:"assets/buildings/school.png",priority:"보통",ai:true,brief:"초·중·고·대학교에 공통으로 쓸 수 있는 밝고 안전한 학교 외관이 필요해요."},
+    {id:"building-library",title:"도서관",category:"AI 건물",image:"assets/buildings/library.png",priority:"보통",ai:true,brief:"책 또는 아치 창문 같은 작은 단서로 학교 건물과 확실히 구분해요."},
+    {id:"building-park",title:"공원",category:"AI 건물",image:"assets/buildings/park.png",priority:"보통",ai:true,brief:"건물 대신 나무·벤치·산책로가 하나의 지도 아이콘처럼 모여 보이게 그려요."},
+    {id:"building-lodging",title:"숙박시설",category:"AI 건물",image:"assets/buildings/lodging.png",priority:"보통",ai:true,brief:"호텔·여관·게스트하우스에 두루 쓸 수 있는 편안한 외관으로 그려요."},
+    {id:"building-theater",title:"공연장",category:"AI 건물",image:"assets/buildings/theater.png",priority:"보통",ai:true,brief:"극장 입구, 포스터 프레임, 조명을 사용해 공연장임을 작게도 알아보게 해요."},
+    {id:"building-home",title:"일반 주택",category:"AI 건물",image:"assets/buildings/home.png",priority:"높음",ai:true,brief:"집 화면과 마을 지도에 함께 어울리는 서랍마을 기본 주택을 직접 그려요."},
+    {id:"building-generic",title:"기타 건물",category:"AI 건물",image:"assets/buildings/generic.png",priority:"낮음",ai:true,brief:"아직 유형이 없는 건물에 쓰는 중립적인 외관이에요. 마지막에 작업해도 돼요."},
+    {id:"world-cozy",title:"서랍마을 기본 지도",category:"마을·배경",image:"assets/world/cozy-town.png",priority:"높음",brief:"현재 지도의 구조는 유지하면서 직접 그린 최종 마을 배경으로 교체해요.",format:"가로 1920×1080 이상"},
+    {id:"world-city",title:"시내 지도",category:"마을·배경",image:"assets/world/downtown.png",priority:"보통",brief:"건물이 올라갈 빈 공간과 도로가 분명한 시내 배경을 준비해요.",format:"가로 1920×1080 이상"},
+    {id:"world-drawer-building",title:"서랍 건물 기본형",category:"마을·배경",image:"assets/world/drawer-building.png",priority:"보통",brief:"서랍마을 로고 분위기와 맞는 범용 건물 장식을 정리해요."},
+    {id:"world-drawer-home",title:"서랍 집 기본형",category:"마을·배경",image:"assets/world/drawer-home.png",priority:"보통",brief:"마을에서 집을 표시할 때 쓰는 직접 제작 아이콘으로 교체해요."},
+    {id:"ui-moonlit",title:"달빛 서랍 테마 UI",category:"UI·테마",image:"assets/ui/panel-frame.png",priority:"낮음",brief:"버튼·탭·카드 테두리의 두께와 모서리를 같은 규칙으로 다시 확인해요.",format:"원본 3배 크기 PNG"},
+    {id:"shop-resume",title:"직업 확장팩 표지",category:"상점·DLC",image:"assets/shop/resume-expansion.png",priority:"낮음",brief:"출시 전 직업 확장팩의 최종 표지와 상점용 작은 썸네일을 준비해요."}
+  ],
+  sound:[
+    {id:"sound-wood-press",title:"나무 버튼 누르기",category:"버튼",priority:"높음",brief:"얇은 나무 조각을 종이나 천 위에서 손끝으로 부드럽게 눌러요.",count:"5가지 변형",length:"0.1~0.3초"},
+    {id:"sound-paper-tab",title:"종이 탭 펼치기·접기",category:"버튼",priority:"높음",brief:"두꺼운 종이 책갈피를 짧게 넘기는 소리예요.",count:"열기 3개 · 닫기 3개"},
+    {id:"sound-confirm",title:"저장·완료",category:"버튼",priority:"높음",brief:"작은 나무 조각을 종이 위에 살포시 내려놓는 소리예요.",count:"3가지 변형"},
+    {id:"sound-door",title:"큰 메뉴 문 열기·닫기",category:"이동",priority:"높음",brief:"집·캐릭터·관계·마을 메뉴를 넘나들 때 쓸 조용한 나무 방문 소리예요.",count:"열기 3개 · 닫기 3개",length:"0.5~1.2초"},
+    {id:"sound-drawer",title:"세부 창 서랍 열기·닫기",category:"이동",priority:"높음",brief:"작은 나무 서랍이 짧게 움직이고 부드럽게 멈추는 소리예요.",count:"열기 3개 · 닫기 3개"},
+    {id:"sound-home-cloth",title:"소파·침대 천",category:"생활",priority:"보통",brief:"앉기, 눕기, 이불 정리를 각각 짧게 녹음해요.",count:"행동별 3개"},
+    {id:"sound-home-water",title:"수도·샤워·수건",category:"생활",priority:"보통",brief:"물을 켜고 끄는 부분은 따로, 지속되는 물소리는 짧은 반복용으로 녹음해요.",count:"각 2~3개"},
+    {id:"sound-home-dishes",title:"컵·접시·수저",category:"생활",priority:"보통",brief:"식탁 위에 조용히 내려놓고 살짝 닿는 정도로 녹음해요.",count:"각 3개"},
+    {id:"sound-interaction",title:"다가가기·옆에 앉기",category:"상호작용",priority:"보통",brief:"발걸음과 옷이 스치는 소리를 분리해서 녹음해요.",count:"각 3개"},
+    {id:"sound-gift",title:"선물·메모 건네기",category:"상호작용",priority:"보통",brief:"물건을 상대 앞으로 밀거나 종이를 접어 건네는 중립적인 소리예요.",count:"각 3개"},
+    {id:"sound-hug",title:"포옹·토닥이기",category:"상호작용",priority:"낮음",brief:"옷감 스침과 손바닥 토닥임을 작고 건조하게 녹음해요.",count:"각 3개"},
+    {id:"sound-crispy",title:"마른 바삭함·튀김",category:"먹기",priority:"높음",brief:"과자·쿠키와 튀김옷 소리를 나누고, 입을 닫은 짧은 씹기만 넣어요.",count:"종류별 3개"},
+    {id:"sound-fresh",title:"사과·오이 같은 아삭함",category:"먹기",priority:"보통",brief:"수분 있는 한입과 짧은 씹기 소리를 녹음해요.",count:"3가지 변형"},
+    {id:"sound-soft",title:"빵·케이크·부드러운 음식",category:"먹기",priority:"보통",brief:"포크로 자르기와 부드러운 한입을 분리해요.",count:"각 3개"},
+    {id:"sound-noodle",title:"파스타·국물 면",category:"먹기",priority:"높음",brief:"마른 면과 국물 묻은 면의 짧은 흡입음을 따로 녹음해요.",count:"각 3개"},
+    {id:"sound-soup",title:"국·찌개·수프",category:"먹기",priority:"보통",brief:"숟가락으로 뜨는 소리와 조용한 한입을 녹음해요.",count:"3가지 변형"},
+    {id:"sound-drink-water",title:"물 한 모금·꿀꺽",category:"마시기",priority:"높음",brief:"한 모금과 두 모금을 나누고, 목소리처럼 크지 않게 녹음해요.",count:"각 3개"},
+    {id:"sound-drink-hot",title:"따뜻한 차·커피",category:"마시기",priority:"보통",brief:"살짝 불기, 한 모금, 잔 내려놓기를 각각 녹음해요.",count:"각 3개"},
+    {id:"sound-drink-soda",title:"탄산 캔·기포·한 모금",category:"마시기",priority:"보통",brief:"캔 여는 소리가 튀지 않게 멀리 두고 녹음해요.",count:"각 3개"}
+  ],
+  translation:[
+    {id:"tr-common",title:"공통 메뉴·버튼",category:"영어·일본어",priority:"높음",brief:"아직 남은 공통 버튼, 오류 안내, 빈 화면 문구를 두 언어로 맞춰요."},
+    {id:"tr-character",title:"캐릭터 신체·외형",category:"영어·일본어",priority:"높음",brief:"세부 신체 특징, 건강, 접근성 설명 중 남은 문구를 번역해요."},
+    {id:"tr-personality",title:"성격·인지·생활 성향",category:"영어·일본어",priority:"높음",brief:"설정 이름뿐 아니라 설명문과 안전 안내까지 함께 번역해요."},
+    {id:"tr-relationship",title:"관계 설정",category:"영어·일본어",priority:"높음",brief:"공식 관계, 각자의 속마음, 갈등·접촉·신뢰 설명을 번역해요."},
+    {id:"tr-home",title:"집·방·반려생물",category:"영어·일본어",priority:"보통",brief:"집 편집, 방 가구, 거주 연결, 반려생물 설정을 마무리해요."},
+    {id:"tr-town",title:"마을·건물",category:"영어·일본어",priority:"보통",brief:"건물 유형·세부 유형·지도 편집 안내를 모두 확인해요."},
+    {id:"tr-shop",title:"상점·결제 안내",category:"영어·일본어",priority:"보통",brief:"상품 설명, 장바구니, 복원, 정책 문구를 검수해요."},
+    {id:"tr-scenes",title:"자동 생활 장면",category:"영어·일본어",priority:"낮음",brief:"메뉴 번역을 끝낸 뒤 생활 장면 제목과 설명을 단계적으로 번역해요."},
+    {id:"tr-visual-qa",title:"휴대폰 번역 화면 검수",category:"검수",priority:"높음",brief:"영어·일본어가 버튼 밖으로 넘치거나 잘리는 화면을 확인해요."}
+  ],
+  release:[
+    {id:"release-art-label",title:"집 화면 글자상자 확인",category:"사이트·앱",priority:"높음",brief:"아이콘 배경은 투명하고 이름·행동 글자상자만 보이는지 확인해요."},
+    {id:"release-photo",title:"업로드 사진 유지 확인",category:"사이트·앱",priority:"높음",brief:"사이트와 앱을 완전히 종료한 뒤 다시 열어 등록 사진이 남는지 확인해요."},
+    {id:"release-buttons",title:"모든 주요 메뉴 버튼 확인",category:"사이트·앱",priority:"높음",brief:"집·캐릭터·관계·마을·설정을 빠르게 오가도 버튼이 멈추지 않는지 확인해요."},
+    {id:"release-aab42",title:"Play 내부 테스트에 코드 42 업로드",category:"Google Play",priority:"높음",brief:"v1.0.40 AAB를 내부 테스트 트랙의 새 출시로 올려요."},
+    {id:"release-rollout",title:"내부 테스트 출시 완료",category:"Google Play",priority:"높음",brief:"검토 화면에서 저장만 하지 말고 ‘내부 테스트 출시 시작’까지 완료해요."},
+    {id:"release-account",title:"테스터 계정과 설치 계정 확인",category:"Google Play",priority:"높음",brief:"테스터 목록에 등록된 Google 계정으로 Play 스토어에 로그인했는지 확인해요."},
+    {id:"release-update",title:"Play 스토어 업데이트 표시 확인",category:"Google Play",priority:"높음",brief:"테스트 참여 링크를 연 뒤 버전 코드 42 업데이트가 표시되는지 확인해요."},
+    {id:"release-mobile",title:"작은 휴대폰 화면 전체 점검",category:"검수",priority:"보통",brief:"글자 크기 확대 상태에서도 메뉴와 설정창이 잘리지 않는지 확인해요."},
+    {id:"release-feedback",title:"피드백 답변 준비",category:"운영",priority:"보통",brief:"수정 버전, 확인 방법, 데이터가 삭제되지 않는다는 내용을 짧게 안내해요."}
+  ],
+  progress:{english:{done:939,total:1865},japanese:{done:938,total:1865}}
+};
