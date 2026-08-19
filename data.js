@@ -315,11 +315,11 @@ window.SEORAP_DATA.tasks.push(
   {id:"dv-sfx-fabric",project:"서랍마을",section:"audio",subsection:"sfx",title:"침구·옷감 생활 소리 녹음하기",summary:"이불을 당기기, 옷을 접기, 소파에 앉기의 부드러운 천 마찰을 각각 녹음."},
   {id:"dv-sfx-dishes",project:"서랍마을",section:"audio",subsection:"sfx",title:"식기 생활 소리 녹음하기",summary:"컵·접시·수저를 내려놓는 소리를 재질별로 작게 녹음하고 날카로운 충돌음은 제외."},
 
-  {id:"dv-release-internal",project:"서랍마을",section:"release",subsection:"play-store",title:"Google Play 내부 테스트 v1.0.48(50) 올리기",summary:"연락받을 캐릭터·빈도·낮 시간대·주제·말투를 고를 수 있는 캐릭터 연락 알림 AAB를 내부 테스트 트랙에 올리고 출시 시작까지 확인."},
+  {id:"dv-release-internal",project:"서랍마을",section:"release",subsection:"play-store",title:"Google Play 내부 테스트 v1.0.49(51) 올리기",summary:"취향도감 추가·다중 선택 시 화면이 위로 이동하거나 선택창이 접히는 문제와, 외출 일정 종료 뒤 귀가하지 않는 문제를 수정한 AAB를 내부 테스트 트랙에 올리고 출시 시작까지 확인."},
   {id:"dv-release-closed",project:"서랍마을",section:"release",subsection:"play-store",title:"비공개 테스트 참여자 등록 확인하기",summary:"신청 Google 계정, 참여 링크, 14일 유지 안내가 서로 맞는지 확인."},
   {id:"dv-release-listing",project:"서랍마을",section:"release",subsection:"play-store",title:"Play 스토어 등록정보 최종 점검하기",summary:"앱 이름·짧은 설명·상세 설명·아이콘·스크린샷·연락처·개인정보처리방침 점검."},
   {id:"dv-release-web-smoke",project:"서랍마을",section:"release",subsection:"web",title:"사이트 배포 뒤 핵심 화면 점검하기",summary:"모바일과 데스크톱에서 사진 로딩, 메뉴 이동, 캐릭터 저장, 설정 연동을 실제 도메인으로 확인."},
-  {id:"dv-release-device",project:"서랍마을",section:"release",subsection:"testing",title:"실기기 앱 핵심 기능 점검하기",summary:"설정에서 캐릭터 연락 알림을 켠 뒤 Android 허용창, 연락 캐릭터 선택, 5초 시험 알림, 알림을 눌렀을 때 해당 캐릭터 화면 연결, 앱 버전 1.0.48·빌드 50을 확인."},
+  {id:"dv-release-device",project:"서랍마을",section:"release",subsection:"testing",title:"실기기 앱 핵심 기능 점검하기",summary:"취향도감에서 추가 버튼을 눌러도 현재 위치가 유지되는지, 옷의 재질·색상 등 다중 선택창이 접히지 않는지, 외출 일정 종료 뒤 귀가 중·집 도착으로 이어지는지, 앱 버전 1.0.49·빌드 51인지 확인."},
   {id:"dv-release-feedback",project:"서랍마을",section:"release",subsection:"testing",title:"베타 피드백 처리 목록 정리하기",summary:"재현 조건과 수정 버전을 기록하고 해결된 항목은 작업판의 현재 자료에서 정리."}
 );
 
