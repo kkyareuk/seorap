@@ -614,5 +614,5 @@ window.SEORAP_DATA.tasks.push({
 });
 window.SEORAP_DATA.tasks.push({
   id:"dv-release-crash-hotfix-59",project:"서랍마을",section:"release",subsection:"testing",completed:true,
-  title:"Android 앱 반복 종료 긴급 수정",summary:"v1.0.58에서 처음 적용한 릴리스 코드·리소스 축소가 동적 플러그인을 제거할 수 있던 구성을 되돌렸어요. 데이터 형식은 바꾸지 않고 v1.0.59(61) 내부 테스트 AAB를 새로 만들었어요."
+  title:"Android 앱 반복 종료 긴급 수정",summary:"v1.0.58에서 처음 적용한 릴리스 코드·리소스 축소를 되돌리고, 특정 화면 설정에서 시작 중 종료될 수 있던 기본 스플래시 리소스를 보강했어요. 데이터 형식은 바꾸지 않고 v1.0.59(61) APK·AAB를 새로 만들었어요."
 });
