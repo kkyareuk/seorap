@@ -200,8 +200,8 @@ window.SEORAP_DATA={
 - 목록을 회고록, 완료 기록, 개발 일지처럼 사용하지 않는다.
 
 [항목 작성 규칙]
-1. 하나의 결과물은 하나의 항목으로 쓴다. 세부 단계를 여러 체크박스로 쪼개지 않는다.
-2. 그림 작업은 화면에서 ‘그렸어요 / 아직’만 확인하게 한다.
+1. 하나의 결과물은 하나의 항목으로 쓴다. 세부 단계를 불필요하게 쪼개지 않는다.
+2. 작업판은 완료 여부를 입력받지 않는 열람 전용 자산·디렉팅 목록으로 유지한다.
 3. 제목은 ‘카페 건물 그리기’, ‘로고 최종본 그리기’처럼 결과물이 바로 보이게 쓴다.
 4. 막연한 아이디어, 언젠가 할 일, 이미 끝난 일은 넣지 않는다.
 5. 새 프로젝트가 생기면 projects에 추가하고 모든 task에 project 이름을 명시한다.
@@ -244,7 +244,6 @@ Object.assign(window.SEORAP_DATA,{
       {id:"email",label:"이메일"},{id:"store-copy",label:"스토어 문구"},{id:"policy",label:"정책·안내"}
     ]}
   ],
-  completedBase:{"서랍마을:docs:email":1},
   documents:[
     {
       id:"dv-closed-beta-invite",project:"서랍마을",section:"docs",subsection:"email",title:"비공개 베타테스트 참여 안내",description:"테스트 계정을 등록한 뒤 참여자에게 그대로 붙여넣어 보내는 이메일입니다.",
@@ -321,7 +320,7 @@ window.SEORAP_DATA.tasks.push(
   {id:"dv-release-listing",project:"서랍마을",section:"release",subsection:"play-store",title:"Play 스토어 등록정보 최종 점검하기",summary:"앱 이름·짧은 설명·상세 설명·아이콘·스크린샷·연락처·개인정보처리방침 점검."},
   {id:"dv-release-web-smoke",project:"서랍마을",section:"release",subsection:"web",title:"사이트 배포 뒤 핵심 화면 점검하기",summary:"모바일과 데스크톱에서 사진 로딩, 메뉴 이동, 캐릭터 저장, 설정 연동을 실제 도메인으로 확인."},
   {id:"dv-release-device",project:"서랍마을",section:"release",subsection:"testing",title:"실기기 앱 핵심 기능 점검하기",summary:"새 설치와 업데이트 설치를 나눠 사진·버튼·설정·오프라인 캐시·뒤로가기를 확인."},
-  {id:"dv-release-feedback",project:"서랍마을",section:"release",subsection:"testing",title:"베타 피드백 처리 목록 정리하기",summary:"재현 조건과 수정 버전을 기록하고 해결된 항목은 작업판에서 제거해 진행률에 반영."}
+  {id:"dv-release-feedback",project:"서랍마을",section:"release",subsection:"testing",title:"베타 피드백 처리 목록 정리하기",summary:"재현 조건과 수정 버전을 기록하고 해결된 항목은 작업판의 현재 자료에서 정리."}
 );
 
 window.SEORAP_DATA.tasks.push(
@@ -365,7 +364,6 @@ window.SEORAP_DATA.tasks.forEach(task=>{
   }
 });
 window.SEORAP_DATA.documents.forEach(document=>{document.section="email";document.subsection="templates"});
-window.SEORAP_DATA.completedBase={"서랍마을:email:templates":1};
 
 const preferenceIconSets={
   "food-icons":[
@@ -449,6 +447,10 @@ window.SEORAP_DATA.sections=[
     {id:"building-exterior",label:"건물 외관",emoji:"🏘️"},
     {id:"home-exterior",label:"집 외관",emoji:"🏠"},
     {id:"building-interior",label:"건물 내부",emoji:"🛋️"},
+    {id:"village-background",label:"마을 배경",emoji:"🗺️",groups:[
+      {id:"city",label:"도시",emoji:"🏙️"},{id:"coast",label:"해안가",emoji:"🌊"},{id:"department-store",label:"백화점 내부",emoji:"🏬"},{id:"european",label:"유럽풍",emoji:"🏰"},
+      {id:"residential",label:"주택가",emoji:"🏡"},{id:"countryside",label:"시골·전원",emoji:"🌾"},{id:"fantasy",label:"중세·판타지",emoji:"🕯️"},{id:"seasonal",label:"밤·계절",emoji:"🌙"}
+    ]},
     {id:"preference-icons",label:"취향사전 아이콘",emoji:"🍰",groups:[
       {id:"food-icons",label:"음식 아이콘",emoji:"🍽️"},{id:"drink-icons",label:"음료 아이콘",emoji:"🥤"},{id:"hobby-icons",label:"취미 아이콘",emoji:"🎲"},{id:"fashion-icons",label:"패션 아이콘",emoji:"👗"},{id:"object-icons",label:"소지품 아이콘",emoji:"🎁"}
     ]},
@@ -510,7 +512,7 @@ window.SEORAP_DATA.tasks.push(
     ["default-character","캐릭터 미등록 기본 스프라이트 그리기","성별과 나이를 특정하지 않는 둥근 실루엣에 작은 서랍 손잡이 브로치를 달아요."],
     ["missing-photo","사진 미등록 스프라이트 그리기","빈 액자 안에서 작은 캐릭터가 고개를 내미는 모습으로, 오류 아이콘처럼 보이지 않게 해요."],
     ["missing-room","방 사진 미등록 스프라이트 그리기","작은 방 모형 위에 붓과 페인트통이 놓인 모습으로 아직 꾸미는 중이라는 느낌을 줘요."],
-    ["ui-atlas","종이·나무 UI 아틀라스 그리기","참고 이미지처럼 팝업, 버튼, 탭, 게이지, 슬롯, 체크박스, 말풍선을 한 장의 부품 시트로 그려요. 종이는 크고 밝게, 나무는 가장자리와 손잡이에만 써서 글자가 편하게 올라가게 해요."],
+    ["ui-atlas","종이·나무 UI 아틀라스 그리기","참고 이미지처럼 팝업, 버튼, 탭, 게이지, 슬롯, 말풍선을 한 장의 부품 시트로 그려요. 종이는 크고 밝게, 나무는 가장자리와 손잡이에만 써서 글자가 편하게 올라가게 해요."],
     ["popup","캐릭터 질문 팝업 프레임 그리기","캐릭터 얼굴이 왼쪽 위에서 종이창을 살짝 들여다보고, 질문과 선택지 세 개가 아래로 이어지는 말풍선형 팝업이에요."],
     ["menu-panels","메인 메뉴·서브메뉴 프레임 그리기","굵직한 메뉴는 문짝처럼, 세부 메뉴는 얇은 종이 탭처럼 구분해요. 선택된 탭만 작은 서랍 손잡이가 튀어나오게 해요."],
     ["log-card","현재 장면·생활로그 카드 그리기","현재 장면은 큰 펼친 종이, 생활로그는 시간표가 적힌 긴 메모지로 구분하고 끝부분을 살짝 말아 올려요."]
@@ -553,3 +555,43 @@ window.SEORAP_DATA.tasks.push(
     ["morning-ambience","아침 실내음","작은 새소리와 커튼을 통과하는 바람이 아주 멀게 들리는 루프."]
   ].map(([id,title,summary],index)=>({id:`dv-sfx-v5-${id}`,project:"서랍마을",section:"sound",subsection:index<3?"interface-sfx":index<9?"food-sfx":index<28?"life-sfx":"ambient-sfx",title:`${title} 녹음하기`,summary:`ASMR 기준: ${summary} 피크를 낮추고 갑자기 튀는 고역과 큰 저음을 제거해요.`}))
 );
+
+// v6: 작업판은 완료 체크용이 아니라 제작 자산과 디렉팅을 찾는 카탈로그다.
+const villageBackgrounds={
+  city:[
+    ["central","도심 중심가 배경","화면 중앙을 가르는 넓은 대로와 양쪽의 서로 다른 높이 건물, 멀리 보이는 거대한 시계탑 하나로 도시의 중심을 보여요."],
+    ["night-neon","네온 상업지구 배경","커다란 세로 간판과 육교, 젖은 도로에 번지는 색 덩어리로 밤거리를 만들어요. 글자를 읽지 않아도 번화가로 보여야 해요."]
+  ],
+  coast:[
+    ["promenade","해변 산책로 배경","굽은 해안선과 커다란 등대, 줄무늬 파라솔 세 개를 멀리서도 읽히는 중심 상징으로 두어요."],
+    ["harbor","작은 항구 마을 배경","방파제와 높이 솟은 크레인, 색이 다른 배 세 척을 크게 묶어 생활하는 항구의 인상을 만들어요."]
+  ],
+  "department-store":[
+    ["atrium","백화점 중앙 아트리움 배경","여러 층을 한눈에 올려다보는 시점에 거대한 샹들리에와 교차 에스컬레이터를 중심축으로 놓아요."],
+    ["luxury-floor","백화점 명품·패션층 배경","둥근 쇼윈도와 크게 늘어진 리본 장식, 중앙의 조각상형 안내대를 이용해 고급 매장 층으로 보여요."]
+  ],
+  european:[
+    ["old-square","유럽풍 구시가지 광장 배경","굽은 박공지붕과 커다란 분수, 시계가 달린 시청 건물을 삼각 구도로 묶어 오래된 광장을 만들어요."],
+    ["canal","유럽풍 운하 거리 배경","화면을 가로지르는 운하와 아치형 돌다리, 창문마다 달린 큰 꽃상자를 반복해 낭만적인 거리로 보여요."]
+  ],
+  residential:[
+    ["suburb","평범한 주택가 배경","완만하게 굽은 골목과 서로 다른 지붕의 집, 커다란 동네 나무 한 그루가 중심인 생활 주택가예요."],
+    ["luxury-hill","고급 언덕 주택가 배경","층층이 높아지는 언덕길과 대문이 큰 저택, 아래로 내려다보이는 도시 불빛을 한 화면에 담아요."]
+  ],
+  countryside:[
+    ["farm","전원 농장 마을 배경","넓은 밭의 곡선과 큰 풍차, 붉은 헛간을 과장해 작은 캐릭터가 살아가는 전원 마을로 보여요."],
+    ["mountain","산골 마을 배경","산자락을 따라 층층이 놓인 집과 커다란 물레방아, 멀리 이어지는 돌계단을 중심으로 그려요."]
+  ],
+  fantasy:[
+    ["medieval","중세 성곽 마을 배경","화면 위쪽의 거대한 성과 아래 시장 골목, 깃발이 이어진 중앙 계단으로 위아래 생활권을 연결해요."],
+    ["magic","마법 상점 거리 배경","휘어진 탑과 공중에 떠 있는 큰 수정, 빛나는 문 세 개를 이용해 현실과 다른 거리임을 즉시 보여요."]
+  ],
+  seasonal:[
+    ["rainy-night","비 오는 밤 마을 배경","검은 실루엣보다 창문 불빛과 웅덩이 반사를 크게 쓰고, 우산처럼 둥근 가로등을 반복해요."],
+    ["snow-festival","눈 축제 마을 배경","눈 덮인 지붕 사이에 거대한 별 장식과 따뜻한 시장 천막을 배치해 추위보다 포근함이 먼저 보이게 해요."]
+  ]
+};
+Object.entries(villageBackgrounds).forEach(([group,items])=>window.SEORAP_DATA.tasks.push(...items.map(([id,title,summary])=>({
+  id:`dv-art-background-${group}-${id}`,project:"서랍마을",section:"art",subsection:"village-background",group,title:`${title} 그리기`,summary,
+  direction:{concept:summary,details:"세로형 마을 지도에서 길과 큰 랜드마크가 먼저 읽히게 하고, 캐릭터와 건물 아이콘이 올라갈 중앙·하단 공간은 복잡한 장식 없이 남겨 주세요.",avoid:["모든 건물을 같은 크기로 반복하기","캐릭터 아이콘 뒤에서 얼굴을 가리는 강한 무늬","사진처럼 흐린 배경만 사용하기"]}
+}))));
