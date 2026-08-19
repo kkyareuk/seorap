@@ -315,11 +315,11 @@ window.SEORAP_DATA.tasks.push(
   {id:"dv-sfx-fabric",project:"서랍마을",section:"audio",subsection:"sfx",title:"침구·옷감 생활 소리 녹음하기",summary:"이불을 당기기, 옷을 접기, 소파에 앉기의 부드러운 천 마찰을 각각 녹음."},
   {id:"dv-sfx-dishes",project:"서랍마을",section:"audio",subsection:"sfx",title:"식기 생활 소리 녹음하기",summary:"컵·접시·수저를 내려놓는 소리를 재질별로 작게 녹음하고 날카로운 충돌음은 제외."},
 
-  {id:"dv-release-internal",project:"서랍마을",section:"release",subsection:"play-store",title:"Google Play 내부 테스트 v1.0.56(58) 올리기",summary:"사이트·앱 메뉴와 일반 버튼이 같은 상태를 보도록 모듈을 하나로 합치고, 화면이 번쩍인 뒤 돌아가는 터치 전환을 고친 AAB를 내부 테스트 트랙에 올린 뒤 출시 시작까지 확인."},
+  {id:"dv-release-internal",project:"서랍마을",section:"release",subsection:"play-store",title:"Google Play 내부 테스트 v1.0.57(59) 올리기",summary:"설정 화면 위치 유지, 캐릭터 연락함·색상·위아래 배치, 반복 요일, 방 사진 전체 보기, 전체 화면 표시를 반영한 AAB를 내부 테스트 트랙에 올린 뒤 출시 시작까지 확인."},
   {id:"dv-release-closed",project:"서랍마을",section:"release",subsection:"play-store",title:"비공개 테스트 참여자 등록 확인하기",summary:"신청 Google 계정, 참여 링크, 14일 유지 안내가 서로 맞는지 확인."},
   {id:"dv-release-listing",project:"서랍마을",section:"release",subsection:"play-store",title:"Play 스토어 등록정보 최종 점검하기",summary:"앱 이름·짧은 설명·상세 설명·아이콘·스크린샷·연락처·개인정보처리방침 점검."},
   {id:"dv-release-web-smoke",project:"서랍마을",section:"release",subsection:"web",title:"사이트 배포 뒤 핵심 화면 점검하기",summary:"모바일과 데스크톱에서 사진 로딩, 메뉴 이동, 캐릭터 저장, 설정 연동을 실제 도메인으로 확인."},
-  {id:"dv-release-device",project:"서랍마을",section:"release",subsection:"testing",title:"실기기 앱 핵심 기능 점검하기",summary:"Galaxy Android 15·16에서 앱 버전 1.0.56·빌드 58의 집·캐릭터·취향 사전·관계·루틴·마을·상점·설정 버튼이 한 번에 열리고 그대로 유지되는지 확인. JSON 백업과 사진, 저장 공간 상품도 함께 점검."},
+  {id:"dv-release-device",project:"서랍마을",section:"release",subsection:"testing",title:"실기기 앱 핵심 기능 점검하기",summary:"Galaxy Android 15·16에서 앱 버전 1.0.57·빌드 59의 집·캐릭터·취향 사전·관계·루틴·마을·상점·설정 버튼이 한 번에 열리고 그대로 유지되는지 확인. 연락 설정 스크롤, 방 사진, JSON 백업과 저장 공간 상품도 함께 점검."},
   {id:"dv-release-feedback",project:"서랍마을",section:"release",subsection:"testing",title:"베타 피드백 처리 목록 정리하기",summary:"재현 조건과 수정 버전을 기록하고 해결된 항목은 작업판의 현재 자료에서 정리."}
 );
 
@@ -603,4 +603,8 @@ window.SEORAP_DATA.completedTaskIds=["dv-draw-restaurant"];
 window.SEORAP_DATA.tasks.push({
   id:"dv-release-notification-care",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"Android 알림·사이트와 앱 메뉴 반응 개선",summary:"권한 화면 복귀 시 폭 깨짐과 캐릭터 선택 시 화면 이동을 고쳤어요. 화면과 이벤트가 서로 다른 상태를 읽던 원인을 제거해 모든 큰 메뉴와 일반 버튼이 같은 데이터로 반응하게 했고, v1.0.56(58) APK·AAB를 만들었어요."
+});
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-contact-settings-57",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"연락·설정·캐릭터 배치 사용성 개선",summary:"설정 선택 뒤 최상단으로 튀는 재렌더를 제거하고, 캐릭터 화면 연락함·HEX 색상 선택·위아래 배치·주간 루틴 반복 요일·방 사진 전체 보기·Android 전체 화면을 반영한 v1.0.57(59) APK·AAB를 만들었어요."
 });
