@@ -684,6 +684,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-moment-controls-comfort-75",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"현재 순간 조작·관계 편안함·알림 설정 안정화",summary:"‘지금 이 순간’의 제목·펼치기 버튼·내용 카드 전체를 눌러 펼치고 접을 수 있게 하고, 접힌 설명은 최대 4줄까지 표시하면서 카드 빈 여백을 줄였어요. 상단 직업 배경의 틈과 프로필 침범을 고치고 알림을 독립 설정 메뉴로 분리했으며, 예전 관계 데이터가 새 편안함 선택을 덮어쓰던 원인을 제거한 v1.0.75(77) APK·AAB를 만들었어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-home-visits-return-ld-76",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"캐릭터 집 방문 일정·즉시 귀환·LD 장면 배치",summary:"일정 장소에서 캐릭터별 집을 골라 친구 집 방문을 등록하고 실제 생활 장면·귀가까지 이어지게 했어요. 선택 캐릭터 또는 전원을 다음 등록 일정 전까지 집으로 돌려보내는 즉시 귀환을 추가하고, LD 두 인물은 HUD 아래에서 선택 인물이 왼쪽 전경, 동행 인물이 오른쪽 후경에 보이도록 배치했어요. 현재 순간 제목과 내용 카드 테두리, 독립 직업 캡슐까지 교정한 v1.0.76(78) APK·AAB를 만들었어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -741,6 +745,16 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.76",code:78,date:"2026-08-20",items:[
+    "주간·월간 일정의 장소에서 각 캐릭터의 집을 골라 친구 집 방문처럼 등록 가능",
+    "캐릭터 집 방문 일정을 실제 집 장면과 연결하고 일정 종료 뒤 자기 집으로 돌아오는 흐름 반영",
+    "일정 화면에 선택 캐릭터·전체 즉시 귀환을 추가하고 다음 등록 일정이 시작되면 자동으로 일상 재개",
+    "LD 두 인물 장면에서 선택 인물을 왼쪽 전경, 동행 인물을 오른쪽 후경에 배치하면서 상단·메뉴·현재 순간·하단 HUD 아래 레이어 유지",
+    "‘지금 이 순간’을 배경 없는 큰 흰 글자와 1.5px 검은 외곽선으로 교정하고 크림색 내용 카드에는 검은 테두리 추가",
+    "직업 표시를 프로필에서 떨어진 독립 갈색 캡슐로 바꾸고 긴 직업명도 화면 밖으로 나가지 않게 제한",
+    "새 일정 목적지와 즉시 귀환 UI·생활 장면의 영어·일본어 문구 반영",
+    "Google Play용 v1.0.76(78) 서명 AAB와 직접 설치용 APK 생성"
+  ]},
   {version:"1.0.75",code:77,date:"2026-08-20",items:[
     "‘지금 이 순간’ 제목·펼치기/접기 버튼·내용 카드 전체를 눌러 같은 방식으로 펼치고 접을 수 있도록 개선",
     "접힌 현재 순간 제목은 한 줄로 유지하고 작은 설명은 최대 4줄까지 표시",
