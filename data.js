@@ -668,6 +668,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-settings-hud-stability-71",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"설정 선택 연속성·관찰 HUD 시안 반영",summary:"집 구성원·방문 요일과 마을 건물 설정을 고를 때 열린 편집창과 스크롤이 유지되도록 다시 고치고, 관계의 편안함 선택값을 사용자가 고른 그대로 보존했어요. 인물 선택창을 메뉴보다 위에 표시하고 사진의 흰 네모를 없앴으며, 제공 SVG·글꼴에 맞춘 이름·시간·현재 순간 배치와 현재 건물 외관을 적용한 v1.0.71(73) 변경이에요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-desktop-restore-aab-72",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"PC 사이트 관찰 화면 복구·AAB 생성",summary:"Android 전용 게임 HUD가 PC 사이트 관찰 화면에 함께 표시되던 렌더링 경로를 분리했어요. 사이트는 캐릭터 목록, 큰 현재 장면, 마을 지도와 오늘의 기록이 이어지는 기존 PC 구성을 복구했고, 앞선 설정·관계·HUD 수정까지 포함한 서명된 v1.0.72(74) AAB를 만들었어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -725,6 +729,12 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.72",code:74,date:"2026-08-20",items:[
+    "PC 사이트 관찰 화면에 Android 전용 HUD가 크게 표시되던 문제 수정",
+    "PC 관찰 화면의 캐릭터 목록·큰 현재 장면·마을 지도·오늘의 기록 구성 복구",
+    "Android 앱은 v1.0.71에서 적용한 전용 HUD와 설정 선택 안정화 유지",
+    "앞선 수정과 사이트 복구를 포함한 서명된 Google Play용 AAB 생성"
+  ]},
   {version:"1.0.71",code:73,date:"2026-08-20",items:[
     "집 구성원·주거 방식·방문 요일을 선택해도 열린 편집창과 현재 스크롤 위치가 유지되도록 수정",
     "관계 설정의 ‘함께 있을 때의 편안함’에서 고른 값이 다른 기본값으로 바뀌던 문제 수정",
