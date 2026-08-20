@@ -652,6 +652,14 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-responsive-hud-swipe-67",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"반응형 관찰 HUD·앱 캐릭터 스와이프",summary:"관찰 화면을 사용자가 그린 위치 관계에 맞춰 상단 프로필 영역, 좌우 메뉴, 현재 순간 카드와 하단 메뉴로 정돈했어요. 고정 좌표 대신 화면 비율·안전영역·작은 화면용 규칙을 사용해 기기별 겹침을 줄이고, Android 홈 관찰 화면을 좌우로 밀면 이전·다음 캐릭터가 선택되도록 한 v1.0.67(69) APK·AAB를 만들었어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-native-hud-root-rebuild-68",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"앱 홈 HUD 근본 개편·PC 화면 분리 복구",summary:"뒤로가기 입력이 관찰 화면의 프로필 버튼까지 전달되어 인물 선택 팝업이 열리던 원인을 차단했어요. Android 홈은 사용자가 그린 프로필 테두리·캐릭터 카드·취향 사전·우편함·마을 원화를 자르지 않고 쓰는 전용 HUD로 다시 구성하고, PC 사이트는 앱 HUD와 완전히 분리해 상단 메뉴와 마을 선택 기능을 복구한 v1.0.68(70) APK·AAB를 만들었어요."
+});
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-figma-hud-placement-69",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"피그마 좌표 기준 앱 홈 HUD 정밀 배치",summary:"제공된 412×917 피그마·SVG를 기준으로 상단 프로필, 좌우 메뉴, 현재 순간과 하단 메뉴의 위치 비율을 다시 맞췄어요. 회색 상자는 자리표시로만 사용하고 실제 화면에서는 제거했으며, 손그림 아이콘과 원형 프로필 사진이 잘리거나 별도 흰 상자에 갇히지 않도록 한 v1.0.69(71) APK·AAB를 만들었어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -709,6 +717,22 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.69",code:71,date:"2026-08-20",items:[
+    "제공된 피그마·SVG의 412×917 좌표 비율을 기준으로 Android 관찰 홈 HUD 재배치",
+    "디자인의 회색 상자와 회색 원은 자리표시로만 해석하고 실제 앱 배경에서는 완전히 제거",
+    "프로필 자리에는 원형 프로필 사진을, 각 메뉴 자리에는 손그림 원본 아이콘을 잘리지 않게 표시",
+    "좌우 메뉴와 하단 메뉴의 갈색 이름표가 아이콘 아래에 걸쳐 보이도록 정렬",
+    "다른 화면에서 뒤로갈 때 프로필 선택 버튼까지 입력이 전달되지 않도록 터치 차단 유지",
+    "영어·일본어 관찰 화면과 메뉴 관련 문구 번역 보강"
+  ]},
+  {version:"1.0.68",code:70,date:"2026-08-20",items:[
+    "다른 메뉴의 뒤로가기 입력이 관찰 화면 프로필 버튼까지 전달되어 인물 선택 팝업이 열리던 문제 수정",
+    "Android 관찰 화면을 앱 전용 HUD 구조로 다시 만들고 PC 사이트 화면과 렌더링 경로를 분리",
+    "사용자가 그린 프로필 테두리·캐릭터 카드·취향 사전·우편함·마을 원화를 잘리지 않게 전체 표시",
+    "좌우 기능 메뉴를 러프 배치에 맞춰 위로 올리고 아이콘 뒤의 흰색·남색·미색 상자 제거",
+    "PC 사이트의 상단 메뉴와 마을 선택 기능 복구",
+    "영어·일본어 관찰 화면과 메뉴 관련 문구 번역 보강"
+  ]},
   {version:"1.0.67",code:69,date:"2026-08-20",items:[
     "관찰 화면을 러프의 위치 관계에 맞춰 상단 프로필·좌우 기능·현재 순간·하단 메뉴 구조로 정돈",
     "메뉴 뒤 별도 색상 상자 없이 배경 위에 아이콘과 이름만 표시",
