@@ -660,6 +660,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-figma-hud-placement-69",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"피그마 좌표 기준 앱 홈 HUD 정밀 배치",summary:"제공된 412×917 피그마·SVG를 기준으로 상단 프로필, 좌우 메뉴, 현재 순간과 하단 메뉴의 위치 비율을 다시 맞췄어요. 회색 상자는 자리표시로만 사용하고 실제 화면에서는 제거했으며, 손그림 아이콘과 원형 프로필 사진이 잘리거나 별도 흰 상자에 갇히지 않도록 한 v1.0.69(71) APK·AAB를 만들었어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-selection-scene-stability-70",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"선택 항목·관계 설정·생활 소품 안정화",summary:"집 구성원과 방문 요일, 관계의 편안함, 마을 건물 편집 선택값이 사라지거나 화면을 위로 올리던 원인을 정리했어요. 관찰 장면의 음식 소품이 겹쳐 깨져 보이던 표시와 상대 이름이 자기 자신으로 반복되던 장면 문구도 고친 v1.0.70(72) APK·AAB를 만들었어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -717,6 +721,14 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.70",code:72,date:"2026-08-20",items:[
+    "집 구성원·방문 요일을 선택할 때 화면이 위로 이동하거나 선택값이 반영되지 않던 문제 수정",
+    "관계 설정의 ‘함께 있을 때 편안함’ 선택값이 다른 항목으로 되돌아가던 문제 수정",
+    "마을 편집에서 건물 선택 항목을 조작할 때 편집 화면의 위치가 초기화되던 문제 수정",
+    "관찰 장면의 음식 소품이 여러 겹 또는 반투명 사각형으로 깨져 보이던 표시 정리",
+    "두 인물 장면에서 상대 이름 대신 자기 이름이 반복되어 표시되던 문구 수정",
+    "영어·일본어 화면 문구 번역 보강"
+  ]},
   {version:"1.0.69",code:71,date:"2026-08-20",items:[
     "제공된 피그마·SVG의 412×917 좌표 비율을 기준으로 Android 관찰 홈 HUD 재배치",
     "디자인의 회색 상자와 회색 원은 자리표시로만 해석하고 실제 앱 배경에서는 완전히 제거",
