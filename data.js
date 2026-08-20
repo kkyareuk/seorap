@@ -319,7 +319,7 @@ window.SEORAP_DATA.tasks.push(
   {id:"dv-sfx-fabric",project:"서랍마을",section:"audio",subsection:"sfx",title:"침구·옷감 생활 소리 녹음하기",summary:"이불을 당기기, 옷을 접기, 소파에 앉기의 부드러운 천 마찰을 각각 녹음."},
   {id:"dv-sfx-dishes",project:"서랍마을",section:"audio",subsection:"sfx",title:"식기 생활 소리 녹음하기",summary:"컵·접시·수저를 내려놓는 소리를 재질별로 작게 녹음하고 날카로운 충돌음은 제외."},
 
-  {id:"dv-release-internal",project:"서랍마을",section:"release",subsection:"play-store",title:"Google Play 내부 테스트 v1.0.59(61) 올리기",summary:"앱 반복 종료를 막은 긴급 안정화 AAB를 내부 테스트 트랙에 올리고, 새 버전이 출시 가능 상태가 된 뒤 실제 기기에서 시작 화면 진입을 확인."},
+  {id:"dv-release-internal",project:"서랍마을",section:"release",subsection:"play-store",title:"Google Play 내부 테스트 v1.0.61(63) 올리기",summary:"설정·집·일정·마을 화면 수정이 포함된 최신 AAB를 내부 테스트 트랙에 올리고, 새 버전이 출시 가능 상태가 된 뒤 실제 기기에서 시작 화면과 집 화면 진입을 확인."},
   {id:"dv-release-closed",project:"서랍마을",section:"release",subsection:"play-store",title:"비공개 테스트 참여자 등록 확인하기",summary:"신청 Google 계정, 참여 링크, 14일 유지 안내가 서로 맞는지 확인."},
   {id:"dv-release-listing",project:"서랍마을",section:"release",subsection:"play-store",title:"Play 스토어 등록정보 최종 점검하기",summary:"앱 이름·짧은 설명·상세 설명·아이콘·스크린샷·연락처·개인정보처리방침 점검."},
   {id:"dv-release-web-smoke",project:"서랍마을",section:"release",subsection:"web",title:"사이트 배포 뒤 핵심 화면 점검하기",summary:"모바일과 데스크톱에서 사진 로딩, 메뉴 이동, 캐릭터 저장, 설정 연동을 실제 도메인으로 확인."},
@@ -624,6 +624,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-settings-performance-60",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"설정·관찰·마을 화면 안정화와 최적화",summary:"설정 메뉴의 받고 싶은 연락 선택 시 화면이 사라지던 상태 분리 문제와 전역 메뉴 스타일 충돌을 근본 수정했어요. 설정을 분야별 메뉴로 정리하고, 월간 달력·테마 색상·집 행동 소품·마을 배율·캐릭터 선택 이동을 사이트와 앱에 함께 교정했어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-android-package-61",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"최신 사이트 수정분 Android 앱 패키징",summary:"사이트에 먼저 반영된 설정·집·일정·마을 화면 수정을 Android 앱 자산에도 동기화하고, 집 행동 이모지의 큰 흰 배경을 제거한 v1.0.61(63) 내부 테스트 AAB와 직접 설치 APK를 만들었어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고 답변",content:`안녕하세요. 자세한 오류 상황과 진단 정보를 보내주셔서 감사합니다.
@@ -655,6 +659,13 @@ window.SEORAP_DATA.copyTemplates=[
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.61",code:63,date:"2026-08-20",items:[
+    "사이트에 먼저 반영된 설정·집·일정·마을 화면 수정분을 Android 앱에도 동기화",
+    "집 안 행동 이모지의 크기를 줄이고 아이콘 뒤 흰 사각 배경 제거",
+    "가로로 긴 방의 인물 가로 배치와 모바일 집 화면 겹침 개선",
+    "설정 연락 선택, 월간 달력, 캐릭터 테마 색상 화면의 모바일 폭 안정화",
+    "내부 테스트용 AAB와 직접 설치용 APK 빌드 완료"
+  ]},
   {version:"1.0.60",code:62,date:"2026-08-20",items:[
     "설정을 게임플레이·알림, 화면·조작, 계정·데이터, 도움말·문의 메뉴로 정리",
     "받고 싶은 연락 선택 시 설정 화면이 사라지거나 백지로 이동하던 오류 수정",
