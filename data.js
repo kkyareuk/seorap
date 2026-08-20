@@ -648,6 +648,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-profile-popup-resident-scroll-66",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"프로필 선택 팝업·집 구성원 편집 안정화",summary:"관찰 화면을 러프 배치에 맞춰 다시 정리하고 상단 원형에는 프로필 사진을 표시하도록 바꿨어요. 인물 선택은 독립 팝업으로 분리하고, 현재 순간은 항상 펼쳐 두며, 우편함·마을 원화의 흰 배경을 제거하고 지도를 키웠어요. 집 구성원 선택 시 화면이 위로 튀지 않게 하고 출퇴근 구성원은 숙박 방을 ‘기타·없음’으로 지정할 수 있게 한 v1.0.66(68) APK·AAB를 만들었어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-responsive-hud-swipe-67",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"반응형 관찰 HUD·앱 캐릭터 스와이프",summary:"관찰 화면을 사용자가 그린 위치 관계에 맞춰 상단 프로필 영역, 좌우 메뉴, 현재 순간 카드와 하단 메뉴로 정돈했어요. 고정 좌표 대신 화면 비율·안전영역·작은 화면용 규칙을 사용해 기기별 겹침을 줄이고, Android 홈 관찰 화면을 좌우로 밀면 이전·다음 캐릭터가 선택되도록 한 v1.0.67(69) APK·AAB를 만들었어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -705,6 +709,14 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.67",code:69,date:"2026-08-20",items:[
+    "관찰 화면을 러프의 위치 관계에 맞춰 상단 프로필·좌우 기능·현재 순간·하단 메뉴 구조로 정돈",
+    "메뉴 뒤 별도 색상 상자 없이 배경 위에 아이콘과 이름만 표시",
+    "화면 비율과 안전영역에 반응하고 작거나 짧은 기기에서는 자동으로 간격·크기가 줄어들도록 개선",
+    "Android 홈 관찰 화면을 좌우로 밀어 이전·다음 캐릭터를 선택하는 조작 안정화",
+    "세로 스크롤과 버튼 조작이 캐릭터 스와이프로 잘못 인식되지 않도록 터치 방향·거리 판정 보강",
+    "영어·일본어 관찰 화면 관련 문구 번역 보강"
+  ]},
   {version:"1.0.66",code:68,date:"2026-08-20",items:[
     "관찰 화면 상단 원형에 SD 아이콘 대신 둥글게 자른 프로필 사진 표시",
     "인물 선택 목록을 화면 안 고정 목록이 아닌 독립 팝업으로 변경",
