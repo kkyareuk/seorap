@@ -632,6 +632,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-scene-notification-62",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"동시 장면·캐릭터 연락·집 애니메이션 개선",summary:"한 캐릭터가 서로 다른 장소의 두 장면에 동시에 등장하지 않게 하고, 연락을 보내는 캐릭터가 날짜와 발송 순서에 따라 고르게 바뀌도록 개선했어요. 집 캐릭터에는 잔잔한 둥둥 애니메이션을 넣고 행동 아이콘이 이름표와 상태표를 가리지 않게 분리했어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-notification-screen-63",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"연락 종류 선택 화면 이탈 근본 수정",summary:"받고 싶은 연락을 누를 때 Android 화면이 옆으로 밀려 백지처럼 보이던 숨김 체크박스 초점 문제를 제거했어요. 연락 종류를 안정적인 선택 버튼으로 바꾸고 전체 화면을 다시 그리지 않게 했으며, 앱 버전은 설정 첫 화면에서 바로 확인할 수 있게 했어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -689,6 +693,11 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.63",code:65,date:"2026-08-20",items:[
+    "받고 싶은 연락을 선택할 때 설정 화면이 옆으로 밀려 백지처럼 보이던 오류 수정",
+    "연락 종류 선택을 화면 전체 갱신 없는 안정적인 버튼 방식으로 변경",
+    "현재 앱 버전과 빌드 번호를 설정 첫 화면에서 바로 확인하도록 이동"
+  ]},
   {version:"1.0.62",code:64,date:"2026-08-20",items:[
     "같은 캐릭터가 서로 다른 장소의 두 생활 장면에 동시에 등장하던 문제 수정",
     "선택한 여러 캐릭터가 날짜와 알림 순서에 따라 고르게 연락하도록 개선",
