@@ -620,6 +620,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-crash-hotfix-59",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"Android 앱 반복 종료 긴급 수정",summary:"v1.0.58에서 처음 적용한 릴리스 코드·리소스 축소를 되돌리고, 특정 화면 설정에서 시작 중 종료될 수 있던 기본 스플래시 리소스를 보강했어요. 데이터 형식은 바꾸지 않고 v1.0.59(61) APK·AAB를 새로 만들었어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-settings-performance-60",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"설정·관찰·마을 화면 안정화와 최적화",summary:"설정 메뉴의 받고 싶은 연락 선택 시 화면이 사라지던 상태 분리 문제와 전역 메뉴 스타일 충돌을 근본 수정했어요. 설정을 분야별 메뉴로 정리하고, 월간 달력·테마 색상·집 행동 소품·마을 배율·캐릭터 선택 이동을 사이트와 앱에 함께 교정했어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고 답변",content:`안녕하세요. 자세한 오류 상황과 진단 정보를 보내주셔서 감사합니다.
@@ -652,6 +656,13 @@ window.SEORAP_DATA.copyTemplates=[
 
 window.SEORAP_DATA.updates=[
   {version:"1.0.60",code:62,date:"2026-08-20",items:[
+    "설정을 게임플레이·알림, 화면·조작, 계정·데이터, 도움말·문의 메뉴로 정리",
+    "받고 싶은 연락 선택 시 설정 화면이 사라지거나 백지로 이동하던 오류 수정",
+    "월간 달력 이동 버튼, 캐릭터 테마 색상, 집 행동 소품의 모바일 배치 개선",
+    "캐릭터를 선택하면 해당 캐릭터가 있는 마을을 관찰하고 선택 상태가 이동 뒤에도 유지되도록 개선",
+    "마을 화면 배율을 넓히고 새 마을 추가는 편집 모드에서만 보이도록 변경",
+    "손그림 음식점 일러스트를 사이트와 앱의 기본 음식점으로 통일",
+    "중복 상태 모듈과 불필요한 화면 갱신을 제거해 메뉴 반응과 이미지 로딩 최적화",
     "가로로 긴 방에서는 캐릭터가 가로 방향으로 배치되도록 수정",
     "기기와 클라우드의 차량 순서가 달라도 차량 사진이 올바른 차량에 유지되도록 수정",
     "일정 추가 창에서 취소했는데도 일정이 생성되던 오류 수정",
