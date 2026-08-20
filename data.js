@@ -664,6 +664,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-selection-scene-stability-70",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"선택 항목·관계 설정·생활 소품 안정화",summary:"집 구성원과 방문 요일, 관계의 편안함, 마을 건물 편집 선택값이 사라지거나 화면을 위로 올리던 원인을 정리했어요. 관찰 장면의 음식 소품이 겹쳐 깨져 보이던 표시와 상대 이름이 자기 자신으로 반복되던 장면 문구도 고친 v1.0.70(72) APK·AAB를 만들었어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-settings-hud-stability-71",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"설정 선택 연속성·관찰 HUD 시안 반영",summary:"집 구성원·방문 요일과 마을 건물 설정을 고를 때 열린 편집창과 스크롤이 유지되도록 다시 고치고, 관계의 편안함 선택값을 사용자가 고른 그대로 보존했어요. 인물 선택창을 메뉴보다 위에 표시하고 사진의 흰 네모를 없앴으며, 제공 SVG·글꼴에 맞춘 이름·시간·현재 순간 배치와 현재 건물 외관을 적용한 v1.0.71(73) 변경이에요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -721,6 +725,15 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.71",code:73,date:"2026-08-20",items:[
+    "집 구성원·주거 방식·방문 요일을 선택해도 열린 편집창과 현재 스크롤 위치가 유지되도록 수정",
+    "관계 설정의 ‘함께 있을 때의 편안함’에서 고른 값이 다른 기본값으로 바뀌던 문제 수정",
+    "마을 건물 추가·편집 선택 항목을 조작할 때 편집창이 닫히거나 위로 이동하지 않도록 수정",
+    "인물 선택창을 좌우 메뉴보다 위에 표시하고 캐릭터 사진 뒤의 흰 사각형 제거",
+    "제공된 SVG와 글꼴을 기준으로 이름·직업·시간·‘지금 이 순간’ 글자 크기와 카드 배치 조정",
+    "현재 순간 카드의 위치 자리에 집 또는 건물 외관 이미지 표시",
+    "새 위치 안내 문구의 영어·일본어 번역 추가"
+  ]},
   {version:"1.0.70",code:72,date:"2026-08-20",items:[
     "집 구성원·방문 요일을 선택할 때 화면이 위로 이동하거나 선택값이 반영되지 않던 문제 수정",
     "관계 설정의 ‘함께 있을 때 편안함’ 선택값이 다른 항목으로 되돌아가던 문제 수정",
