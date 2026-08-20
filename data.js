@@ -640,6 +640,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-game-hud-64",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"관찰 화면 게임 HUD와 손그림 마을 아이콘 적용",summary:"관찰 화면을 상단 캐릭터 정보, 좌우 기능 메뉴, 중앙 생활 장면, 현재 순간 카드, 하단 주요 메뉴로 다시 구성했어요. 사용자가 그린 두루마리 지도 마을 아이콘을 원화 그대로 적용하고 v1.0.64(66) Android APK·AAB를 만들었어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-mailbox-hud-65",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"우편함 HUD·캐릭터 스와이프·지도 원화 교정",summary:"다른 화면에서 돌아왔을 때 인물 변경 목록이 저절로 열리지 않게 고치고, Android 관찰 화면을 좌우로 밀어 이전·다음 캐릭터를 선택할 수 있게 했어요. 메뉴 뒤 색상 상자를 제거하고 캐릭터 연락을 독립 우편함으로 옮겼으며, 손그림 원화에서 지도만 정확히 잘라 마을 메뉴에 적용한 v1.0.65(67) APK·AAB를 만들었어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -697,6 +701,13 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.65",code:67,date:"2026-08-20",items:[
+    "다른 화면에서 돌아왔을 때 인물 변경 목록이 자동으로 열린 채 남던 오류 수정",
+    "Android 관찰 화면을 좌우로 밀어 이전·다음 캐릭터를 선택하는 조작 추가",
+    "캐릭터 연락을 캐릭터 설정 화면에서 분리해 독립 우편함 메뉴로 이동",
+    "관찰 화면 좌우·하단 메뉴 뒤의 남색·미색 상자 제거",
+    "사용자 원화에서 두루마리 지도만 정확히 잘라 마을 메뉴에 적용"
+  ]},
   {version:"1.0.64",code:66,date:"2026-08-20",items:[
     "관찰 화면을 캐릭터 중심의 게임 HUD 레이아웃으로 전면 재구성",
     "캐릭터·취향 사전·관계는 왼쪽, 일정·통계·설정은 오른쪽 메뉴로 정리",
