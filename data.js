@@ -680,6 +680,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-moment-font-header-74",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"현재 순간·선택 글꼴·상단 프로필 SVG 교정",summary:"‘지금 이 순간’을 배경 없는 흰 글씨와 검은 외곽선으로 표시하고, 접힌 카드의 말줄임·건물 외관·위치와 펼치기·접기 배치를 다듬었어요. 상단 이름·직업·시간은 사용자가 고른 글꼴을 따르게 하고, 제공받은 그리운 심심체는 선택 항목으로 추가했어요. SVG의 갈색 상단 모양과 직업 길이에 맞춰 늘어나는 영역을 반영한 v1.0.74(76) APK·AAB를 만들었어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-moment-controls-comfort-75",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"현재 순간 조작·관계 편안함·알림 설정 안정화",summary:"‘지금 이 순간’의 제목·펼치기 버튼·내용 카드 전체를 눌러 펼치고 접을 수 있게 하고, 접힌 설명은 최대 4줄까지 표시하면서 카드 빈 여백을 줄였어요. 상단 직업 배경의 틈과 프로필 침범을 고치고 알림을 독립 설정 메뉴로 분리했으며, 예전 관계 데이터가 새 편안함 선택을 덮어쓰던 원인을 제거한 v1.0.75(77) APK·AAB를 만들었어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -737,6 +741,16 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.75",code:77,date:"2026-08-20",items:[
+    "‘지금 이 순간’ 제목·펼치기/접기 버튼·내용 카드 전체를 눌러 같은 방식으로 펼치고 접을 수 있도록 개선",
+    "접힌 현재 순간 제목은 한 줄로 유지하고 작은 설명은 최대 4줄까지 표시",
+    "현재 순간 카드가 내용 길이에 맞춰 자라도록 바꿔 접힘·펼침 상태의 과한 하단 빈 여백 제거",
+    "펼치기/접기 버튼을 내용 카드 위에 더 겹쳐 배치하고 모든 조작부의 열린 상태 동기화",
+    "상단 직업 배경과 머리글 사이의 틈을 없애고 직업 배경이 프로필 사진을 침범하지 않도록 수정",
+    "알림을 게임플레이 설정에서 분리해 독립 알림 메뉴로 이동하고 영어·일본어 메뉴 번역 반영",
+    "예전 관계 데이터가 새 ‘함께 있을 때의 편안함’ 선택값을 덮어쓰던 오류를 10개 선택지 전체에서 수정",
+    "Google Play용 v1.0.75(77) 서명 AAB와 직접 설치용 APK 생성"
+  ]},
   {version:"1.0.74",code:76,date:"2026-08-20",items:[
     "‘지금 이 순간’을 배경 없는 흰 글씨와 검은 외곽선으로 변경해 장면 위에서도 선명하게 표시",
     "접힌 현재 순간 카드의 긴 제목·설명을 말줄임하고 건물 외관과 위치 정보는 카드 안에 유지",
