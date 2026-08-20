@@ -672,6 +672,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-desktop-restore-aab-72",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"PC 사이트 관찰 화면 복구·AAB 생성",summary:"Android 전용 게임 HUD가 PC 사이트 관찰 화면에 함께 표시되던 렌더링 경로를 분리했어요. 사이트는 캐릭터 목록, 큰 현재 장면, 마을 지도와 오늘의 기록이 이어지는 기존 PC 구성을 복구했고, 앞선 설정·관계·HUD 수정까지 포함한 서명된 v1.0.72(74) AAB를 만들었어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-svg-hud-expand-ja-73",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"SVG 기준 관찰 HUD·현재 순간 펼치기·일본어 메뉴 교정",summary:"412×917 SVG의 실제 좌우 비대칭 여백과 카드 좌표를 다시 적용하고, 현재 순간 카드에 제목 탭과 펼치기·접기 동작을 복구했어요. 검은 외곽선처럼 보이던 인물 이름 그림자를 없애고, 일본어 메뉴를 人物·好み·予定처럼 버튼 안에 자연스럽게 들어가는 명칭으로 다듬은 v1.0.73(75) APK·AAB를 만들었어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -729,6 +733,13 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.73",code:75,date:"2026-08-20",items:[
+    "412×917 SVG의 실제 여백을 기준으로 좌우 기능 메뉴와 하단 메뉴 위치·크기 재조정",
+    "‘지금 이 순간’ 카드의 제목 탭과 펼치기·접기 기능 복구",
+    "인물 이름의 검은 외곽선처럼 보이던 그림자를 제거하고 건물 외관 이미지는 카드 위치 정보에 유지",
+    "주간 루틴 메뉴를 ‘일정’으로 변경하고 일본어 메뉴를 人物·好み·予定·郵便·記録 등 짧고 자연스러운 표기로 교정",
+    "Google Play용 v1.0.73(75) 서명 AAB와 직접 설치용 APK 생성"
+  ]},
   {version:"1.0.72",code:74,date:"2026-08-20",items:[
     "PC 사이트 관찰 화면에 Android 전용 HUD가 크게 표시되던 문제 수정",
     "PC 관찰 화면의 캐릭터 목록·큰 현재 장면·마을 지도·오늘의 기록 구성 복구",
