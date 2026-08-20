@@ -636,6 +636,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-notification-screen-63",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"연락 종류 선택 화면 이탈 근본 수정",summary:"받고 싶은 연락을 누를 때 Android 화면이 옆으로 밀려 백지처럼 보이던 숨김 체크박스 초점 문제를 제거했어요. 연락 종류를 안정적인 선택 버튼으로 바꾸고 전체 화면을 다시 그리지 않게 했으며, 앱 버전은 설정 첫 화면에서 바로 확인할 수 있게 했어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-game-hud-64",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"관찰 화면 게임 HUD와 손그림 마을 아이콘 적용",summary:"관찰 화면을 상단 캐릭터 정보, 좌우 기능 메뉴, 중앙 생활 장면, 현재 순간 카드, 하단 주요 메뉴로 다시 구성했어요. 사용자가 그린 두루마리 지도 마을 아이콘을 원화 그대로 적용하고 v1.0.64(66) Android APK·AAB를 만들었어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -693,6 +697,13 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.64",code:66,date:"2026-08-20",items:[
+    "관찰 화면을 캐릭터 중심의 게임 HUD 레이아웃으로 전면 재구성",
+    "캐릭터·취향 사전·관계는 왼쪽, 일정·통계·설정은 오른쪽 메뉴로 정리",
+    "현재 순간 카드와 관찰·집·오늘의 기록·상점·마을 하단 메뉴 추가",
+    "직접 그린 두루마리 지도 마을 아이콘을 사이트와 Android 앱에 적용",
+    "영어·일본어 HUD 접근성 문구와 관련 항목 번역 보강"
+  ]},
   {version:"1.0.63",code:65,date:"2026-08-20",items:[
     "받고 싶은 연락을 선택할 때 설정 화면이 옆으로 밀려 백지처럼 보이던 오류 수정",
     "연락 종류 선택을 화면 전체 갱신 없는 안정적인 버튼 방식으로 변경",
