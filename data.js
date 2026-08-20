@@ -676,6 +676,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-svg-hud-expand-ja-73",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"SVG 기준 관찰 HUD·현재 순간 펼치기·일본어 메뉴 교정",summary:"412×917 SVG의 실제 좌우 비대칭 여백과 카드 좌표를 다시 적용하고, 현재 순간 카드에 제목 탭과 펼치기·접기 동작을 복구했어요. 검은 외곽선처럼 보이던 인물 이름 그림자를 없애고, 일본어 메뉴를 人物·好み·予定처럼 버튼 안에 자연스럽게 들어가는 명칭으로 다듬은 v1.0.73(75) APK·AAB를 만들었어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-moment-font-header-74",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"현재 순간·선택 글꼴·상단 프로필 SVG 교정",summary:"‘지금 이 순간’을 배경 없는 흰 글씨와 검은 외곽선으로 표시하고, 접힌 카드의 말줄임·건물 외관·위치와 펼치기·접기 배치를 다듬었어요. 상단 이름·직업·시간은 사용자가 고른 글꼴을 따르게 하고, 제공받은 그리운 심심체는 선택 항목으로 추가했어요. SVG의 갈색 상단 모양과 직업 길이에 맞춰 늘어나는 영역을 반영한 v1.0.74(76) APK·AAB를 만들었어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -733,6 +737,15 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.74",code:76,date:"2026-08-20",items:[
+    "‘지금 이 순간’을 배경 없는 흰 글씨와 검은 외곽선으로 변경해 장면 위에서도 선명하게 표시",
+    "접힌 현재 순간 카드의 긴 제목·설명을 말줄임하고 건물 외관과 위치 정보는 카드 안에 유지",
+    "펼친 상태에서도 현재 순간 제목과 접기 버튼을 카드 위에 유지하고 본문을 카드 안에서 확인 가능",
+    "상단 이름·직업·시간과 현재 순간 문구가 사용자가 고른 글꼴을 그대로 사용하도록 수정",
+    "그리운 심심체를 강제 적용하지 않고 설정에서 고를 수 있는 선택 글꼴로 추가",
+    "SVG에 맞춰 시간 높이와 상단 갈색 영역을 조정하고 직업 글자 길이에 따라 영역이 늘어나도록 개선",
+    "Google Play용 v1.0.74(76) 서명 AAB와 직접 설치용 APK 생성"
+  ]},
   {version:"1.0.73",code:75,date:"2026-08-20",items:[
     "412×917 SVG의 실제 여백을 기준으로 좌우 기능 메뉴와 하단 메뉴 위치·크기 재조정",
     "‘지금 이 순간’ 카드의 제목 탭과 펼치기·접기 기능 복구",
