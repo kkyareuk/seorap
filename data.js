@@ -696,6 +696,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-home-assets-sheets-groups-78",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"홈 원화 라벨·일정 바텀시트·캐릭터 그룹 완성",summary:"홈 메뉴의 손그림 라벨 배경과 상단 목재 장식을 복구하고 현재 순간 펼치기·접기에 제공된 빨간 테이프를 적용했어요. 기기 글꼴 선택은 제거하고 KCC 한빛체로 UI를 통일했으며, 일정·기념일 편집을 아래에서 오르내리는 바텀시트와 월·일 선택으로 바꿨어요. 일정 종료 알림, 관계 화면의 캐릭터 그룹, 마을 사이 자동 이동 차단 설정과 영어·일본어 문구를 추가한 v1.0.78(80) APK·AAB를 만들었어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-hud-seams-character-draft-79",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"홈 라벨 틈·투명 버튼 교정과 캐릭터 프로필 러프",summary:"홈 메뉴 라벨의 이어 붙인 경계와 글자 잘림을 원화 한 장 배경 방식으로 고치고, 펼치기·접기 테이프와 일정 되돌아가기 버튼 뒤의 흰 네모를 제거했어요. 연결된 밝은 바탕만 투명화하는 원화 추출 방식을 적용해 아이콘 안쪽 색은 보존했으며, 캐릭터 화면을 프로필 용지와 색상별 설정 띠로 구성한 1차 러프로 재배치했어요. 새 문구의 영어·일본어 번역과 v1.0.79(81) APK·AAB까지 반영했어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -753,6 +757,15 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.79",code:81,date:"2026-08-21",items:[
+    "홈 좌우·하단 메뉴와 직업 라벨을 한 장짜리 손그림 배경으로 바꿔 미세한 갈라짐과 늘림 경계를 제거",
+    "긴 메뉴 글자가 갈색 라벨 안에서 잘리지 않도록 모바일 너비와 글자 크기 조정",
+    "현재 순간 펼치기·접기 빨간 테이프와 일정 되돌아가기 버튼 뒤에 보이던 흰 사각형 제거",
+    "원화 가장자리에 연결된 밝은 바탕만 투명화해 아이콘 내부의 크림색은 보존하도록 에셋 추출 개선",
+    "캐릭터 화면을 프로필 용지·내보내기/저장/삭제·색상별 설정 띠로 구성한 1차 러프 UI로 재배치",
+    "새 캐릭터 프로필 화면 문구의 영어·일본어 번역 반영",
+    "Google Play용 v1.0.79(81) 서명 AAB와 직접 설치용 APK 생성"
+  ]},
   {version:"1.0.78",code:80,date:"2026-08-21",items:[
     "홈 좌우·하단 메뉴와 직업 표시의 손그림 갈색 라벨을 늘려도 양끝이 깨지지 않는 원화 프레임으로 복구",
     "홈 최상단 목재 장식을 복구하고 현재 순간 펼치기·접기 버튼에 제공된 빨간 테이프 원화 적용",
