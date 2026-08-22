@@ -748,6 +748,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-character-group-layout-95-96",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"모바일 캐릭터 그룹·관계 화면 레이아웃 복구",summary:"좁은 휴대폰 화면에서 캐릭터 그룹 이름이 한 글자 폭으로 찌그러지고 편집·삭제 버튼이 내용을 밀어내던 구조를 고쳤어요. 그룹 아이콘·이름·동작 영역을 분리하고 버튼을 아래 행에 배치했으며, 그룹 목록과 관계 편집 화면에 중복 적용된 화면 높이를 제거해 중간의 큰 빈 공간 없이 바로 이어지도록 했어요. v1.0.78.4(95) 핫픽스와 동일 수정이 적용된 v1.0.90(96) 최신 개발판 APK·AAB를 만들고 모바일 회귀검사와 전체 앱 빌드를 통과했어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-relationship-scroll-97-98",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"캐릭터 그룹 아래 관계 설정 스크롤 복구",summary:"현재 관계 화면과 맞지 않는 과거 룰렛형 관계 화면 CSS가 여러 번 중복되어 전체 높이와 스크롤을 덮어쓰던 원인을 제거했어요. 캐릭터 그룹 목록 뒤의 관계 설정 영역은 페이지 내용만큼 자연스럽게 이어지고, 휴대폰에서는 화면 전체를 하나의 세로 스크롤 영역으로 사용해 맨 아래 관계 설정 버튼까지 누를 수 있어요. 관계 편집 팝업도 별도 스크롤을 유지하며, v1.0.78.5(97) 핫픽스와 동일 수정이 적용된 v1.0.91(98) 최신 개발판 APK·AAB를 만들고 회귀검사와 Android 빌드를 통과했어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -805,6 +809,18 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.91",code:98,date:"2026-08-22",items:[
+    "캐릭터 그룹 아래 관계 설정 영역이 화면 밖으로 잘리고 스크롤되지 않던 오류 수정",
+    "현재 화면과 맞지 않는 과거 관계 룰렛의 중복 고정 높이·overflow 스타일 제거",
+    "관계 페이지와 관계 편집 팝업을 각각 끝까지 스크롤할 수 있도록 스크롤 소유권 정리",
+    "v1.0.90의 캐릭터 그룹·일정·동기화 기능을 보존한 v1.0.91(98) AAB·APK 생성"
+  ]},
+  {version:"1.0.78.5",code:97,date:"2026-08-22",items:[
+    "캐릭터 그룹 아래 관계 설정 영역이 잘려 버튼을 누를 수 없던 오류 수정",
+    "휴대폰 관계 화면을 하나의 세로 스크롤 영역으로 정리하고 맨 아래 버튼까지 접근 가능하게 개선",
+    "관계 설정 팝업이 화면 높이를 넘을 때 팝업 안에서 끝까지 스크롤되도록 수정",
+    "Google Play용 v1.0.78.5(97) 서명 AAB와 설치 확인용 APK 생성"
+  ]},
   {version:"1.0.90",code:96,date:"2026-08-22",items:[
     "모바일 캐릭터 그룹 카드의 아이콘·그룹명·구성원·동작 영역을 독립 구조로 재배치",
     "긴 그룹 이름이 한 글자 폭으로 찌그러지지 않고 편집·삭제 버튼은 아래 행에 표시",
