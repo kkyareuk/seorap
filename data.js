@@ -736,6 +736,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-android-asset-package-hotfix-87",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"Android 시작 화면·전체 자산 패키징 복구",summary:"v1.0.86 앱에 준비된 웹 자산 143개 중 25개만 포함되어 로고가 깨지고 시작 화면에서 멈추던 패키징 오류를 복구했어요. Android 빌드는 이제 중간 복사본 대신 준비가 끝난 www 자산 143개를 외부 빌드 폴더에 직접 옮기며, 원본과 개수가 하나라도 다르면 빌드가 실패하도록 검사를 추가했어요. APK 내부의 필수 실행 모듈·로고·UI 원화·폰트를 확인하고 v1.0.87(90) AAB와 APK를 다시 만들었어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-game-date-schedule-companion-91-92",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"게임 날짜·일정 우선·관계 동행 반영",summary:"v1.0.78.1(87) 배포 계보와 최신 개발본에 게임 날짜 표시를 추가했어요. 등록된 일정 시간에는 해당 일정을 최우선으로 사용하고, 동행자가 없는 일정 중 임의 대화가 끼어들지 않도록 생활 로그를 교정했어요. 관계별 ‘함께 다니기’는 두 캐릭터 모두 별도 일정이 없을 때만 같은 장소와 공동 행동을 만들도록 구현했어요. v1.0.78.2(91) 핫픽스와 v1.0.88(92) 최신 개발판 APK·AAB를 각각 만들고 전체 자산 포함 여부를 검증했어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -793,6 +797,22 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.88",code:92,date:"2026-08-22",items:[
+    "홈 시간 아래에 현실 달력을 기준으로 한 게임 날짜와 요일 표시",
+    "등록 일정의 시작·종료 시간에는 임의 생활 행동보다 해당 일정이 우선되도록 생활 로그 교정",
+    "동행자가 지정되지 않은 일정에 예정에 없던 캐릭터 대화나 공동 행동이 끼어들지 않도록 수정",
+    "관계 설정에 ‘함께 다니기’를 추가해 둘 다 별도 일정이 없을 때 같은 장소의 공동 행동과 생활 로그 생성",
+    "서로 다른 일정이나 명시된 일정 동행자는 관계 동행보다 항상 우선하도록 충돌 방지",
+    "v1.0.87의 최신 캐릭터 화면과 자산 143개를 보존한 v1.0.88(92) AAB·APK 생성"
+  ]},
+  {version:"1.0.78.2",code:91,date:"2026-08-22",items:[
+    "현재 배포 계보인 v1.0.78.1(87)을 기준으로 홈에 게임 날짜와 요일 표시",
+    "등록된 일정 시간에는 임의 행동 대신 해당 일정이 생활 로그에 유지되도록 수정",
+    "동행자가 없는 일정 중 예정에 없던 캐릭터 대화가 생성되지 않도록 수정",
+    "관계별 ‘함께 다니기’를 추가하고 두 캐릭터의 별도 일정이 없을 때만 공동 행동으로 연결",
+    "Android 웹 자산 126개 전체가 APK·AAB에 포함되었는지 검증",
+    "Google Play용 v1.0.78.2(91) 서명 AAB와 직접 설치 확인용 APK 생성"
+  ]},
   {version:"1.0.87",code:90,date:"2026-08-22",items:[
     "v1.0.86에서 로고가 깨지고 ‘앱 화면을 열지 못했어요’가 표시되던 Android 시작 오류 수정",
     "준비된 웹 자산 143개 전체를 APK·AAB에 직접 포함하도록 Android 패키징 경로 복구",
