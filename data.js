@@ -752,6 +752,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-relationship-scroll-97-98",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"캐릭터 그룹 아래 관계 설정 스크롤 복구",summary:"현재 관계 화면과 맞지 않는 과거 룰렛형 관계 화면 CSS가 여러 번 중복되어 전체 높이와 스크롤을 덮어쓰던 원인을 제거했어요. 캐릭터 그룹 목록 뒤의 관계 설정 영역은 페이지 내용만큼 자연스럽게 이어지고, 휴대폰에서는 화면 전체를 하나의 세로 스크롤 영역으로 사용해 맨 아래 관계 설정 버튼까지 누를 수 있어요. 관계 편집 팝업도 별도 스크롤을 유지하며, v1.0.78.5(97) 핫픽스와 동일 수정이 적용된 v1.0.91(98) 최신 개발판 APK·AAB를 만들고 회귀검사와 Android 빌드를 통과했어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-empty-custom-town-hud-99-100",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"주민 없는 사용자 마을 홈 화면 복구",summary:"새로 만든 마을에 사는 캐릭터가 없을 때 빈 상태 화면만 구형 HUD 규칙을 사용해 홈 메뉴 원화가 화면 전체로 커지고 흰 띠가 생기던 원인을 고쳤어요. 빈 마을도 정상 홈과 같은 HUD v4 좌표계·테마·투명 메뉴를 사용하고, 휴대폰과 태블릿 모두 화면 밖으로 넘치지 않아요. 기존 캐릭터·마을 데이터는 바꾸지 않아 업데이트 뒤 앱을 다시 열면 초기화 없이 정상 화면으로 복구돼요. 새 버전 업데이트 소식을 보내던 알림 UI·예약·열기 경로도 제거했으며, v1.0.78.6(99) 핫픽스와 동일 수정이 적용된 v1.0.92(100) 최신 개발판 APK·AAB를 만들었어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -809,6 +813,18 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.92",code:100,date:"2026-08-22",items:[
+    "주민이 없는 사용자 생성 마을도 정상 홈과 같은 HUD v4 좌표계와 테마로 표시",
+    "휴대폰·태블릿에서 메뉴 원화가 거대해지거나 흰 배경 띠가 나타나는 오류 수정",
+    "새 버전 업데이트 알림 설정·예약·열기 경로 제거",
+    "v1.0.91의 캐릭터 그룹·관계 화면과 최신 UI를 보존한 v1.0.92(100) AAB·APK 생성"
+  ]},
+  {version:"1.0.78.6",code:99,date:"2026-08-22",items:[
+    "새로 만든 빈 마을을 들어갔다 나온 뒤 홈 화면 배치가 깨지던 오류 수정",
+    "기존 데이터는 그대로 두고 업데이트 후 앱 재시작만으로 화면이 복구되도록 개선",
+    "휴대폰 384×853과 태블릿 1205×753에서 화면 넘침과 흰 메뉴 배경이 없는지 확인",
+    "Google Play용 v1.0.78.6(99) 서명 AAB와 설치 확인용 APK 생성"
+  ]},
   {version:"1.0.91",code:98,date:"2026-08-22",items:[
     "캐릭터 그룹 아래 관계 설정 영역이 화면 밖으로 잘리고 스크롤되지 않던 오류 수정",
     "현재 화면과 맞지 않는 과거 관계 룰렛의 중복 고정 높이·overflow 스타일 제거",
