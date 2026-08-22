@@ -744,6 +744,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-forward-schema-cloud-recovery-93-94",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"Google Play 업데이트 뒤 캐릭터 불러오기 복구",summary:"v1.0.78.2(91)가 최신 개발판의 저장 형식을 읽을 때 클라우드 캐릭터를 빈 새 게임으로 잘못 바꾸던 원인을 수정했어요. 핫픽스는 이후 버전의 캐릭터·집·마을 데이터를 보존해 읽고, 불러오기 전 데이터와 마지막 정상 캐릭터 상태를 별도 복구본으로 유지해 빈 상태보다 우선 복원해요. v1.0.78.3(93) Google Play용 AAB·확인 APK와 동일 방어가 적용된 v1.0.89(94) 최신 개발판을 만들었어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-character-group-layout-95-96",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"모바일 캐릭터 그룹·관계 화면 레이아웃 복구",summary:"좁은 휴대폰 화면에서 캐릭터 그룹 이름이 한 글자 폭으로 찌그러지고 편집·삭제 버튼이 내용을 밀어내던 구조를 고쳤어요. 그룹 아이콘·이름·동작 영역을 분리하고 버튼을 아래 행에 배치했으며, 그룹 목록과 관계 편집 화면에 중복 적용된 화면 높이를 제거해 중간의 큰 빈 공간 없이 바로 이어지도록 했어요. v1.0.78.4(95) 핫픽스와 동일 수정이 적용된 v1.0.90(96) 최신 개발판 APK·AAB를 만들고 모바일 회귀검사와 전체 앱 빌드를 통과했어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -801,6 +805,17 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.90",code:96,date:"2026-08-22",items:[
+    "모바일 캐릭터 그룹 카드의 아이콘·그룹명·구성원·동작 영역을 독립 구조로 재배치",
+    "긴 그룹 이름이 한 글자 폭으로 찌그러지지 않고 편집·삭제 버튼은 아래 행에 표시",
+    "그룹 목록과 관계 편집 화면 사이의 과도한 빈 공간 제거",
+    "v1.0.89의 일정·동기화·데이터 복구 기능과 자산 143개를 보존한 v1.0.90(96) AAB·APK 생성"
+  ]},
+  {version:"1.0.78.4",code:95,date:"2026-08-22",items:[
+    "휴대폰 관계 화면에서 캐릭터 그룹 이름과 버튼이 서로 밀어내며 깨지던 오류 수정",
+    "그룹 목록 아래에 화면 한 장 높이의 빈 공간이 생기던 중복 높이 계산 제거",
+    "Google Play용 v1.0.78.4(95) 서명 AAB와 설치 확인용 APK 생성"
+  ]},
   {version:"1.0.89",code:94,date:"2026-08-22",items:[
     "이후 앱 버전에서 저장한 데이터도 캐릭터·집·마을을 지우지 않고 안전하게 읽도록 저장 형식 호환성 확대",
     "클라우드 불러오기 직전 상태와 마지막 정상 캐릭터 상태를 별도 복구본으로 유지",
