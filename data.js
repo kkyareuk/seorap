@@ -724,6 +724,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-tablet-hud-hotfix-78-1",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"배포판 v1.0.78 태블릿 HUD 긴급 복구",summary:"현재 배포 중인 v1.0.78(80) 계보에서 태블릿 가로 화면의 좌우·하단 메뉴 원화와 글자판이 화면 너비를 따라 거대해지던 반응형 크기 계산을 직접 수정했어요. 휴대폰용 좌표는 유지하면서 태블릿에서만 아이콘과 라벨 최대 크기를 제한하고 동기화 데이터나 캐릭터 설정은 건드리지 않았어요. v1.0.78.1(87) 서명 AAB와 설치 확인용 APK를 만들고 같은 방어 로직을 dev에도 반영했어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-character-wallet-expansion-85",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"캐릭터 주민등록증·선택 목록 확장",summary:"주민등록증에서 키·몸무게를 제거하고 긴 직업 이름을 끝까지 보여 주는 전체 너비 직업 칸으로 바꿨어요. 정보 영역을 제목에서 조금 내리고 선택됨 글자판을 아이콘 아래에 분리했으며, 내보내기·저장·삭제 버튼의 원화 비율을 유지한 채 높이를 키웠어요. 캐릭터 선택창에는 다른 캐릭터 세 명을 한 번에 표시하고 추가 인원은 스크롤로 모두 고를 수 있게 한 v1.0.85(88) APK·AAB를 만들었어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -781,6 +785,15 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.85",code:88,date:"2026-08-22",items:[
+    "서랍마을 주민등록증에서 키·몸무게를 제거하고 직업 종류를 카드 아래쪽 전체 너비로 확장해 긴 직업 이름도 줄바꿈하여 모두 표시",
+    "이름·나이·생일·성별·직업 정보 묶음을 주민등록증 제목에서 조금 내려 여백과 가독성 개선",
+    "선택됨 글자판을 현재 캐릭터 아이콘과 겹치지 않는 아래 위치로 옮기고 앞 레이어에 고정",
+    "프로필 내보내기·캐릭터 저장·캐릭터 삭제 버튼을 원화 양끝 비율은 유지하면서 세로로 확대",
+    "캐릭터 선택창에 다른 캐릭터 세 명을 한 번에 표시하고 추가 인원은 내부 스크롤로 모두 선택할 수 있도록 확장",
+    "위치 바꾸기의 밑줄을 제거하고 추가·정렬 조작부를 늘어난 목록 아래에 재배치",
+    "Google Play용 v1.0.85(88) 서명 AAB와 직접 설치 확인용 APK 생성"
+  ]},
   {version:"1.0.78.1",code:87,date:"2026-08-22",items:[
     "현재 배포 중인 v1.0.78을 기준으로 태블릿 가로 화면에서 좌우·하단 메뉴 원화가 화면 전체를 덮을 만큼 커지던 오류 수정",
     "휴대폰 HUD 좌표는 유지하면서 태블릿의 메뉴 아이콘과 글자판에 안전한 최대 크기를 적용",
