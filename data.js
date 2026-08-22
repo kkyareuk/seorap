@@ -704,6 +704,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-responsive-theme-mailbox-80",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"기기 맞춤 홈 HUD·테마팩 기반·우편함 선물 안정화",summary:"상단 목재 원화는 비율을 유지한 채 화면을 채우고 홈 HUD 자체는 어떤 모바일 화면에서도 스크롤되지 않게 고쳤어요. 프로필 링의 틈을 없애고 메뉴 라벨을 양끝은 보존하고 가운데만 늘어나는 3조각 프레임으로 다시 만들어 #FFF5DD 글자가 틀 안에 안정적으로 들어가게 했어요. 현재 홈 UI 하나만 기본 테마로 남기면서 전체·캐릭터별 테마팩을 나중에 추가할 기반을 마련했고, 빈 마을 전환 화면과 물건 선호 저장을 복구했어요. 실제 선물 보내기는 우편함으로 옮기고 영어·일본어 문구와 v1.0.80(82) APK·AAB까지 반영했어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-character-wallet-scene-export-81",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"SVG 카드지갑 캐릭터 화면·프로필 저장·공동 장면 무결성",summary:"제공 캐릭터 SVG의 종이·카드지갑·주민등록증·연필 띠와 KoPub 바탕·푸라닭 젠틀고딕을 그대로 추출해 모바일 캐릭터 화면을 다시 만들었어요. 선택됨 위 칸은 현재 캐릭터의 SD 아이콘만 표시하며, 프로필에서 생일 월·일을 따로 저장할 수 있게 했어요. Android 프로필 PNG/PDF를 기기 저장소에 직접 기록하도록 고치고, 자기 자신과 대화하거나 다른 장소의 인물을 대화 상대로 표시하는 로그 및 같은 공동 장면의 소품이 시점마다 달라지는 문제를 막은 v1.0.81(83) APK·AAB를 만들었어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -761,6 +765,18 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.81",code:83,date:"2026-08-22",items:[
+    "제공 캐릭터 SVG에서 종이·카드지갑·주민등록증·여섯 연필 메뉴·추가/뒤로가기 원화를 정확히 추출해 모바일 캐릭터 화면 재구성",
+    "KoPubWorld 바탕체와 Puradak Gentle Gothic을 주민등록증 및 손그림 버튼에 적용",
+    "선택됨 위 회색 칸을 현재 캐릭터의 투명 SD 아이콘 자리로 연결하고 눌러 캐릭터를 바꿀 수 있게 개선",
+    "프로필 생일을 연도 없이 월·일로 선택하고 잘못된 날짜는 해당 월의 마지막 날로 보정해 저장",
+    "Android 프로필 내보내기가 PNG는 사진 폴더, PDF는 다운로드 폴더의 DrawerVillage에 실제 파일로 저장되도록 수정",
+    "홈 상단 목재 원화를 아래쪽 기준으로 맞추고 위쪽만 잘리게 변경하며 현재 순간 카드의 불필요한 ‘서랍 로그’ 제목과 여백 정리",
+    "자기 자신과 함께 있는 것으로 표시되는 로그 및 서로 다른 장소의 인물과 대화하는 로그 차단",
+    "동일한 공동 장면은 어느 캐릭터 시점에서도 같은 행동 문구를 사용해 소품이 다르게 보이지 않도록 수정",
+    "새 주민등록증·생일·장면 오류 문구의 영어·일본어 번역 반영",
+    "Google Play용 v1.0.81(83) 서명 AAB와 직접 설치용 APK 생성"
+  ]},
   {version:"1.0.80",code:82,date:"2026-08-22",items:[
     "기기 화면 비율이 달라도 상단 목재 원화가 찌그러지지 않고 필요한 부분만 잘리도록 표시하며 홈 HUD 스크롤 차단",
     "프로필 사진과 원형 테두리 사이의 틈 제거 및 이름·직업 정렬과 간격 교정",
