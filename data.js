@@ -732,6 +732,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-character-picker-paper-86",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"캐릭터 선택창 확장·종이 배경 장식 교정",summary:"뒤로가기 버튼을 원화 비율 그대로 줄여 위로 옮기고, 현재 캐릭터 아이콘·선택됨 글자판·선택 팝업도 함께 위쪽으로 정리했어요. 선택됨 글자판은 아이콘 바로 아래에 여백 없이 붙이고, 캐릭터 수에 따라 다른 인물을 최대 여섯 명까지 한 번에 보여 주도록 팝업 높이를 자동 확장했어요. 위치 바꾸기와 추가 조작을 다시 선명하게 표시하고 팝업이 연필 위에서 불투명하게 가리도록 레이어 구조를 고쳤으며, 모자이크 종이는 찌그러뜨리지 않고 기울어진 배경 장식으로 사용한 v1.0.86(89) APK·AAB를 만들었어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-android-asset-package-hotfix-87",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"Android 시작 화면·전체 자산 패키징 복구",summary:"v1.0.86 앱에 준비된 웹 자산 143개 중 25개만 포함되어 로고가 깨지고 시작 화면에서 멈추던 패키징 오류를 복구했어요. Android 빌드는 이제 중간 복사본 대신 준비가 끝난 www 자산 143개를 외부 빌드 폴더에 직접 옮기며, 원본과 개수가 하나라도 다르면 빌드가 실패하도록 검사를 추가했어요. APK 내부의 필수 실행 모듈·로고·UI 원화·폰트를 확인하고 v1.0.87(90) AAB와 APK를 다시 만들었어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -789,6 +793,13 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.87",code:90,date:"2026-08-22",items:[
+    "v1.0.86에서 로고가 깨지고 ‘앱 화면을 열지 못했어요’가 표시되던 Android 시작 오류 수정",
+    "준비된 웹 자산 143개 전체를 APK·AAB에 직접 포함하도록 Android 패키징 경로 복구",
+    "앱 자산 수가 원본과 하나라도 다르면 빌드를 중단하는 누락 방지 검사 추가",
+    "APK 내부에서 시작 화면 로고·실행 모듈·캐릭터 UI 원화·폰트 포함 여부 확인",
+    "Google Play용 v1.0.87(90) 서명 AAB와 직접 설치 확인용 APK 생성"
+  ]},
   {version:"1.0.86",code:89,date:"2026-08-22",items:[
     "뒤로가기 버튼을 원화 비율 그대로 조금 줄여 위로 옮기고 현재 캐릭터 아이콘·선택됨·목록 팝업도 함께 위쪽으로 정렬",
     "선택됨 글자판을 현재 캐릭터 아이콘 바로 아래에 여백 없이 연결",
