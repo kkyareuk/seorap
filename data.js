@@ -708,6 +708,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-character-wallet-scene-export-81",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"SVG 카드지갑 캐릭터 화면·프로필 저장·공동 장면 무결성",summary:"제공 캐릭터 SVG의 종이·카드지갑·주민등록증·연필 띠와 KoPub 바탕·푸라닭 젠틀고딕을 그대로 추출해 모바일 캐릭터 화면을 다시 만들었어요. 선택됨 위 칸은 현재 캐릭터의 SD 아이콘만 표시하며, 프로필에서 생일 월·일을 따로 저장할 수 있게 했어요. Android 프로필 PNG/PDF를 기기 저장소에 직접 기록하도록 고치고, 자기 자신과 대화하거나 다른 장소의 인물을 대화 상대로 표시하는 로그 및 같은 공동 장면의 소품이 시점마다 달라지는 문제를 막은 v1.0.81(83) APK·AAB를 만들었어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-character-svg-photo-moment-82",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"SVG 캐릭터 화면 복구·프로필 사진 연결·현재 순간 3줄",summary:"공통 모바일 여백과 테마 스타일이 제공 SVG의 카드지갑 화면을 덮어쓰던 원인을 제거해 384×854와 412×917에서 원화 비율·배치·폰트를 복구했어요. 선택됨 칸은 SD 아이콘이 있으면 아이콘, 없으면 프로필 사진, 둘 다 없으면 기존 더미 프로필을 보여줘요. 주민등록증 사진 칸은 KCC 한빛체 안내와 함께 눌러 바로 프로필 사진을 고를 수 있게 연결했고, 현재 순간은 접었을 때 설명을 읽기 좋은 3줄로 표시하며 글자 하단이 잘리지 않게 고쳤어요. 선택 중 팝업·스크롤·페이지 위치가 유지되는지 실제 모바일 화면에서 확인하고 v1.0.82(84) APK·AAB를 만들었어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -765,6 +769,15 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.82",code:84,date:"2026-08-22",items:[
+    "공통 모바일 여백과 테마 덮어쓰기를 분리해 제공 SVG 카드지갑 캐릭터 화면의 종이·지갑·주민등록증·연필 메뉴 비율과 배치 복구",
+    "선택됨 칸은 SD 아이콘을 우선 표시하고 아이콘이 없으면 프로필 사진, 둘 다 없으면 기존 더미 프로필을 표시하도록 개선",
+    "주민등록증의 사진 칸을 누르면 프로필 사진을 추가·변경할 수 있게 연결하고 빈 사진 안내에 KCC 한빛체 적용",
+    "현재 순간을 접었을 때 설명을 최대 3줄로 표시하고 본문 크기·줄 간격·하단 여백을 조정해 글자 잘림과 가독성 개선",
+    "캐릭터 화면과 프로필 편집에서 선택해도 팝업이 닫히거나 화면 위치가 초기화되지 않도록 모바일 상호작용 검증",
+    "새 프로필 사진 추가·변경 문구의 영어·일본어 번역 반영",
+    "Google Play용 v1.0.82(84) 서명 AAB와 직접 설치용 APK 생성"
+  ]},
   {version:"1.0.81",code:83,date:"2026-08-22",items:[
     "제공 캐릭터 SVG에서 종이·카드지갑·주민등록증·여섯 연필 메뉴·추가/뒤로가기 원화를 정확히 추출해 모바일 캐릭터 화면 재구성",
     "KoPubWorld 바탕체와 Puradak Gentle Gothic을 주민등록증 및 손그림 버튼에 적용",
