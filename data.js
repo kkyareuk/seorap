@@ -720,6 +720,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-tablet-character-interaction-84",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"태블릿 동기화 화면 복구·캐릭터 설정 조작 안정화",summary:"태블릿 가로 화면에서 홈 메뉴 원화가 화면 너비만큼 커져 동기화 뒤에도 UI가 망가져 보이던 반응형 크기 계산을 고쳤어요. 상단 목재 장식은 비율을 유지하며 틈 없이 겹치고 직업은 흰색으로 정리했어요. 캐릭터 선택창의 선택 버튼·아이콘·목록 레이어와 세로 그라데이션을 바로잡고 모든 캐릭터를 스크롤해 고를 수 있게 했으며, 주민등록증을 푸라닭 제목과 2열 KoPub 명조 정보로 재배치했어요. 여섯 연필 메뉴의 지정 색·검은 외곽선과 터치 동작, 관계 편집창의 세로 스크롤까지 복구하고 v1.0.84(86) APK·AAB를 만들었어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-tablet-hud-hotfix-78-1",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"배포판 v1.0.78 태블릿 HUD 긴급 복구",summary:"현재 배포 중인 v1.0.78(80) 계보에서 태블릿 가로 화면의 좌우·하단 메뉴 원화와 글자판이 화면 너비를 따라 거대해지던 반응형 크기 계산을 직접 수정했어요. 휴대폰용 좌표는 유지하면서 태블릿에서만 아이콘과 라벨 최대 크기를 제한하고 동기화 데이터나 캐릭터 설정은 건드리지 않았어요. v1.0.78.1(87) 서명 AAB와 설치 확인용 APK를 만들고 같은 방어 로직을 dev에도 반영했어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -777,6 +781,12 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.78.1",code:87,date:"2026-08-22",items:[
+    "현재 배포 중인 v1.0.78을 기준으로 태블릿 가로 화면에서 좌우·하단 메뉴 원화가 화면 전체를 덮을 만큼 커지던 오류 수정",
+    "휴대폰 HUD 좌표는 유지하면서 태블릿의 메뉴 아이콘과 글자판에 안전한 최대 크기를 적용",
+    "동기화 데이터·캐릭터·마을 설정을 변경하지 않고 화면 배치만 복구",
+    "Google Play용 v1.0.78.1(87) 서명 AAB와 직접 설치 확인용 APK 생성"
+  ]},
   {version:"1.0.84",code:86,date:"2026-08-22",items:[
     "태블릿 가로 화면에서 홈 좌우·하단 메뉴 원화가 화면 너비를 따라 거대해지던 반응형 크기 계산을 제한해 동기화 뒤에도 정상 비율 유지",
     "홈 상단 목재 장식과 바가 비율을 유지한 채 틈 없이 겹치도록 배치하고 직업 글자를 흰색으로 교정",
