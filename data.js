@@ -740,6 +740,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-game-date-schedule-companion-91-92",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"게임 날짜·일정 우선·관계 동행 반영",summary:"v1.0.78.1(87) 배포 계보와 최신 개발본에 게임 날짜 표시를 추가했어요. 등록된 일정 시간에는 해당 일정을 최우선으로 사용하고, 동행자가 없는 일정 중 임의 대화가 끼어들지 않도록 생활 로그를 교정했어요. 관계별 ‘함께 다니기’는 두 캐릭터 모두 별도 일정이 없을 때만 같은 장소와 공동 행동을 만들도록 구현했어요. v1.0.78.2(91) 핫픽스와 v1.0.88(92) 최신 개발판 APK·AAB를 각각 만들고 전체 자산 포함 여부를 검증했어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-forward-schema-cloud-recovery-93-94",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"Google Play 업데이트 뒤 캐릭터 불러오기 복구",summary:"v1.0.78.2(91)가 최신 개발판의 저장 형식을 읽을 때 클라우드 캐릭터를 빈 새 게임으로 잘못 바꾸던 원인을 수정했어요. 핫픽스는 이후 버전의 캐릭터·집·마을 데이터를 보존해 읽고, 불러오기 전 데이터와 마지막 정상 캐릭터 상태를 별도 복구본으로 유지해 빈 상태보다 우선 복원해요. v1.0.78.3(93) Google Play용 AAB·확인 APK와 동일 방어가 적용된 v1.0.89(94) 최신 개발판을 만들었어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -797,6 +801,19 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.89",code:94,date:"2026-08-22",items:[
+    "이후 앱 버전에서 저장한 데이터도 캐릭터·집·마을을 지우지 않고 안전하게 읽도록 저장 형식 호환성 확대",
+    "클라우드 불러오기 직전 상태와 마지막 정상 캐릭터 상태를 별도 복구본으로 유지",
+    "빈 현재 상태보다 캐릭터가 있는 복구본을 우선해 자동 복원",
+    "v1.0.88의 최신 UI·기능과 자산 143개를 보존한 v1.0.89(94) AAB·APK 생성"
+  ]},
+  {version:"1.0.78.3",code:93,date:"2026-08-22",items:[
+    "Google Play 업데이트 뒤 클라우드를 불러와도 ‘아직 만든 캐릭터가 없어요’로 바뀌던 오류 수정",
+    "최신 개발판 저장 형식의 캐릭터·집·마을 데이터를 v1.0.78 핫픽스 계보에서도 보존",
+    "클라우드 불러오기 직전 데이터와 마지막 정상 캐릭터 상태를 별도 복구본으로 보관",
+    "빈 상태가 표시된 기기에서도 남아 있는 로컬 복구본 또는 클라우드 원본을 다시 읽어 자동 복원",
+    "Google Play용 v1.0.78.3(93) 서명 AAB와 설치 확인용 APK 생성"
+  ]},
   {version:"1.0.88",code:92,date:"2026-08-22",items:[
     "홈 시간 아래에 현실 달력을 기준으로 한 게임 날짜와 요일 표시",
     "등록 일정의 시작·종료 시간에는 임의 생활 행동보다 해당 일정이 우선되도록 생활 로그 교정",
