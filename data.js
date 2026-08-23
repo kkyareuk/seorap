@@ -805,6 +805,10 @@ window.SEORAP_DATA.tasks.push({
   title:"집 방 크기 누적 증가·편집 메뉴 대비 수정",summary:"집 편집 격자의 최소 방 높이와 저장 상태 복원의 최소 높이가 서로 달라 앱을 다시 열 때 방이 커지던 원인을 하나의 12×16 격자 규칙으로 통합했어요. 저장할 때 테두리와 여백이 섞인 화면 픽셀을 다시 비율로 계산하지 않고 실제 저장 좌표를 사용해 재실행을 반복해도 방 위치와 크기가 그대로 유지돼요. 집 편집 메뉴는 검은 배경과 번진 검은 그림자를 제거하고 반투명 종이색 배경·또렷한 글자·가벼운 테두리로 정리했어요. v1.0.106(116) dev APK·AAB를 만들고 384×853 실제 화면에서 편집 전후와 새로고침 뒤 방 좌표가 같은지 확인했으며 전체 회귀검사 18종, Android 빌드와 APK/AAB 서명 검증을 완료했어요."
 });
 window.SEORAP_DATA.tasks.push({
+  id:"dv-release-furniture-placement-117",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"집 가구 직접 배치·편집 기능 추가",summary:"방 편집에서 방 종류별 가구를 여러 개 추가하고 실제 방 화면 안에서 직접 배치할 수 있게 했어요. 가구를 끌어 위치를 정하고 하단 도구로 크기·15도 회전·앞뒤 순서·삭제를 조절하며, 좌표와 모양은 기기 저장·동기화·앱 재실행 뒤에도 유지돼요. 가구는 캐릭터와 반려생물보다 아래 레이어에 놓이고 정적인 요소로 렌더링해 기존 둥둥 애니메이션과 발열 최적화를 보존했어요. 전체 가구 이름과 편집 문구를 한국어·영어·일본어에 반영하고 v1.0.107(117) dev APK·AAB를 만들었어요. 384×853 화면에서 추가·크기·회전·재실행 저장을 확인하고 전체 회귀검사 18종, Android 빌드와 APK/AAB 서명 검증을 완료했어요."
+});
+window.SEORAP_DATA.tasks.push({
   id:"dv-pwa-cloudflare-pages-115",project:"서랍마을",section:"release",subsection:"testing",completed:false,
   title:"PWA 최신 115 Cloudflare Pages 배포 확인",summary:"Cloudflare Pages가 main의 최신 커밋을 복제한 뒤 package.json에 build 명령이 없어 실패하며, 운영 PWA가 과거 성공본에 머물던 원인을 확인했어요. 정적 웹 파일을 dist에 안전하게 모으는 npm build와 Cloudflare Pages 출력 폴더 설정을 추가해 로컬 빌드·최신 캐시 표식·전체 회귀검사 18종을 통과했고 커밋 2cd5842를 main에 반영했어요. Cloudflare에서 새 커밋의 프로덕션 배포를 성공시킨 뒤 drawervillage.com이 최신 charactercontrast 파일을 제공하는지 최종 확인해야 해요."
 });
@@ -865,6 +869,14 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.107-dev",code:117,date:"2026-08-23",items:[
+    "방 종류별 가구 목록에서 같은 가구를 여러 개 추가하고 실제 방 화면 안에 바로 표시",
+    "가구를 직접 끌어 이동하고 하단 도구에서 크기·15도 회전·앞뒤 순서·삭제를 조절하는 편집 기능 추가",
+    "가구의 좌표·크기·각도·순서를 기기 저장과 동기화 데이터에 포함해 앱 재실행 뒤에도 같은 배치 유지",
+    "가구를 캐릭터·반려생물 아래의 정적 레이어로 분리해 기존 생활 애니메이션과 발열 최적화 유지",
+    "가구 카탈로그와 편집 안내의 한국어·영어·일본어 문구 적용",
+    "384×853 실제 화면에서 가구 추가·편집·재실행 복원 확인, 전체 회귀검사 18종, Android APK/AAB 빌드와 서명 검증 완료"
+  ]},
   {version:"1.0.106-dev",code:116,date:"2026-08-23",items:[
     "집 편집의 최소 크기 규칙을 저장·복원·직접 조절 모두 동일한 12×16 격자 기준으로 통합",
     "방 저장 시 테두리·여백이 포함된 화면 픽셀을 다시 비율로 환산하지 않도록 바꿔 앱 재실행마다 방이 커지는 누적 오차 제거",
