@@ -833,6 +833,10 @@ window.SEORAP_DATA.tasks.push({
   title:"집 HUD 정밀 교정·구성원 생활 카드 복구",summary:"상단 장식과 나무 바를 자연스럽게 겹쳐 흰 틈과 눌림을 없애고, 뒤로가기를 최상단에 둔 채 캐릭터 이름 대신 집 아이콘과 실제 집 이름을 표시했어요. 집 이름·집 정보·방 이름은 흰색, 집 이동·편집·구성원·반려생물·UI 숨김은 #FFF5DD로 고정하고 공통 테마가 전용 색과 투명 배경을 덮던 근본 선택자를 정리했어요. 집 편집 세부 도구는 우측 기본 메뉴에서 분리된 하단 도구막대로 옮겼으며, 구성원은 이름과 현재 행동을 담은 네모 카드로 복구했어요. 같은 상호작용에 참여한 두 캐릭터는 한 카드에 이름을 함께 표시하고 뽀뽀·포옹·대화·식사·놀이별 애니메이션을 재생해요. 한국어·영어·일본어를 적용한 v1.0.112(123) dev APK·AAB를 만들고 384×854 모바일 시각 검수, 전체 회귀검사 19종, Android 490개 작업 빌드를 통과했어요."
 });
 window.SEORAP_DATA.tasks.push({
+  id:"dv-release-home-furniture-size-124",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"집 버튼 캡 교정·커플 침대 2×2",summary:"집 이름과 집 정보를 같은 하단선에 고정하고, 전역 버튼 최소 높이가 조합형 캡을 세로로 늘려 좌우와 글자를 자르던 충돌을 해결했어요. 집 이동·편집 완료·구성원·반려생물·UI 숨김과 하단 편집 메뉴는 원래 비율을 유지하며, 편집 완료 뒤의 갈색 네모도 제거했어요. 집 설정·방 구성·가구 배치·거주 설정 글자는 #FFF5DD로 통일했어요. 커플 침대는 기존 배치와 새 배치 모두 2×2 칸을 차지하며, 두 캐릭터가 함께 사용할 때 서로 다른 침대 칸에 표시되어 겹치지 않아요. v1.0.113(124) dev APK·AAB를 만들고 384×854 모바일 시각 검수, 전체 회귀검사 19종, 집 UI·생활 검사 45개, Android 490개 작업 빌드를 통과했어요."
+});
+window.SEORAP_DATA.tasks.push({
   id:"dv-pwa-cloudflare-pages-115",project:"서랍마을",section:"release",subsection:"testing",completed:false,
   title:"PWA 최신 115 Cloudflare Pages 배포 확인",summary:"Cloudflare Pages가 main의 최신 커밋을 복제한 뒤 package.json에 build 명령이 없어 실패하며, 운영 PWA가 과거 성공본에 머물던 원인을 확인했어요. 정적 웹 파일을 dist에 안전하게 모으는 npm build와 Cloudflare Pages 출력 폴더 설정을 추가해 로컬 빌드·최신 캐시 표식·전체 회귀검사 18종을 통과했고 커밋 2cd5842를 main에 반영했어요. Cloudflare에서 새 커밋의 프로덕션 배포를 성공시킨 뒤 drawervillage.com이 최신 charactercontrast 파일을 제공하는지 최종 확인해야 해요."
 });
@@ -893,6 +897,14 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.113-dev",code:124,date:"2026-08-24",items:[
+    "집 이름과 집 정보를 상단 바의 같은 하단선에 정렬",
+    "집 이동·편집 완료·구성원·반려생물·UI 숨김 버튼의 좌우 캡과 글자 잘림 해결",
+    "편집 완료 버튼 뒤 갈색 사각형 제거 및 집 설정·방 구성·가구 배치·거주 설정 글자를 #FFF5DD로 통일",
+    "커플 침대를 기존·신규 배치 모두 2×2 격자 크기로 표시",
+    "커플 침대를 함께 쓰는 두 캐릭터를 서로 다른 침대 칸에 배치해 겹침 방지",
+    "384×854 모바일 시각 검수·전체 회귀검사 19종·집 UI 및 생활 검사 45개·Android 490개 작업 빌드 완료"
+  ]},
   {version:"1.0.112-dev",code:123,date:"2026-08-24",items:[
     "상단 장식과 나무 바 사이의 흰 틈·눌림·잘림을 없애고 뒤로가기 버튼을 최상위 레이어에 고정",
     "상단 캐릭터 이름을 집 아이콘과 실제 집 이름으로 교체하고 집 정보와 같은 하단선에 정렬",
