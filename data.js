@@ -768,6 +768,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-true-ld-editor-hotfix-107",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"LD 편집기 실제 홈 좌표 핫픽스",summary:"dev에서 검증한 실제 홈 화면형 LD 위치 편집기를 현재 배포 계열 main에도 옮겼어요. 412×917 전체 홈 프레임과 상단바 아래부터 최하단까지의 동일 좌표계를 사용하고, 홈 메뉴·하단 도크·현재 행동 아이콘까지 실제 자산으로 표시해 편집 결과를 그대로 확인할 수 있어요. v1.0.78.8(107) 핫픽스 APK·Play Console용 AAB를 만들고 전체 회귀검사·서명 검증을 완료했어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-character-svg-fidelity-108",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"새 SVG 기준 캐릭터 허브 완전 재배치",summary:"캐릭터 화면을 새 412×917 SVG와 직접 대조해 체크 종이·지갑·주민등록증·기능 버튼·붉은 천·펼친 책·테이프·선호 물품 3자리·클립·열쇠의 위치와 크기, 회전값을 같은 좌표계로 옮겼어요. 실제 캐릭터 정보와 선호 물품, 빠른 설정 팝업과 전체 설정 이동은 유지하고 한국어·영어·일본어를 함께 반영했어요. v1.0.98(108) dev APK·AAB를 만들고 브라우저 412×917 시각 대조·전체 회귀검사·Android 빌드·서명 검증을 완료했어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -825,6 +829,12 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.98-dev",code:108,date:"2026-08-23",items:[
+    "캐릭터 허브를 새 412×917 SVG와 직접 대조해 체크 종이·지갑·주민등록증·3개 기능 버튼의 좌표와 각도를 동일하게 조정",
+    "붉은 천 위의 펼친 책, 테이프, 선호 물품 3자리, 상단 클립과 하단 열쇠를 원본 에셋과 소수점 회전값 그대로 적용",
+    "책 왼쪽 빠른설정 팝업과 오른쪽 전체설정 페이지 이동, 실제 캐릭터 정보·사진·선호 물품 표시와 기존 애니메이션을 유지",
+    "한국어·영어·일본어 문구, 412×917 브라우저 좌표 대조, 전체 회귀검사, Android APK/AAB 빌드와 서명 검증 완료"
+  ]},
   {version:"1.0.78.8",code:107,date:"2026-08-23",items:[
     "LD 위치 편집창을 실제 홈과 같은 412×917 전체 화면으로 바꾸고 상단바 아래부터 화면 최하단까지의 절대 좌표계를 그대로 적용",
     "편집창의 LD 원본 비율·크기·위치와 행동 아이콘 기준점을 실제 홈 렌더링과 일치시켜 저장 뒤 달라 보이던 문제 수정",
