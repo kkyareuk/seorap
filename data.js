@@ -800,6 +800,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-character-popup-notification-voice-115",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"캐릭터 팝업 계층·알림 말투 전체 적용",summary:"캐릭터 선택 팝업을 열면 프로필 내보내기·저장·삭제보다 높은 전용 계층에서 표시하고, 닫힐 때까지 뒤쪽 관리 버튼의 터치를 막아 팝업을 뚫고 눌리지 않게 했어요. 팝업 이름은 검은 외곽선을 없애고 흰색 글자와 아래로 번지는 검은 그림자만 사용해요. 캐릭터 연락 알림은 접두사만 붙이던 방식에서 제목과 본문 종결형을 함께 바꾸는 방식으로 확장해, 마왕·군주·신탁·반말·격식체 등을 포함한 모든 직접 선택 말투가 한국어·영어·일본어에서 실제로 적용돼요. 생활로그는 관찰 기록이므로 기존처럼 캐릭터 말투를 넣지 않아요. v1.0.105(115) dev APK·AAB를 만들고 412×917 실제 터치 판정, 전체 회귀검사 18종, Android 빌드와 APK/AAB 서명 검증을 완료했어요. 같은 최신 결과물을 사이트 배포 기준 브랜치인 main에도 병합했어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-pwa-cloudflare-pages-115",project:"서랍마을",section:"release",subsection:"testing",completed:false,
+  title:"PWA 최신 115 Cloudflare Pages 배포 확인",summary:"Cloudflare Pages가 main의 최신 커밋을 복제한 뒤 package.json에 build 명령이 없어 실패하며, 운영 PWA가 과거 성공본에 머물던 원인을 확인했어요. 정적 웹 파일을 dist에 안전하게 모으는 npm build와 Cloudflare Pages 출력 폴더 설정을 추가해 로컬 빌드·최신 캐시 표식·전체 회귀검사 18종을 통과했고 커밋 2cd5842를 main에 반영했어요. Cloudflare에서 새 커밋의 프로덕션 배포를 성공시킨 뒤 drawervillage.com이 최신 charactercontrast 파일을 제공하는지 최종 확인해야 해요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
