@@ -764,6 +764,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-true-ld-editor-preview-106",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"LD 편집기와 실제 홈 화면 좌표 일치",summary:"LD 위치 편집 미리보기를 기존 9:16 간이 상자에서 실제 홈과 같은 412×917 전체 화면으로 교체했어요. 상단바 아래부터 화면 최하단까지의 LD 좌표계, 전신 이미지 원본 비율, 행동 아이콘 기준점을 실제 홈 렌더링과 동일하게 맞추고, 임시 선 아이콘 대신 홈의 좌우 메뉴·하단 도크 원화와 현재 행동 아이콘을 표시해 완성 화면을 보며 배치할 수 있어요. v1.0.97(106) dev APK·AAB를 만들고 실제 홈과 편집창의 정규화 좌표를 직접 대조했어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-true-ld-editor-hotfix-107",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"LD 편집기 실제 홈 좌표 핫픽스",summary:"dev에서 검증한 실제 홈 화면형 LD 위치 편집기를 현재 배포 계열 main에도 옮겼어요. 412×917 전체 홈 프레임과 상단바 아래부터 최하단까지의 동일 좌표계를 사용하고, 홈 메뉴·하단 도크·현재 행동 아이콘까지 실제 자산으로 표시해 편집 결과를 그대로 확인할 수 있어요. v1.0.78.8(107) 핫픽스 APK·Play Console용 AAB를 만들고 전체 회귀검사·서명 검증을 완료했어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -821,6 +825,12 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.78.8",code:107,date:"2026-08-23",items:[
+    "LD 위치 편집창을 실제 홈과 같은 412×917 전체 화면으로 바꾸고 상단바 아래부터 화면 최하단까지의 절대 좌표계를 그대로 적용",
+    "편집창의 LD 원본 비율·크기·위치와 행동 아이콘 기준점을 실제 홈 렌더링과 일치시켜 저장 뒤 달라 보이던 문제 수정",
+    "홈 좌우 메뉴·하단 도크 원화와 현재 행동 아이콘을 편집 미리보기에 적용",
+    "한국어·영어·일본어 문구와 기존 LD 둥둥 애니메이션을 유지하고 전체 회귀검사·Android 빌드·APK/AAB 서명 검증 완료"
+  ]},
   {version:"1.0.97-dev",code:106,date:"2026-08-23",items:[
     "LD 위치 편집 미리보기를 실제 홈과 동일한 412×917 전체 화면 비율로 바꾸고 상단바 아래부터 화면 최하단까지의 절대 좌표계를 그대로 표시",
     "편집창의 LD 전신 원본 비율·크기·위치와 행동 아이콘 기준점을 실제 홈 렌더링 공식에 맞춰 저장값과 결과 화면의 차이를 제거",
