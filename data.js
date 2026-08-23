@@ -801,6 +801,10 @@ window.SEORAP_DATA.tasks.push({
   title:"캐릭터 팝업 계층·알림 말투 전체 적용",summary:"캐릭터 선택 팝업을 열면 프로필 내보내기·저장·삭제보다 높은 전용 계층에서 표시하고, 닫힐 때까지 뒤쪽 관리 버튼의 터치를 막아 팝업을 뚫고 눌리지 않게 했어요. 팝업 이름은 검은 외곽선을 없애고 흰색 글자와 아래로 번지는 검은 그림자만 사용해요. 캐릭터 연락 알림은 접두사만 붙이던 방식에서 제목과 본문 종결형을 함께 바꾸는 방식으로 확장해, 마왕·군주·신탁·반말·격식체 등을 포함한 모든 직접 선택 말투가 한국어·영어·일본어에서 실제로 적용돼요. 생활로그는 관찰 기록이므로 기존처럼 캐릭터 말투를 넣지 않아요. v1.0.105(115) dev APK·AAB를 만들고 412×917 실제 터치 판정, 전체 회귀검사 18종, Android 빌드와 APK/AAB 서명 검증을 완료했어요. 같은 최신 결과물을 사이트 배포 기준 브랜치인 main에도 병합했어요."
 });
 window.SEORAP_DATA.tasks.push({
+  id:"dv-release-room-layout-edit-menu-116",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"집 방 크기 누적 증가·편집 메뉴 대비 수정",summary:"집 편집 격자의 최소 방 높이와 저장 상태 복원의 최소 높이가 서로 달라 앱을 다시 열 때 방이 커지던 원인을 하나의 12×16 격자 규칙으로 통합했어요. 저장할 때 테두리와 여백이 섞인 화면 픽셀을 다시 비율로 계산하지 않고 실제 저장 좌표를 사용해 재실행을 반복해도 방 위치와 크기가 그대로 유지돼요. 집 편집 메뉴는 검은 배경과 번진 검은 그림자를 제거하고 반투명 종이색 배경·또렷한 글자·가벼운 테두리로 정리했어요. v1.0.106(116) dev APK·AAB를 만들고 384×853 실제 화면에서 편집 전후와 새로고침 뒤 방 좌표가 같은지 확인했으며 전체 회귀검사 18종, Android 빌드와 APK/AAB 서명 검증을 완료했어요."
+});
+window.SEORAP_DATA.tasks.push({
   id:"dv-pwa-cloudflare-pages-115",project:"서랍마을",section:"release",subsection:"testing",completed:false,
   title:"PWA 최신 115 Cloudflare Pages 배포 확인",summary:"Cloudflare Pages가 main의 최신 커밋을 복제한 뒤 package.json에 build 명령이 없어 실패하며, 운영 PWA가 과거 성공본에 머물던 원인을 확인했어요. 정적 웹 파일을 dist에 안전하게 모으는 npm build와 Cloudflare Pages 출력 폴더 설정을 추가해 로컬 빌드·최신 캐시 표식·전체 회귀검사 18종을 통과했고 커밋 2cd5842를 main에 반영했어요. Cloudflare에서 새 커밋의 프로덕션 배포를 성공시킨 뒤 drawervillage.com이 최신 charactercontrast 파일을 제공하는지 최종 확인해야 해요."
 });
@@ -861,6 +865,13 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.106-dev",code:116,date:"2026-08-23",items:[
+    "집 편집의 최소 크기 규칙을 저장·복원·직접 조절 모두 동일한 12×16 격자 기준으로 통합",
+    "방 저장 시 테두리·여백이 포함된 화면 픽셀을 다시 비율로 환산하지 않도록 바꿔 앱 재실행마다 방이 커지는 누적 오차 제거",
+    "집 편집 메뉴의 검은 배경과 번진 검은 글자 그림자를 제거하고 반투명 종이색 배경·또렷한 글자·가벼운 테두리 적용",
+    "새 문구 없이 기존 한국어·영어·일본어 번역 유지",
+    "384×853 실제 화면에서 새로고침 전후 방 좌표 동일성 확인, 전체 회귀검사 18종, Android APK/AAB 빌드와 서명 검증 완료"
+  ]},
   {version:"1.0.105-dev",code:115,date:"2026-08-23",items:[
     "캐릭터 선택 팝업을 관리 버튼보다 높은 전용 계층에 배치하고 열린 동안 뒤쪽 내보내기·저장·삭제 버튼 터치 차단",
     "팝업 캐릭터 이름의 외곽선을 제거하고 흰색 글자와 아래로 번지는 검은 그림자로 변경",
