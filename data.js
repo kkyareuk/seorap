@@ -760,6 +760,10 @@ window.SEORAP_DATA.tasks.push({
   id:"dv-release-adjustable-ld-stage-104-105",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"홈 LD 고정 영역·캐릭터별 위치 조정",summary:"홈 HUD의 좁은 자동 레이아웃이 LD를 작고 높은 위치에 띄우던 원인을 고쳤어요. LD는 상단바 아래부터 화면 최하단까지의 고정 영역 안에서만 렌더링되고, 캐릭터 설정에서 회색 미리보기 영역을 직접 끌거나 크기 손잡이·화면 채우기 버튼으로 캐릭터별 위치와 크기를 저장할 수 있어요. 2인 장면은 1인 장면과 같은 Y 위치·크기를 유지하고 X 위치만 좌우로 나뉘며 기존 둥둥 애니메이션과 행동 소품은 보존했어요. v1.0.78.7(104) 핫픽스 APK·AAB와 동일 수정이 적용된 v1.0.96(105) 개발 브랜치를 만들고 412×917 화면·전체 회귀검사를 통과했어요."
 });
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-true-ld-editor-preview-106",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"LD 편집기와 실제 홈 화면 좌표 일치",summary:"LD 위치 편집 미리보기를 기존 9:16 간이 상자에서 실제 홈과 같은 412×917 전체 화면으로 교체했어요. 상단바 아래부터 화면 최하단까지의 LD 좌표계, 전신 이미지 원본 비율, 행동 아이콘 기준점을 실제 홈 렌더링과 동일하게 맞추고, 임시 선 아이콘 대신 홈의 좌우 메뉴·하단 도크 원화와 현재 행동 아이콘을 표시해 완성 화면을 보며 배치할 수 있어요. v1.0.97(106) dev APK·AAB를 만들고 실제 홈과 편집창의 정규화 좌표를 직접 대조했어요."
+});
 
 window.SEORAP_DATA.copyTemplates=[
   {id:"bug",emoji:"🐛",title:"오류 신고",question:"버튼을 눌러도 반응하지 않거나 화면이 사라지고 흰 화면만 보여요.",replies:[{label:"한국어",code:"ko",content:`안녕하세요. 오류를 제보해주셔서 감사합니다.
@@ -817,6 +821,12 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.97-dev",code:106,date:"2026-08-23",items:[
+    "LD 위치 편집 미리보기를 실제 홈과 동일한 412×917 전체 화면 비율로 바꾸고 상단바 아래부터 화면 최하단까지의 절대 좌표계를 그대로 표시",
+    "편집창의 LD 전신 원본 비율·크기·위치와 행동 아이콘 기준점을 실제 홈 렌더링 공식에 맞춰 저장값과 결과 화면의 차이를 제거",
+    "임시 선 문자 대신 홈의 좌우 메뉴 원화 6개·하단 도크 원화 5개와 현재 생활 장면의 행동 아이콘을 미리보기에 적용",
+    "한국어·영어·일본어 문구, 412×917 브라우저 좌표 대조, 관찰 HUD·캐릭터·알림·성능 회귀검사와 APK/AAB 서명 검증 완료"
+  ]},
   {version:"1.0.96-dev",code:105,date:"2026-08-23",items:[
     "main LD 배치 핫픽스를 캐릭터 화면 개편·애니메이션·블러 최적화를 유지한 dev 브랜치에도 동일 적용",
     "캐릭터별 LD 위치·크기와 화면 채우기 프리셋, 2인 장면의 동일 Y·크기 규칙을 영어·일본어와 함께 반영",
