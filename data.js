@@ -849,6 +849,10 @@ window.SEORAP_DATA.tasks.push({
   title:"함께 TV 보기·조깅 이동·집 상단바 정리",summary:"같은 TV를 사용하는 캐릭터 둘을 한 장면에 배치하고 웃음·분노·울음 반응과 TV 시청 동작을 추가했어요. 아침 조깅을 마치고 돌아오는 캐릭터는 집에 도착한 것처럼 멈추지 않고 마을 화면에서 집 방향으로 달리는 이동자와 이동 아이콘으로 표시돼요. 집 상단바가 화면 오른쪽 끝까지 빈틈없이 이어지도록 폭을 고치고, 집 이름은 20px로 키웠으며 우측 집 정보는 12px 흰 글자·검은 외곽선으로 줄여 같은 하단선에 정렬했어요. UI를 숨긴 뒤 나타나는 UI 표시 버튼에서는 갈색 조합형 배경을 제거했어요. 한국어·영어·일본어 상태 문구를 적용하고 v1.0.116(127) dev APK·AAB를 만들었어요. 384×854 실제 화면에서 상단바 폭, 글자 크기·색상·정렬, UI 숨김 상태를 확인했으며 전체 회귀검사 20종과 Android 490개 작업 빌드를 통과했어요."
 });
 window.SEORAP_DATA.tasks.push({
+  id:"dv-release-home-hud-tv-jog-nail-128",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"집 SVG 메뉴 복원·조깅/TV/손톱 장면 교정",summary:"집 정보는 수정 SVG와 동일하게 우측 조합형 메뉴의 첫 버튼으로 되돌리고, 상단의 일반 주거·층수는 갈색 공통 스타일에 덮이지 않는 작은 흰 글자·검은 외곽선·우측 정렬로 고정했어요. UI 숨김 뒤 UI 표시 버튼은 좌·중·우 조합형 에셋을 다시 표시하면서 버튼 뒤의 별도 갈색 네모만 제거했어요. 아침 조깅 복귀는 관찰 화면에서도 실제 이동 애니메이션과 이동 배지를 보이고 마을에서는 더 분명한 이동 경로를 사용해요. 함께 TV를 볼 때 중복 TV 아이콘을 없애고 각 반응 아이콘을 캐릭터 바깥쪽으로 분산했어요. 손톱 정돈 장면은 파일 이모지 대신 💅를 사용하며, 과묵하고 마초적인 남성 성격에는 배정하지 않고 문장도 손톱줄로 명확히 고쳤어요. 새 문구를 한국어·영어·일본어로 적용하고 v1.0.117(128) dev APK·AAB를 만들었어요. 412×917 실제 화면에서 최종 글자색·정렬·버튼 에셋을 확인했으며 전체 회귀검사 20종과 Android 490개 작업 빌드를 통과했어요."
+});
+window.SEORAP_DATA.tasks.push({
   id:"dv-pwa-cloudflare-pages-115",project:"서랍마을",section:"release",subsection:"testing",completed:false,
   title:"PWA 최신 115 Cloudflare Pages 배포 확인",summary:"Cloudflare Pages가 main의 최신 커밋을 복제한 뒤 package.json에 build 명령이 없어 실패하며, 운영 PWA가 과거 성공본에 머물던 원인을 확인했어요. 정적 웹 파일을 dist에 안전하게 모으는 npm build와 Cloudflare Pages 출력 폴더 설정을 추가해 로컬 빌드·최신 캐시 표식·전체 회귀검사 18종을 통과했고 커밋 2cd5842를 main에 반영했어요. Cloudflare에서 새 커밋의 프로덕션 배포를 성공시킨 뒤 drawervillage.com이 최신 charactercontrast 파일을 제공하는지 최종 확인해야 해요."
 });
