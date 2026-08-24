@@ -940,7 +940,19 @@ We will review the wording together with its in-game context.`},
 소중한 제보 감사합니다.`}]}
 ];
 
+window.SEORAP_DATA.tasks.push({
+  id:"dv-release-town-building-book-fallback-128",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"마을 건물 바로 편집·캐릭터 책 배경 복구",summary:"마을의 집 정보에서 외형을 바로 바꾸고 일반 건물은 상세 화면이나 길게 누르기로 편집할 수 있게 했어요. Android에서 캐릭터 전체설정의 책과 나무 배경이 사라지던 이미지 레이어 충돌을 CSS 표면 레이어로 교체해 복구하고 v1.0.128(139) APK·AAB를 만들었어요."
+});
+
 window.SEORAP_DATA.updates=[
+  {version:"1.0.128-dev",code:139,date:"2026-08-24",items:[
+    "마을의 집 상세 화면에서 집 외형 이미지를 바로 변경하고 집 설정으로 이어서 이동 가능",
+    "일반 건물 상세 화면에 해당 건물 편집 진입을 추가하고 건물·집을 0.56초 길게 눌러 바로 편집하는 조작 지원",
+    "Android WebView에서 단독 장식 이미지가 누락되며 캐릭터 전체설정이 흰 화면처럼 보이던 충돌을 제거",
+    "나무 배경과 책을 CSS 표면 레이어로 고정해 캐시·기기별 이미지 요소 렌더링 차이에도 책 UI가 유지되도록 개선",
+    "새 마을 편집 안내와 버튼에 영어·일본어 번역을 적용하고 384×854 실화면·전체 회귀검사·Android 빌드 완료"
+  ]},
   {version:"1.0.127-dev",code:138,date:"2026-08-24",items:[
     "Android 캐릭터 전체설정에서 사라지던 나무 배경·책·책갈피를 독립 이미지 레이어로 고정하고 입력 내용까지 올바른 순서로 표시",
     "마을 대화 말풍선 뒤에 생기던 큰 흰색 네모를 제거하고 화면 가장자리 인물의 말풍선이 잘리지 않도록 위치 자동 보정",
