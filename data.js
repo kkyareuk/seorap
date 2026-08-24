@@ -837,6 +837,10 @@ window.SEORAP_DATA.tasks.push({
   title:"집 버튼 캡 교정·커플 침대 2×2",summary:"집 이름과 집 정보를 같은 하단선에 고정하고, 전역 버튼 최소 높이가 조합형 캡을 세로로 늘려 좌우와 글자를 자르던 충돌을 해결했어요. 집 이동·편집 완료·구성원·반려생물·UI 숨김과 하단 편집 메뉴는 원래 비율을 유지하며, 편집 완료 뒤의 갈색 네모도 제거했어요. 집 설정·방 구성·가구 배치·거주 설정 글자는 #FFF5DD로 통일했어요. 커플 침대는 기존 배치와 새 배치 모두 2×2 칸을 차지하며, 두 캐릭터가 함께 사용할 때 서로 다른 침대 칸에 표시되어 겹치지 않아요. v1.0.113(124) dev APK·AAB를 만들고 384×854 모바일 시각 검수, 전체 회귀검사 19종, 집 UI·생활 검사 45개, Android 490개 작업 빌드를 통과했어요."
 });
 window.SEORAP_DATA.tasks.push({
+  id:"dv-release-home-elevator-motion-125",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"집 층 이동·저발열 생활 이동 애니메이션",summary:"집 이름을 누르면 집 이동 메뉴가 열리고, 기존 집 이동 자리에는 현재 층수가 표시되도록 바꿨어요. 우측에는 엘리베이터형 위·아래 층 이동 버튼을 추가했으며 UI를 숨겨도 상단 바는 유지돼요. 집 이름 옆에는 실제 집 외형 아이콘을 표시하고 집 정보 글자를 줄였어요. 편집 완료·UI 숨김 버튼과 방 이름·층/격자 안내의 공통 테마 충돌을 해결해 글자와 버튼이 잘리거나 어둡게 보이지 않아요. 캐릭터와 반려생물은 좌표를 순간 변경하지 않고 GPU transform 기반으로 부드럽게 이동하며, 대화 중에는 말풍선 효과가 나타나요. 한국어·영어·일본어를 적용한 v1.0.114(125) dev APK·AAB를 만들고 384×854 실제 화면에서 버튼 폭·색상·층 이동·UI 숨김을 조작 검수했으며 전체 회귀검사 19종, 집 UI·생활 검사 54개, Android 490개 작업 빌드를 통과했어요."
+});
+window.SEORAP_DATA.tasks.push({
   id:"dv-pwa-cloudflare-pages-115",project:"서랍마을",section:"release",subsection:"testing",completed:false,
   title:"PWA 최신 115 Cloudflare Pages 배포 확인",summary:"Cloudflare Pages가 main의 최신 커밋을 복제한 뒤 package.json에 build 명령이 없어 실패하며, 운영 PWA가 과거 성공본에 머물던 원인을 확인했어요. 정적 웹 파일을 dist에 안전하게 모으는 npm build와 Cloudflare Pages 출력 폴더 설정을 추가해 로컬 빌드·최신 캐시 표식·전체 회귀검사 18종을 통과했고 커밋 2cd5842를 main에 반영했어요. Cloudflare에서 새 커밋의 프로덕션 배포를 성공시킨 뒤 drawervillage.com이 최신 charactercontrast 파일을 제공하는지 최종 확인해야 해요."
 });
@@ -897,6 +901,15 @@ We will review the wording together with its in-game context.`},
 ];
 
 window.SEORAP_DATA.updates=[
+  {version:"1.0.114-dev",code:125,date:"2026-08-24",items:[
+    "집 이름을 누르면 집 이동 메뉴가 열리고 기존 집 이동 자리에는 현재 층수 표시",
+    "우측에 엘리베이터형 위·아래 층 이동 버튼을 추가하고 여러 층 사이 이동 연결",
+    "UI 숨김 상태에서도 상단 바를 유지하고 집 이름 옆에 실제 집 외형 아이콘 표시",
+    "편집 완료·UI 숨김 버튼 글자 잘림과 방 이름·층/격자 안내가 어둡게 보이던 테마 충돌 해결",
+    "캐릭터와 반려생물을 GPU transform 기반 이동으로 바꾸고 대화 장면에 말풍선 효과 추가",
+    "집 정보 글자 크기 축소 및 한국어·영어·일본어 층 이동 문구 적용",
+    "384×854 모바일 조작 검수·전체 회귀검사 19종·집 UI 및 생활 검사 54개·Android 490개 작업 빌드 완료"
+  ]},
   {version:"1.0.113-dev",code:124,date:"2026-08-24",items:[
     "집 이름과 집 정보를 상단 바의 같은 하단선에 정렬",
     "집 이동·편집 완료·구성원·반려생물·UI 숨김 버튼의 좌우 캡과 글자 잘림 해결",
