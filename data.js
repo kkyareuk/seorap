@@ -994,8 +994,8 @@ window.SEORAP_DATA.tasks.push({
 });
 
 window.SEORAP_DATA.tasks.push({
-  id:"dv-hotfix-media-cloud-recovery-121-2",project:"서랍마을",section:"release",subsection:"testing",completed:true,
-  title:"기기 이미지 유실 뒤 클라우드 복원 핫픽스",summary:"기기 이미지 저장소가 정리된 뒤에도 오래된 로컬 참조가 동기화된 클라우드 사진 주소를 덮어써 사진이 계속 사라지던 원인을 수정했어요. 유효한 클라우드 이미지를 우선 복원하고 사라진 로컬 참조는 다시 저장하지 않도록 고친 v1.0.121.2(134) APK·AAB를 만들었어요."
+  id:"dv-hotfix-media-cloud-recovery-121-3",project:"서랍마을",section:"release",subsection:"testing",completed:true,
+  title:"기기 이미지 유실 뒤 클라우드 복원 핫픽스",summary:"기기 이미지 저장소가 정리된 뒤에도 오래된 로컬 참조가 동기화된 클라우드 사진 주소를 덮어써 사진이 계속 사라지던 원인을 수정했어요. 유효한 클라우드 이미지를 우선 복원하고 사라진 로컬 참조는 다시 저장하지 않도록 고쳤으며, 과거 업로드 코드와 충돌하지 않는 v1.0.121.3(153) APK·AAB를 만들었어요."
 });
 
 window.SEORAP_DATA.tasks.push({
@@ -1013,9 +1013,10 @@ window.SEORAP_DATA.updates=[
     "기기 이미지 저장소가 정리되어 로컬 사진을 찾지 못할 때 동기화된 클라우드 사진을 다시 복원하도록 수정",
     "새 신체 항목의 한국어·영어·일본어를 적용하고 384×854 실화면·미디어 복구·집 생활·클라우드 병합·성능 회귀검사 및 Android APK/AAB 빌드 완료"
   ]},
-  {version:"1.0.121.2-hotfix",code:134,date:"2026-08-26",items:[
+  {version:"1.0.121.3-hotfix",code:153,date:"2026-08-26",items:[
     "앱이 종료된 사이 기기 이미지 저장소가 정리되면 오래된 로컬 이미지 참조가 동기화 사진을 다시 덮어쓰던 오류 수정",
     "로컬 원본을 찾지 못해도 유효한 클라우드 사진 주소가 있으면 이미지 복원 단계에서 우선 사용하도록 개선",
+    "과거 Android 개발 빌드에서 사용했을 수 있는 코드 134 대신 Play Console에서 다시 사용할 수 없는 버전 코드 충돌을 피하도록 코드 153으로 재발급",
     "미디어 복구·집 생활·클라우드 병합·성능 회귀검사와 Android APK/AAB 빌드 완료"
   ]},
   {version:"1.0.140-dev",code:151,date:"2026-08-25",items:[
