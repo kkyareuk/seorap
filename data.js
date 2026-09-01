@@ -1011,9 +1011,21 @@ window.SEORAP_DATA.tasks.push({id:"dv-character-emotion-performance-190",project
 window.SEORAP_DATA.tasks.push({id:"dv-statistics-emotion-calendar-191",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.178(191) 빈 기본 사전·정서 반응·통계 보고서·오늘 달력",summary:"새 월드의 사전과 기본 판매 목록을 비워 사용자가 직접 추가하기 전에는 음식·물품이 생기지 않도록 했고 기존 월드의 사용자 항목은 보존해요. 감정 성향 화면 겹침을 정리하고 분노·유혹·호감 반응을 추가해 기분 계산에 연결했어요. 옷장 SD·LD가 캐릭터 그림 전체를 바꾸는 기능임을 안내하고 각 그림의 화면 배치를 따로 저장해요. 캐릭터 1쪽에는 기본 서랍마을 전체 테마와 고급 LD 바로가기를 두고 프로필 사진에 액자를 적용했으며 잉크병도 저장 버튼으로 작동해요. 통계 보고서는 전체·마을별로 인구가 많은 순서의 마을, 마을·건물·캐릭터 수, 연령대·성비 피라미드, 생활 평균, 성격 분포와 사회 지표를 보여줘요. 월간 일정은 현재 달과 오늘을 기본 표시하고 양말 정리 같은 집안일도 마을 행동 애니메이션으로 보여줘요. 전용·기존 회귀검사와 Android APK·AAB 빌드를 통과했어요. 정적 UI 영어 73.7%, 일본어 73.7%. 앱 dev, 작업판 main; 운영 Play 배포 아님."});
 window.SEORAP_DATA.tasks.push({id:"dv-direct-layout-mood-scenes-192",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.179(192) 옷 직접 배치·기분 행동·생활 시간 정합성",summary:"기분과 정서 성향 입력칸이 머리말과 겹치지 않게 내리고, 옷장 SD·LD 화면 배치는 수치 입력 대신 그림을 직접 끌고 두 손가락으로 크기·각도를 조절하도록 바꿨어요. 옷의 ‘유니폼으로 등록’과 건물·일정의 ‘유니폼 착용 필수’를 구분해 설명했어요. 낙천적 캐릭터도 최종 기분 점수가 음수이면 ‘기분 좋음’으로 표시되지 않으며 화남·슬픔·긴장·피곤·지루함은 다음 행동에 실제 반영돼요. 짧은 말씨름은 12분 뒤 끝나고 즉시 반복하지 않으며, 심야에는 야식 습관이 있는 캐릭터만 음식 장면을 사용해요. 한국어·영어·일본어 장면과 UI를 함께 반영하고 회귀검사와 Android APK·AAB 빌드를 통과했어요. 정적 UI 영어 73.7%, 일본어 73.7%. 앱 dev, 작업판 main; 운영 Play 배포 아님."});
 window.SEORAP_DATA.tasks.push({id:"dv-play-games-achievements-193",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.180(193) Google Play 게임즈 업적 기반",summary:"첫 캐릭터·첫 건물/집·첫 공식 관계·첫 사전 항목과 캐릭터 5명·건물/집 10개·마을 3개·캐릭터 한 명의 6개 설정 장 완성까지 8개 업적을 추가했어요. 업적 진행도와 달성 시각은 월드에 먼저 저장되고, 설정의 업적 화면에서 언제든 확인해요. Android에는 Play 게임즈 v2 로그인·표준 업적 해제·증분 단계 동기화·Google 기본 업적 화면을 연결했으며 Console ID가 비어 있는 개발 빌드에서는 외부 호출 없이 로컬 기록만 안전하게 유지해요. 계정 분리·성능·내비게이션·Android 자산 회귀검사와 debug APK·release AAB 빌드를 통과했어요. 새 업적 화면과 문구는 한국어·영어·일본어 완료. 전체 정적 UI 영어 73.7%, 일본어 73.7%. 앱 dev, 작업판 main; 운영 Play 배포 아님."});
+window.SEORAP_DATA.tasks.push({id:"dv-taste-scroll-emotion-header-194",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.181(194) 취향·사전·소지품 스크롤과 정서 화면 교정",summary:"캐릭터 취향의 좋아하는 것·좋아하는 것 사전·소지품 팝업을 제목, 독립 스크롤 목록, 하단 닫기 영역으로 분리해 긴 항목도 끝까지 볼 수 있게 했어요. 휴대폰 하단 안전 영역을 포함하고, 이어서 열리는 사전·다중 선택 목록에도 같은 스크롤 제약을 적용했어요. 팝업 제목과 닫기 버튼을 같은 줄에 고정했으며, 전역 상단바 스타일이 기분과 정서 성향 설명을 네모 상자로 만들고 선택 항목을 가리던 구조를 일반 설명 영역으로 교체하고 불필요한 안내 상자를 제거했어요. 384×854에서 마지막 항목과 하단 버튼 노출을 직접 검수하고 신규·업적·정서·캐릭터 UI·내비게이션·성능 회귀검사와 Android debug APK·release AAB 빌드를 통과했어요. 새 번역 문구는 없으며 기존 한국어·영어·일본어를 그대로 유지해요. 전체 정적 UI 영어·일본어 각 73.5%. 앱 dev, 작업판 main; 운영 Play 배포 아님."});
 window.SEORAP_DATA.tasks.push({id:"dv-play-games-console-ids-193",project:"서랍마을",section:"release",subsection:"play-store",completed:false,title:"Google Play 게임즈 프로젝트·업적 ID 연결",summary:"Play Console에서 com.drawervillage.app용 Play 게임즈 서비스 프로젝트와 업적 8개를 만든 뒤 프로젝트 ID와 각 업적 ID를 Android 문자열 리소스에 넣고 설정을 켜야 해요. 테스터 계정으로 로그인·오프라인 달성 후 재동기화·Google 기본 업적 화면을 실제 Play 설치본에서 확인해요."});
 window.SEORAP_DATA.tasks.push({id:"dv-home-real-save-185",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"집 진입 불가·기존 건물 복구 실계정 재확인",summary:"185 개발판의 가상 데이터에서는 집 관찰/편집 화면이 열리고 누락 건물 선택 복구도 통과했어요. 실제 계정에서의 재현과 복구 후보 유무는 확인되지 않았어요. 기존 앱 삭제나 데이터 초기화 없이 업데이트 후 확인이 필요해요."});
 window.SEORAP_DATA.updates=[
+  {version:"1.0.181-dev",code:194,date:"2026-09-02",items:[
+    "좋아하는 것·좋아하는 것 사전·소지품 팝업의 긴 목록을 내부 독립 스크롤로 변경해 마지막 항목까지 열람 가능",
+    "팝업 하단 닫기 버튼은 목록 스크롤과 분리하고 Android 하단 안전 영역을 반영",
+    "사전 항목 및 다중 선택 팝업에도 같은 높이·스크롤 제약을 적용",
+    "팝업 제목과 × 버튼을 같은 줄에 배치하고 작은 화면에서 제목이 자연스럽게 줄바꿈되도록 교정",
+    "전역 상단바 스타일이 기분과 정서 성향 설명을 네모 상자로 만들고 선택 항목을 가리던 구조 수정",
+    "기분과 정서 성향의 불필요한 하단 안내 상자 제거",
+    "384×854 실화면 검수, 신규·업적·정서·캐릭터 UI·내비게이션·성능 회귀검사와 Android debug APK·release AAB 빌드 통과",
+    "새 번역 문구 없음. 기존 한국어·영어·일본어 유지. 전체 정적 UI 영어·일본어 각 73.5%",
+    "1.0.181 / 코드 194 개발 APK·AAB 생성. 앱 dev, 작업판 main; 운영 main·Google Play 배포 아님"
+  ]},
   {version:"1.0.180-dev",code:193,date:"2026-09-02",items:[
     "첫 캐릭터·첫 건물/집·첫 공식 관계·첫 사용자 사전 항목을 표준 업적으로 추가",
     "캐릭터 5명·건물/집 10개·마을 3개를 단계형 업적으로 추가",
