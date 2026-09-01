@@ -1010,8 +1010,21 @@ window.SEORAP_DATA.tasks.push({id:"dv-character-mood-balance-189",project:"서�
 window.SEORAP_DATA.tasks.push({id:"dv-character-emotion-performance-190",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.177(190) 감정 성향·캐릭터 편집 성능·드레스코드",summary:"캐릭터 성격 8쪽 뒤에 감정 성향 9쪽을 추가해 기본 정서·변화 폭·지속 시간·좋은 일과 스트레스 반응·회복 방식을 캐릭터별로 정해요. 낙천적인 인물은 평범한 날에 무덤덤함으로 바뀌지 않고, 부정적 사건은 성격에 맞는 긴장·걱정·가라앉음으로 반응해요. 캐릭터 전체설정에서 보이지 않는 모바일 허브·데스크톱 편집기·대화상자를 동시에 만들던 중복 DOM을 제거하고 책의 입력과 선택 버튼을 3쪽처럼 입체화했어요. 건물 드레스코드는 별도 창의 색·재질·분위기 3열 선택으로 바꾸고, 한국어로 남아 있던 생성 생활 로그에 영어·일본어 의미 번역 폴백을 적용했어요. 신규·성능·기존 버그·Android 자산 회귀검사와 APK·AAB 빌드를 통과했어요. 정적 UI 영어 73.4%, 일본어 73.3%. 앱 dev, 작업판 main; 운영 Play 배포 아님."});
 window.SEORAP_DATA.tasks.push({id:"dv-statistics-emotion-calendar-191",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.178(191) 빈 기본 사전·정서 반응·통계 보고서·오늘 달력",summary:"새 월드의 사전과 기본 판매 목록을 비워 사용자가 직접 추가하기 전에는 음식·물품이 생기지 않도록 했고 기존 월드의 사용자 항목은 보존해요. 감정 성향 화면 겹침을 정리하고 분노·유혹·호감 반응을 추가해 기분 계산에 연결했어요. 옷장 SD·LD가 캐릭터 그림 전체를 바꾸는 기능임을 안내하고 각 그림의 화면 배치를 따로 저장해요. 캐릭터 1쪽에는 기본 서랍마을 전체 테마와 고급 LD 바로가기를 두고 프로필 사진에 액자를 적용했으며 잉크병도 저장 버튼으로 작동해요. 통계 보고서는 전체·마을별로 인구가 많은 순서의 마을, 마을·건물·캐릭터 수, 연령대·성비 피라미드, 생활 평균, 성격 분포와 사회 지표를 보여줘요. 월간 일정은 현재 달과 오늘을 기본 표시하고 양말 정리 같은 집안일도 마을 행동 애니메이션으로 보여줘요. 전용·기존 회귀검사와 Android APK·AAB 빌드를 통과했어요. 정적 UI 영어 73.7%, 일본어 73.7%. 앱 dev, 작업판 main; 운영 Play 배포 아님."});
 window.SEORAP_DATA.tasks.push({id:"dv-direct-layout-mood-scenes-192",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.179(192) 옷 직접 배치·기분 행동·생활 시간 정합성",summary:"기분과 정서 성향 입력칸이 머리말과 겹치지 않게 내리고, 옷장 SD·LD 화면 배치는 수치 입력 대신 그림을 직접 끌고 두 손가락으로 크기·각도를 조절하도록 바꿨어요. 옷의 ‘유니폼으로 등록’과 건물·일정의 ‘유니폼 착용 필수’를 구분해 설명했어요. 낙천적 캐릭터도 최종 기분 점수가 음수이면 ‘기분 좋음’으로 표시되지 않으며 화남·슬픔·긴장·피곤·지루함은 다음 행동에 실제 반영돼요. 짧은 말씨름은 12분 뒤 끝나고 즉시 반복하지 않으며, 심야에는 야식 습관이 있는 캐릭터만 음식 장면을 사용해요. 한국어·영어·일본어 장면과 UI를 함께 반영하고 회귀검사와 Android APK·AAB 빌드를 통과했어요. 정적 UI 영어 73.7%, 일본어 73.7%. 앱 dev, 작업판 main; 운영 Play 배포 아님."});
+window.SEORAP_DATA.tasks.push({id:"dv-play-games-achievements-193",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.180(193) Google Play 게임즈 업적 기반",summary:"첫 캐릭터·첫 건물/집·첫 공식 관계·첫 사전 항목과 캐릭터 5명·건물/집 10개·마을 3개·캐릭터 한 명의 6개 설정 장 완성까지 8개 업적을 추가했어요. 업적 진행도와 달성 시각은 월드에 먼저 저장되고, 설정의 업적 화면에서 언제든 확인해요. Android에는 Play 게임즈 v2 로그인·표준 업적 해제·증분 단계 동기화·Google 기본 업적 화면을 연결했으며 Console ID가 비어 있는 개발 빌드에서는 외부 호출 없이 로컬 기록만 안전하게 유지해요. 계정 분리·성능·내비게이션·Android 자산 회귀검사와 debug APK·release AAB 빌드를 통과했어요. 새 업적 화면과 문구는 한국어·영어·일본어 완료. 전체 정적 UI 영어 73.7%, 일본어 73.7%. 앱 dev, 작업판 main; 운영 Play 배포 아님."});
+window.SEORAP_DATA.tasks.push({id:"dv-play-games-console-ids-193",project:"서랍마을",section:"release",subsection:"play-store",completed:false,title:"Google Play 게임즈 프로젝트·업적 ID 연결",summary:"Play Console에서 com.drawervillage.app용 Play 게임즈 서비스 프로젝트와 업적 8개를 만든 뒤 프로젝트 ID와 각 업적 ID를 Android 문자열 리소스에 넣고 설정을 켜야 해요. 테스터 계정으로 로그인·오프라인 달성 후 재동기화·Google 기본 업적 화면을 실제 Play 설치본에서 확인해요."});
 window.SEORAP_DATA.tasks.push({id:"dv-home-real-save-185",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"집 진입 불가·기존 건물 복구 실계정 재확인",summary:"185 개발판의 가상 데이터에서는 집 관찰/편집 화면이 열리고 누락 건물 선택 복구도 통과했어요. 실제 계정에서의 재현과 복구 후보 유무는 확인되지 않았어요. 기존 앱 삭제나 데이터 초기화 없이 업데이트 후 확인이 필요해요."});
 window.SEORAP_DATA.updates=[
+  {version:"1.0.180-dev",code:193,date:"2026-09-02",items:[
+    "첫 캐릭터·첫 건물/집·첫 공식 관계·첫 사용자 사전 항목을 표준 업적으로 추가",
+    "캐릭터 5명·건물/집 10개·마을 3개를 단계형 업적으로 추가",
+    "한 캐릭터의 모습·기본 생활·신체·성격·취향·옷장 6개 설정 장을 완성하는 단계형 업적 추가",
+    "설정에 업적 메뉴를 추가하고 8개 업적의 달성 여부와 현재 진행도를 월드별로 저장",
+    "Android Google Play 게임즈 v2 로그인, 표준 업적 해제, 단계 동기화와 기본 업적 화면 연결",
+    "Play Console ID가 없는 개발 빌드는 외부 호출을 막고 로컬 달성 기록을 유지해 나중에 재동기화 가능",
+    "계정별 월드 분리·성능·내비게이션·Android 자산·업적 전용 회귀검사와 Android debug APK·release AAB 빌드 통과",
+    "새 업적 이름·설명·상태 화면 한국어·영어·일본어 완료. 전체 정적 UI 영어 73.7%, 일본어 73.7%",
+    "1.0.180 / 코드 193 개발 APK·AAB 생성. 앱 dev, 작업판 main; 운영 main·Google Play 배포 아님"
+  ]},
   {version:"1.0.179-dev",code:192,date:"2026-09-01",items:[
     "음수 기분 점수가 낙천적 성향 때문에 ‘기분 좋음’으로 뒤집히던 오류 수정",
     "화남·슬픔·긴장·피곤·지루함에 따라 다음 자유 행동을 거리 두기·회복·확인·휴식·활동 전환으로 변경",
