@@ -28,8 +28,8 @@ window.SEORAP_DATA={
       direction:{concept:"새 그림을 만들지 않고 제공된 완성 원화를 그대로 사용해요.",details:"불빛 레이어는 건물 원화와 같은 좌표로 추출하고 부드러운 빛 번짐만 적용해요."}
     },
     {
-      id:"dv-draw-theater",project:"서랍마을",type:"그림",title:"공연장 건물 그리기",checkLabel:"그렸어요",image:"assets/buildings/theater.png",
-      summary:"밤에 작은 보석상자처럼 빛나는 공연장. 무대 소품보다 중앙 입구 홀과 포스터 박스로 구분해요.",
+      id:"dv-draw-theater",project:"서랍마을",type:"그림",title:"공연장 건물 그리기",checkLabel:"그렸어요",image:"assets/buildings/theater.png",completed:true,
+      summary:"사용자가 완성한 피아노 공연장 원화와 별도 불빛 레이어를 v1.0.173(186) 개발판에 반영했어요. 건물과 불빛이 같은 위치·크기·반전 상태를 유지하며 시간 설정에 맞춰 켜져요.",
       direction:{
         concept:"콘서트, 연극, 뮤지컬을 모두 열 수 있는 마을 대표 공연장이에요. 낮에는 묵직한 문화시설, 밤에는 중앙 홀만 따뜻하게 빛나는 모습이 되어야 해요.",
         silhouette:"낮고 넓은 본관 양쪽이 펼쳐지고, 중앙 유리 입구 홀만 2층 높이로 솟는 구조예요. 중앙 홀의 위쪽은 완만한 곡선으로 마감해 무대 막이 열리는 인상을 주되 실제 커튼 모양 건물로 만들지는 않아요.",
@@ -80,8 +80,8 @@ window.SEORAP_DATA={
       }
     },
     {
-      id:"dv-draw-park",project:"서랍마을",type:"그림",title:"공원 그림 그리기",checkLabel:"그렸어요",image:"assets/buildings/park.png",
-      summary:"건물이 아니라 열린 녹지 자체가 하나의 지도 아이콘처럼 읽히는 작은 동네 공원이에요.",
+      id:"dv-draw-park",project:"서랍마을",type:"그림",title:"공원 그림 그리기",checkLabel:"그렸어요",image:"assets/buildings/park.png",completed:true,
+      summary:"사용자가 완성한 분수·벤치·나무 공원 원화와 가로등 불빛 레이어를 v1.0.173(186) 개발판에 반영했어요.",
       direction:{
         concept:"산책, 휴식, 반려동물과의 외출이 모두 가능한 동네 공원이에요. 놀이공원처럼 시설을 채우지 않고, 큰 나무 아래 머물 수 있는 여백을 중심으로 그려요.",
         silhouette:"낮은 타원형 잔디 지형 위에 높이가 다른 나무 세 그루를 삼각형으로 배치해 하나의 덩어리처럼 보여요. 가장 큰 나무는 뒤쪽 한편에 두고 중앙 시야는 열어둬요.",
@@ -145,8 +145,8 @@ window.SEORAP_DATA={
       }
     },
     {
-      id:"dv-draw-home",project:"서랍마을",type:"그림",title:"기본 주택 그리기",checkLabel:"그렸어요",image:"assets/buildings/home.png",
-      summary:"특정 가족 형태나 계층에 묶이지 않는 서랍마을의 편안한 기본 주택이에요.",
+      id:"dv-draw-home",project:"서랍마을",type:"그림",title:"기본 주택 그리기",checkLabel:"그렸어요",image:"assets/buildings/home.png",completed:true,
+      summary:"사용자가 완성한 빨간 지붕 집 원화와 창문 불빛 레이어를 v1.0.173(186) 개발판에 반영했어요. 집 내부 설정과 마을 지도에서 편집하는 외형 설정도 분리했어요.",
       direction:{
         concept:"한두 명부터 가족, 친구, 공동생활까지 다양한 구성원이 살 수 있는 기본 집이에요. 지나치게 부유하거나 가난한 인상 없이 오래 살며 조금씩 고쳐 온 편안한 주택이어야 해요.",
         silhouette:"2층 본채와 낮은 1층 확장 공간이 옆으로 붙은 비대칭 구조로 만들어요. 박공지붕 두 개의 높이를 다르게 하고, 작은 굴뚝은 뒤쪽으로 치워요. 정면이 보이는 3/4 시점에서 현관과 옆마당이 함께 보여야 해요.",
@@ -1003,8 +1003,19 @@ window.SEORAP_DATA.tasks.push({id:"dv-restore-welcome-gifts-182",project:"서랍
 window.SEORAP_DATA.tasks.push({id:"dv-village-performance-183",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.170(183) 렉 개선·마을/건물 관리·6열 사전·말투",summary:"생활 장면의 반복 계산을 줄이고 사전을 6열 아이콘과 지연 생성 편집 팝업으로 바꿨어요. 첫 마을과 삭제 기록을 안정화하고 마을 정보에서 다른 마을을 열람·삭제할 수 있어요. 건물·집의 상세 편집에서 삭제 가능하며 집 사진에는 집 일러스트나 가족사진을 넣는 안내를 붙였어요. 시작 화면은 휴대폰/태블릿 높이에 맞추고 과묵한 직설체·냉정한 격식체 및 전체 문장 알림을 추가했어요. 새 회귀검사 통과, 기존 27/30 통과(기존 기대값 실패 3종). 영어·일본어 정적 UI 각 72.9%. 앱 dev/작업판 main, 운영 Play 배포 아님."});
 window.SEORAP_DATA.tasks.push({id:"dv-dictionary-mail-184",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.171(184) 사전 원화 UI·반점 별점·알림 우편 동기화",summary:"제공된 사전 SVG의 나무·책·잉크병과 버튼을 적용하고 겹침·색·크기·기울기·위치를 맞췄어요. 사진은 인게임/링크/기기에서 선택하며 별점 0.5 단위와 실제 물품 효과를 지원해요. 알림과 우편의 제목·본문을 일치시키고 건물 삭제 후 목록 복귀, 마을 제목 높이, 파란 터치 강조를 수정했어요. 목록 30개씩 표시·건물 상세창 지연 생성으로 반복 렌더를 줄였어요. APK/AAB 빌드와 29/32 회귀검사 통과(기존 기대값 실패 3종). 정적 UI 영어·일본어 각 73.6%. 앱 dev, 작업판 main이며 운영 Play 배포 아님."});
 window.SEORAP_DATA.tasks.push({id:"dv-village-recovery-mood-185",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.172(185) 건물 소실 방지·선택 복구·캐릭터 기분",summary:"건물 동기화를 개별 건물 단위로 고치고 기기 복구본의 누락 건물을 선택 복구할 수 있어요. 건물 목록·스크롤, 캐릭터 10페이지 클릭, 캐릭터별 애니메이션 위치, 상점 카드, 마을 블러 배경과 노란 선택 버튼을 반영했어요. 현재 환경에 따른 인물 기분과 대화 주제를 추가했어요. 신규 검사와 Android 빌드 통과. 실제 계정의 건물 복구 여부와 집 진입 문제는 별도 확인이 필요해요. 앱 dev, 작업판 main; 정적 UI 영어 73.7%, 일본어 73.6%."});
+window.SEORAP_DATA.tasks.push({id:"dv-town-scene-home-186",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.173(186) 마을 복구·상태별 이미지·집 편집 분리",summary:"계정 확인 전에 빈 월드가 먼저 열리던 문제와 동기화 후 서로 다른 마을의 건물이 합쳐지던 문제를 수정했어요. 피아노 공연장·공원·빨간 지붕 집과 시간대별 불빛을 추가하고 수면·아침 준비·욕실·업무·외출·감정별 캐릭터 아이콘과 LD를 설정할 수 있어요. 애니메이션 배치는 캐릭터 설정 3쪽에서 5단계로 고르며, 마을 건물 목록에서 집을 바로 추가하고 집 내부 설정과 마을 건물 외형 설정을 나눴어요. 신규·기존 회귀검사, 384×854 화면, Android APK/AAB 빌드를 통과했어요. 앱 dev, 작업판 main; 정적 UI 영어 73.6%, 일본어 73.5%."});
 window.SEORAP_DATA.tasks.push({id:"dv-home-real-save-185",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"집 진입 불가·기존 건물 복구 실계정 재확인",summary:"185 개발판의 가상 데이터에서는 집 관찰/편집 화면이 열리고 누락 건물 선택 복구도 통과했어요. 실제 계정에서의 재현과 복구 후보 유무는 확인되지 않았어요. 기존 앱 삭제나 데이터 초기화 없이 업데이트 후 확인이 필요해요."});
 window.SEORAP_DATA.updates=[
+  {version:"1.0.173-dev",code:186,date:"2026-09-01",items:[
+    "로그인 계정 확인이 끝나기 전에 빈 새 월드 화면이 먼저 열리지 않도록 시작 흐름 수정",
+    "동기화에서 실제 마을별 건물 목록을 우선하고 같은 건물 ID를 한 마을에만 귀속해 여러 마을의 건물이 합쳐지는 문제 수정",
+    "사용자가 그린 피아노 공연장·공원·빨간 지붕 집과 각각의 불빛 레이어 추가. 위치·크기·좌우반전·점등 시간을 건물과 함께 유지",
+    "수면·아침 준비·욕실·업무·외출·기쁨·슬픔·분노·피곤 상태별 SD 아이콘과 LD 이미지 설정. 미설정 상태는 기본 이미지 사용",
+    "애니메이션 좌우 배치 설정을 관계창에서 캐릭터 전체설정 3쪽 상단으로 이동하고 5단계 선택 팝업 제공",
+    "마을 건물 목록에 집 추가 분리. 집 설정은 이름·용도·층·소유·거주 같은 내부 정보, 마을 건물 설정은 외관·모양·지도 크기·평판·조명 담당",
+    "신규 186 검사와 계정 분리·마을 조명·저장 복구·생활 로그·성능·캐릭터 UI 회귀검사 및 384×854 Android 화면 검증 통과",
+    "1.0.173 / 코드 186 개발 APK·AAB 생성. 앱 dev, 작업판 main; 운영 main·Google Play 배포 아님"
+  ]},
   {version:"1.0.172-dev",code:185,date:"2026-08-31",items:[
     "같은 마을의 건물을 개별 ID로 동기화해 한쪽 저장본에서만 보이는 건물 보존. 직접 삭제한 건물과 다른 계정은 제외",
     "건물 목록에 건물 복구 추가. 현재 계정의 기기 복구본에서 찾은 건물을 선택해서 복구",
