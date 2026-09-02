@@ -41,8 +41,8 @@ window.SEORAP_DATA={
       }
     },
     {
-      id:"dv-draw-shop",project:"서랍마을",type:"그림",title:"옷가게 건물 그리기",checkLabel:"그렸어요",image:"assets/buildings/shop.png",
-      summary:"작은 편집숍 같은 옷가게. 옷걸이 장식보다 쇼윈도의 옷 배치와 천 재질이 중요해요.",
+      id:"dv-draw-shop",project:"서랍마을",type:"그림",title:"옷가게 건물 그리기",checkLabel:"그렸어요",image:"assets/buildings/shop.png",completed:true,
+      summary:"사용자가 완성한 웨딩드레스 부티크 원화를 v1.0.184(197) 개발판에 반영했어요.",
       direction:{
         concept:"주인이 직접 고른 옷과 액세서리를 파는 작은 편집숍이에요. 화려한 백화점보다 골목 안의 감각적인 가게에 가깝고, 성별이나 한 가지 스타일로 고정되지 않아야 해요.",
         silhouette:"폭이 좁은 2층 상가로 만들고 1층 쇼윈도를 건물 폭의 절반 정도로 크게 열어요. 2층 창은 한쪽으로 치우치게 두고 짧은 패브릭 차양으로 비대칭 균형을 잡아요.",
@@ -54,8 +54,8 @@ window.SEORAP_DATA={
       }
     },
     {
-      id:"dv-draw-office",project:"서랍마을",type:"그림",title:"사무실 건물 그리기",checkLabel:"그렸어요",image:"assets/buildings/office.png",
-      summary:"오래된 창고를 개조한 작은 회사. 초고층 유리 빌딩 대신 사람이 일하는 흔적을 보여줘요.",
+      id:"dv-draw-office",project:"서랍마을",type:"그림",title:"사무실 건물 그리기",checkLabel:"그렸어요",image:"assets/buildings/office.png",completed:true,
+      summary:"사용자가 완성한 도심 오피스 원화와 조명 레이어를 v1.0.184(197) 개발판에 반영했어요.",
       direction:{
         concept:"일반 회사, IT 회사, 연구소, 디자인 스튜디오가 함께 사용할 수 있는 범용 업무 건물이에요. 딱딱한 기업 본사보다 오래된 건물을 고쳐 여러 팀이 일하는 곳처럼 보여요.",
         silhouette:"회갈색 벽돌 3층 건물 위에 작은 유리 회의실을 한쪽으로 얹어요. 입구 쪽 모서리를 세로 유리창으로 잘라 무거운 직육면체가 되지 않게 하고, 옥상 높이는 한쪽만 살짝 다르게 만들어요.",
@@ -67,8 +67,8 @@ window.SEORAP_DATA={
       }
     },
     {
-      id:"dv-draw-school",project:"서랍마을",type:"그림",title:"학교 건물 그리기",checkLabel:"그렸어요",image:"assets/buildings/school.png",
-      summary:"밝고 안전한 마을 학교. 중앙 현관동과 양옆 교실동의 실루엣으로 읽히게 해요.",
+      id:"dv-draw-school",project:"서랍마을",type:"그림",title:"학교 건물 그리기",checkLabel:"그렸어요",image:"assets/buildings/school.png",completed:true,
+      summary:"사용자가 완성한 학사모 학교와 시계탑 학교 원화를 v1.0.184(197) 개발판에 반영했어요.",
       direction:{
         concept:"초·중·고등학교에 공통으로 사용할 수 있는 기본 학교예요. 아이들이 생활하는 장소라는 따뜻함은 있지만 장난감 학교처럼 유아적으로 보이지 않아야 해요.",
         silhouette:"가운데 현관동이 3층으로 조금 높고, 양옆 교실동이 2층 높이로 길게 뻗는 구조예요. 뒤편 한쪽에 체육관의 낮은 둥근 지붕이 조금만 보이게 해 건물 기능을 넓혀요.",
@@ -93,8 +93,8 @@ window.SEORAP_DATA={
       }
     },
     {
-      id:"dv-draw-library",project:"서랍마을",type:"그림",title:"도서관 건물 그리기",checkLabel:"그렸어요",image:"assets/buildings/library.png",
-      summary:"책 모양 건물이 아니라, 높이가 다른 매스와 긴 독서창으로 조용함을 보여주는 도서관이에요.",
+      id:"dv-draw-library",project:"서랍마을",type:"그림",title:"도서관 건물 그리기",checkLabel:"그렸어요",image:"assets/buildings/library.png",completed:true,
+      summary:"사용자가 완성한 책더미 도서관 원화를 v1.0.184(197) 개발판에 반영했어요.",
       direction:{
         concept:"아이, 학생, 어른이 함께 쓰는 공공도서관이에요. 엄숙한 지식의 신전보다 조용히 오래 머물 수 있는 밝은 생활 공간으로 보여야 해요.",
         silhouette:"높이가 다른 직사각형 세 덩어리가 옆으로 겹치는 2층 건물로 만들어요. 가장 낮은 덩어리 위에는 작은 옥상정원을 두고, 중앙 덩어리의 세로 창을 가장 높게 올려요.",
@@ -119,8 +119,8 @@ window.SEORAP_DATA={
       }
     },
     {
-      id:"dv-draw-lodging",project:"서랍마을",type:"그림",title:"숙박시설 건물 그리기",checkLabel:"그렸어요",image:"assets/buildings/lodging.png",
-      summary:"오래된 저택을 고쳐 만든 작은 부티크 호텔. 깊은 캐노피와 불이 켜진 객실 창이 핵심이에요.",
+      id:"dv-draw-lodging",project:"서랍마을",type:"그림",title:"숙박시설 건물 그리기",checkLabel:"그렸어요",image:"assets/buildings/lodging.png",completed:true,
+      summary:"사용자가 완성한 여행가방 호텔 원화를 v1.0.184(197) 개발판에 반영했어요.",
       direction:{
         concept:"여행자가 하루 쉬고 가는 4층 규모의 작은 호텔이에요. 궁전이나 고급 체인점보다 오래된 저택을 정성껏 고쳐 운영하는 숙소의 인상을 줘요.",
         silhouette:"모서리가 둥근 세로 건물 한쪽에 작은 탑처럼 돌출된 계단실을 두고, 1층 입구에는 깊은 캐노피를 달아요. 지붕 높이를 한쪽만 살짝 높여 단조로운 직사각형을 피하세요.",
@@ -158,8 +158,8 @@ window.SEORAP_DATA={
       }
     },
     {
-      id:"dv-draw-generic",project:"서랍마을",type:"그림",title:"중립 건물 그리기",checkLabel:"그렸어요",image:"assets/buildings/generic.png",
-      summary:"아직 전용 그림이 없는 유형에 잠시 쓰는 중립 건물. 물음표 없이도 비어 있는 용도를 표현해요.",
+      id:"dv-draw-generic",project:"서랍마을",type:"그림",title:"중립 건물 그리기",checkLabel:"그렸어요",image:"assets/buildings/generic.png",completed:true,
+      summary:"사용자가 완성한 옥상 정원 중립 건물 원화를 v1.0.184(197) 개발판에 반영했어요.",
       direction:{
         concept:"전용 디자인이 아직 없는 건물 유형을 대신하는 기본 상가예요. 미완성처럼 보이지 않으면서도 카페, 병원, 학교 등 특정 기능의 상징을 가져서는 안 돼요.",
         silhouette:"2층의 단순한 직사각 건물에 한쪽이 낮은 별채를 붙이고 지붕 높이를 조금 다르게 해요. 정면을 너무 비워 두지 않되 간판을 얹기 쉬운 평평한 면을 남겨요.",
@@ -588,7 +588,7 @@ Object.entries(villageBackgrounds).forEach(([group,items])=>window.SEORAP_DATA.t
 // 이전 작업판에서 이미 완료했던 13개는 개별 항목 기록이 지워진 탓에
 // 전체 진행률에만 보존하고, 새 식당 일러스트는 실제 항목에 O로 표시한다.
 window.SEORAP_DATA.historicalCompleted={"서랍마을":13};
-window.SEORAP_DATA.completedTaskIds=["dv-draw-restaurant","dv-draw-cafe","dv-draw-hospital"];
+window.SEORAP_DATA.completedTaskIds=["dv-draw-restaurant","dv-draw-cafe","dv-draw-hospital","dv-draw-theater","dv-draw-shop","dv-draw-office","dv-draw-school","dv-draw-park","dv-draw-library","dv-draw-lodging","dv-draw-home","dv-draw-generic"];
 window.SEORAP_DATA.tasks.push({
   id:"dv-release-notification-care",project:"서랍마을",section:"release",subsection:"testing",completed:true,
   title:"Android 알림·사이트와 앱 메뉴 반응 개선",summary:"권한 화면 복귀 시 폭 깨짐과 캐릭터 선택 시 화면 이동을 고쳤어요. 화면과 이벤트가 서로 다른 상태를 읽던 원인을 제거해 모든 큰 메뉴와 일반 버튼이 같은 데이터로 반응하게 했고, v1.0.56(58) APK·AAB를 만들었어요."
@@ -1014,9 +1014,20 @@ window.SEORAP_DATA.tasks.push({id:"dv-play-games-achievements-193",project:"서�
 window.SEORAP_DATA.tasks.push({id:"dv-taste-scroll-emotion-header-194",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.181(194) 취향·사전·소지품 스크롤과 정서 화면 교정",summary:"캐릭터 취향의 좋아하는 것·좋아하는 것 사전·소지품 팝업을 제목, 독립 스크롤 목록, 하단 닫기 영역으로 분리해 긴 항목도 끝까지 볼 수 있게 했어요. 휴대폰 하단 안전 영역을 포함하고, 이어서 열리는 사전·다중 선택 목록에도 같은 스크롤 제약을 적용했어요. 팝업 제목과 닫기 버튼을 같은 줄에 고정했으며, 전역 상단바 스타일이 기분과 정서 성향 설명을 네모 상자로 만들고 선택 항목을 가리던 구조를 일반 설명 영역으로 교체하고 불필요한 안내 상자를 제거했어요. 384×854에서 마지막 항목과 하단 버튼 노출을 직접 검수하고 신규·업적·정서·캐릭터 UI·내비게이션·성능 회귀검사와 Android debug APK·release AAB 빌드를 통과했어요. 새 번역 문구는 없으며 기존 한국어·영어·일본어를 그대로 유지해요. 전체 정적 UI 영어·일본어 각 73.5%. 앱 dev, 작업판 main; 운영 Play 배포 아님."});
 window.SEORAP_DATA.tasks.push({id:"dv-personality-home-hydration-195",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.182(195) 정서 화면·성격 반영·집 이동 안정화",summary:"캐릭터 설정 9쪽의 제목·설명·선택 항목을 하나의 흐름 레이아웃으로 묶어 작은 화면의 글자 겹침을 없앴어요. 8쪽의 사회성·판단·계획·활동 속도·부지런함·정리 습관·갈등·애정 표현·생활 리듬·유머가 상황별 기분, 행동 주도권과 생활 로그에 반영돼요. 건물 드레스코드의 유니폼 착용 필수는 화면·이벤트·과거 저장값에서 제거했고, 집 진입 때 이미 가구를 쓰는 캐릭터는 현재 위치에서 바로 사용 동작을 이어가 실제 장면이 바뀔 때만 걸어요. 384×854 실화면, 전용 24개·집 생활 70개 및 기존 회귀검사, Android debug APK·release AAB 빌드를 통과했어요. 새 기분 사유 한국어·영어·일본어 완료. 앱 dev, 작업판 main; 운영 Play 배포 아님."});
 window.SEORAP_DATA.tasks.push({id:"dv-emotion-tastes-196",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.183(196) 정서 다양화·취향 기반 기분·선호 편집 흐름",summary:"캐릭터 설정 9쪽의 항목 간격과 글자 크기를 조정하고 평소 정서를 낙천적·다정함·유혹적·냉소적·까칠함·불안함·침울함·분노를 품음 등 19가지로 넓혔어요. 정서 민감도와 주변 감정 영향을 추가하고 성격·사건·동행인의 기분·좋아하거나 싫어하는 대상이 실제 기분 점수, 다음 행동과 생활 로그를 함께 바꿔요. 기분 표현도 들뜸·애정·호기심·유혹·까칠함·혐오·격분·외로움·실망·피로 등으로 세분화했어요. 11쪽에서는 좋아하는 일반 항목과 사전 항목을 한 창에 합치고 싫어하는 것 선택을 추가했으며, 하위 선택을 마치면 전체 창이 닫히지 않고 바로 이전 분류 창으로 돌아가요. 384×854 실화면, 전용 28개와 기존 정서·취향·성능·로그 회귀검사, Android debug APK·release AAB 빌드를 통과했어요. 새 UI·기분 사유·행동 로그 한국어·영어·일본어 완료. 앱 dev, 작업판 main; 운영 Play 배포 아님."});
+window.SEORAP_DATA.tasks.push({id:"dv-couple-bed-buildings-197",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.184(197) 2인 침대 레이어·건물 원화와 조명",summary:"2인 침대의 바탕·이불·발판을 하나의 가구로 이동시키고, 사용 상태에 따라 캐릭터가 침대 위 또는 이불 안에 자연스럽게 들어가도록 레이어를 분리했어요. 좌우 선호와 베개 위치를 반영해 두 사람이 눕는 자리를 정해요. 제공된 건물 13종과 조명 6종을 도감에 반영하고 외곽 투명 배경과 윤곽선 안 흰 면을 구분해 원화의 흰색을 보존했어요. 신규 검사·브라우저 시각 검수·Android 빌드를 진행했고 새 문구 영어·일본어를 함께 반영했어요. 앱 dev, 작업판 main이며 운영 Play 배포가 아니에요."});
 window.SEORAP_DATA.tasks.push({id:"dv-play-games-console-ids-193",project:"서랍마을",section:"release",subsection:"play-store",completed:false,title:"Google Play 게임즈 프로젝트·업적 ID 연결",summary:"Play Console에서 com.drawervillage.app용 Play 게임즈 서비스 프로젝트와 업적 8개를 만든 뒤 프로젝트 ID와 각 업적 ID를 Android 문자열 리소스에 넣고 설정을 켜야 해요. 테스터 계정으로 로그인·오프라인 달성 후 재동기화·Google 기본 업적 화면을 실제 Play 설치본에서 확인해요."});
 window.SEORAP_DATA.tasks.push({id:"dv-home-real-save-185",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"집 진입 불가·기존 건물 복구 실계정 재확인",summary:"185 개발판의 가상 데이터에서는 집 관찰/편집 화면이 열리고 누락 건물 선택 복구도 통과했어요. 실제 계정에서의 재현과 복구 후보 유무는 확인되지 않았어요. 기존 앱 삭제나 데이터 초기화 없이 업데이트 후 확인이 필요해요."});
 window.SEORAP_DATA.updates=[
+  {version:"1.0.184-dev",code:197,date:"2026-09-02",items:[
+    "2인 침대를 바탕·이불·발판 3개 정렬 레이어로 적용하고 가구 이동 시 한 덩어리로 이동",
+    "일반 이동 중에는 캐릭터가 침대 전체 위에, 침대 사용 중에는 발판 뒤에, 잠들면 이불 안에 보이도록 상태별 레이어 분리",
+    "두 캐릭터의 좌우 배치 선호를 지키고 선호가 같으면 안정적인 무작위로 자리를 나누며 머리는 베개 위치에 맞춤",
+    "카페·병원·피아노 공연장·웨딩드레스 부티크·경기장·오피스·학교 2종·호텔·도서관·중립 건물·기본 주택·공원 원화 적용",
+    "카페·병원·피아노 공연장·오피스·기본 주택·공원 조명을 원화와 같은 좌표로 적용",
+    "바깥과 연결된 흰 배경만 투명하게 하고 윤곽선 안의 흰 건물 면은 불투명하게 보존",
+    "신규 기능 검사와 브라우저 시각 검수 완료. 새 문구 영어·일본어 번역 반영",
+    "1.0.184 / 코드 197 개발판. 앱 dev, 작업판 main이며 운영 main·Google Play 배포 아님"
+  ]},
   {version:"1.0.183-dev",code:196,date:"2026-09-02",items:[
     "캐릭터 설정 9쪽의 선택 항목 간격을 넓히고 라벨 글자를 키워 384×854 화면에서도 읽기 쉽게 정리",
     "평소 정서를 낙천적·쾌활함·열정적·다정함·유혹적·차분함·현실적·무덤덤함·냉소적·까칠함·예민함·불안함·침울함·비관적·분노를 품음 등 19가지로 확장",
