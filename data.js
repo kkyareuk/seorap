@@ -1016,9 +1016,20 @@ window.SEORAP_DATA.tasks.push({id:"dv-personality-home-hydration-195",project:"�
 window.SEORAP_DATA.tasks.push({id:"dv-emotion-tastes-196",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.183(196) 정서 다양화·취향 기반 기분·선호 편집 흐름",summary:"캐릭터 설정 9쪽의 항목 간격과 글자 크기를 조정하고 평소 정서를 낙천적·다정함·유혹적·냉소적·까칠함·불안함·침울함·분노를 품음 등 19가지로 넓혔어요. 정서 민감도와 주변 감정 영향을 추가하고 성격·사건·동행인의 기분·좋아하거나 싫어하는 대상이 실제 기분 점수, 다음 행동과 생활 로그를 함께 바꿔요. 기분 표현도 들뜸·애정·호기심·유혹·까칠함·혐오·격분·외로움·실망·피로 등으로 세분화했어요. 11쪽에서는 좋아하는 일반 항목과 사전 항목을 한 창에 합치고 싫어하는 것 선택을 추가했으며, 하위 선택을 마치면 전체 창이 닫히지 않고 바로 이전 분류 창으로 돌아가요. 384×854 실화면, 전용 28개와 기존 정서·취향·성능·로그 회귀검사, Android debug APK·release AAB 빌드를 통과했어요. 새 UI·기분 사유·행동 로그 한국어·영어·일본어 완료. 앱 dev, 작업판 main; 운영 Play 배포 아님."});
 window.SEORAP_DATA.tasks.push({id:"dv-couple-bed-buildings-197",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.184(197) 2인 침대 레이어·건물 원화와 조명",summary:"2인 침대의 바탕·이불·발판을 하나의 가구로 이동시키고, 사용 상태에 따라 캐릭터가 침대 위 또는 이불 안에 자연스럽게 들어가도록 레이어를 분리했어요. 좌우 선호와 베개 위치를 반영해 두 사람이 눕는 자리를 정해요. 제공된 건물 13종과 조명 6종을 도감에 반영하고 외곽 투명 배경과 윤곽선 안 흰 면을 구분해 원화의 흰색을 보존했어요. 신규 검사·브라우저 시각 검수·Android 빌드를 진행했고 새 문구 영어·일본어를 함께 반영했어요. 앱 dev, 작업판 main이며 운영 Play 배포가 아니에요."});
 window.SEORAP_DATA.tasks.push({id:"dv-life-assets-198",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.185(198) 건물 재단·생활 애니메이션·기분 로그·액세서리 성향",summary:"카페와 병원을 각 건물 영역만 다시 잘라 아래쪽의 다른 그림, 외곽 흰 테두리를 제거하고 카페 컵 손잡이 안쪽을 투명하게 열었어요. 조명 레이어도 같은 캔버스에 맞췄고 2인 침대는 22% 키웠어요. 마을의 대기·쇼핑 캐릭터에 움직임을 추가하고 기분 사유를 실제 행동 로그의 시간·제목·내용과 연결했어요. 캐릭터 설정 7쪽에는 액세서리 착용 성향을 추가해 자동 코디와 생활 행동에 반영해요. 전용·생활·정서 회귀검사, 모바일 브라우저 시각 검수와 Android APK/AAB 빌드를 통과했어요. 정적 UI 영어·일본어 각 73.7%. 앱 dev, 작업판 main이며 운영 Play 배포가 아니에요."});
+window.SEORAP_DATA.tasks.push({id:"dv-character-settings-statistics-199",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.186(199) 통계·외모 설정·캐릭터 책 정리",summary:"통계 화면에 다른 탭과 같은 원형 나무 뒤로가기 버튼을 적용하고 범위 선택과 보고서 다운로드가 내용을 가리지 않도록 흐름을 정리했어요. 캐릭터 설정 7쪽에서는 작업복·수영복·잠옷·파티복과 복잡한 액세서리 성향을 제거하고, 액세서리 착용 여부와 평소 외모 관리 정도를 넉넉한 간격으로 설정하도록 바꿨어요. 선택값은 자동 코디와 아침 준비 행동·로그에 반영돼요. 전체설정 책 왼쪽을 가리던 회색 나무 모양은 배경 원화에서 제거했어요. 전용·생활·정서·성능 회귀검사와 모바일 브라우저 시각 검수, Android APK/AAB 빌드를 통과했어요. 정적 UI 영어 74.3%, 일본어 74.2%. 앱 dev, 작업판 main이며 운영 Play 배포가 아니에요."});
 window.SEORAP_DATA.tasks.push({id:"dv-play-games-console-ids-193",project:"서랍마을",section:"release",subsection:"play-store",completed:false,title:"Google Play 게임즈 프로젝트·업적 ID 연결",summary:"Play Console에서 com.drawervillage.app용 Play 게임즈 서비스 프로젝트와 업적 8개를 만든 뒤 프로젝트 ID와 각 업적 ID를 Android 문자열 리소스에 넣고 설정을 켜야 해요. 테스터 계정으로 로그인·오프라인 달성 후 재동기화·Google 기본 업적 화면을 실제 Play 설치본에서 확인해요."});
 window.SEORAP_DATA.tasks.push({id:"dv-home-real-save-185",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"집 진입 불가·기존 건물 복구 실계정 재확인",summary:"185 개발판의 가상 데이터에서는 집 관찰/편집 화면이 열리고 누락 건물 선택 복구도 통과했어요. 실제 계정에서의 재현과 복구 후보 유무는 확인되지 않았어요. 기존 앱 삭제나 데이터 초기화 없이 업데이트 후 확인이 필요해요."});
 window.SEORAP_DATA.updates=[
+  {version:"1.0.186-dev",code:199,date:"2026-09-02",items:[
+    "통계 화면에 다른 탭과 같은 원형 나무 뒤로가기 버튼을 적용하고 범위 탭이 가려지지 않도록 배치 교정",
+    "보고서 다운로드 버튼을 문서 흐름에 넣어 통계 카드와 하단 내용을 덮지 않도록 수정",
+    "캐릭터 설정 7쪽에서 작업복·수영복·잠옷·파티복과 복잡한 액세서리 착용 성향 제거",
+    "액세서리 착용 여부와 평소 외모 관리 정도를 새로 추가하고 선택 행 사이 간격 확대",
+    "액세서리 설정은 자동 코디에, 외모 관리 설정은 아침 준비 시간과 구체적인 행동 로그에 반영",
+    "캐릭터 전체설정 책 왼쪽 페이지를 가리던 회색 나무 모양을 배경 원화에서 제거",
+    "전용·생활·정서·성능 회귀검사, 430×932 모바일 브라우저 시각 검수와 Android APK/AAB 빌드 완료",
+    "정적 UI 영어 74.3%, 일본어 74.2%. 1.0.186 / 코드 199 개발판이며 운영 main·Google Play 배포 아님"
+  ]},
   {version:"1.0.185-dev",code:198,date:"2026-09-02",items:[
     "카페·병원 원화를 해당 건물 영역만 다시 재단해 아래쪽의 다른 건물 조각과 외곽 흰 테두리 제거",
     "카페 컵 손잡이 안쪽을 투명하게 열고 카페·병원 조명 레이어를 새 재단 좌표와 정확히 정렬",
