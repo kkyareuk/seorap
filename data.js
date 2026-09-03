@@ -1023,9 +1023,23 @@ window.SEORAP_DATA.tasks.push({id:"dv-relationship-emotion-202",project:"서랍�
 window.SEORAP_DATA.tasks.push({id:"dv-language-relationship-font-203",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.189(203) 언어 전환·관계창·마을 추가·글꼴 설정",summary:"일본어에서 한국어로 돌아온 뒤 기존 생활 로그가 일본어로 남던 문제를 저장된 의미 키 기준 재번역으로 고치고, 혼자 집중하는 장면과 동행 장면이 서로 엇갈리지 않도록 보호했어요. 관계창은 먼저 고른 캐릭터를 항상 왼쪽에 두고 화살표를 그 캐릭터 대표색으로 표시하며 불신 관계 문구까지 영어·일본어로 번역했어요. 긴 외국어 때문에 겹치던 캐릭터 설정 3·6쪽을 언어별 줄바꿈과 간격으로 정돈하고 신체·접근성 선택지도 번역했어요. 마을 전환창에서 새 마을을 바로 추가할 수 있고, 설정에는 무료 OFL 일본어·한자 글꼴 M PLUS Rounded 1c와 기존 글꼴 선택을 복구했어요. Google Play 홍보 이미지 문구의 한·영·일 원고도 정리했으며 모바일 시각 검수, 전용·기존 회귀검사와 Android APK/AAB 빌드를 통과했어요. 앱 dev이며 운영 main·사이트·Google Play 배포는 변경하지 않았어요."});
 window.SEORAP_DATA.tasks.push({id:"dv-cognitive-traits-font-205",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.191(205) 생활 특성 선택·메인 글꼴 적용",summary:"자폐·ADHD 같은 진단명 선택을 없애고 집중·감각·소통·일상 방식의 구체적인 특성만 고르도록 신체·접근성 6쪽에 별도 항목을 만들었어요. 성격 쪽에는 이동 안내나 설명 문구를 남기지 않았고, 새 선택창도 제목과 선택지만 담담하게 보여줘요. 선택 결과는 내보내기에서도 성격과 분리해 표시하고 과거 진단명 값이 기분을 추정하는 데 쓰이지 않도록 했어요. 설정에서 고른 글꼴은 메인 화면을 포함한 공통 UI 전체에 적용해요. 한국어·영어·일본어 문구 완료, 모바일 시각 검수·회귀검사와 Android APK/AAB 빌드를 통과했어요. 앱 dev이며 운영 main·사이트·Google Play 배포는 변경하지 않았어요."});
 window.SEORAP_DATA.tasks.push({id:"dv-sync-rules-hotfix-196",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.183(196) 대용량 계정 동기화 서버 핫픽스",summary:"분할 동기화 기능이 서버 권한에 막힌 뒤 전체 데이터를 문서 하나로 다시 올리면서 용량 제한 오류가 나던 원인을 수정했어요. 로그인한 사용자는 자신의 동기화 코어·캐릭터·날짜별 기록에만 접근할 수 있도록 경로를 정확히 제한한 Firestore 규칙을 운영 서버에 배포했어요. 사진이나 게임 데이터는 삭제하지 않았고 기존 v1.0.183(196) 앱에서 재설치 없이 바로 사용할 수 있어요. 규칙 구조 검사와 클라우드 병합·이미지 복구·v196 정서 회귀검사를 통과했으며 앱 main/dev와 작업판 main에 반영했어요. 서버 전용 수정이라 versionCode와 번역 진행률은 바뀌지 않았어요."});
+window.SEORAP_DATA.tasks.push({id:"dv-sync-home-character-206",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.192(206) 증분 동기화·집 가구·캐릭터 설정 정돈",summary:"첫 동기화 뒤에는 바뀐 캐릭터와 날짜 기록만 읽고 쓰는 증분 동기화를 적용해 대용량 계정의 반복 동기화 시간과 서버 사용량을 줄였어요. 사진과 기존 데이터는 삭제하지 않습니다. 집 편집 가구를 검색 가능한 모바일 하단 목록으로 바꾸고 커플 침대는 이모지 대신 실제 침대 일러스트로 표시해요. 침대 점유 칸과 세로 격자를 키우되 잠든 캐릭터 크기는 침대와 분리하고, 두 사람의 몸이 이불 안에 들어가도록 배치했으며 이름표와 수면 표식을 숨겼어요. 연구·집중 중인 캐릭터가 다른 사람의 대화 상대로 잘못 표시되는 문제를 실제 실행 검사로 막았어요. 캐릭터 설정은 원본 책 비율을 복구하고 감정 상세 페이지를 합쳤으며 인지·감각·상호작용 특성을 아래로 옮겼어요. 다중 선택은 3열 서랍마을 색상으로 정돈하고 선택 요약에 실제 항목을 표시해요. 한국어·영어·일본어 변경 문구 100% 완료, 384×854 모바일 시각 검수·동기화/관계 회귀검사와 Android APK/AAB 빌드를 통과했어요. 앱 dev이며 운영 main·사이트·Google Play 배포는 변경하지 않았어요."});
 window.SEORAP_DATA.tasks.push({id:"dv-play-games-console-ids-193",project:"서랍마을",section:"release",subsection:"play-store",completed:false,title:"Google Play 게임즈 프로젝트·업적 ID 연결",summary:"Play Console에서 com.drawervillage.app용 Play 게임즈 서비스 프로젝트와 업적 8개를 만든 뒤 프로젝트 ID와 각 업적 ID를 Android 문자열 리소스에 넣고 설정을 켜야 해요. 테스터 계정으로 로그인·오프라인 달성 후 재동기화·Google 기본 업적 화면을 실제 Play 설치본에서 확인해요."});
 window.SEORAP_DATA.tasks.push({id:"dv-home-real-save-185",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"집 진입 불가·기존 건물 복구 실계정 재확인",summary:"185 개발판의 가상 데이터에서는 집 관찰/편집 화면이 열리고 누락 건물 선택 복구도 통과했어요. 실제 계정에서의 재현과 복구 후보 유무는 확인되지 않았어요. 기존 앱 삭제나 데이터 초기화 없이 업데이트 후 확인이 필요해요."});
 window.SEORAP_DATA.updates=[
+  {version:"1.0.192-dev",code:206,date:"2026-09-03",items:[
+    "첫 동기화 뒤 변경된 캐릭터·날짜 기록만 전송하는 증분 동기화로 반복 동기화 시간과 서버 사용량 절감",
+    "사진과 기존 게임 데이터를 삭제하지 않고 유지하며 구형 저장본도 첫 1회 변환 뒤 증분 방식 사용",
+    "집 편집 가구 목록을 검색 가능한 모바일 하단창으로 변경하고 커플 침대를 실제 3겹 일러스트로 표시",
+    "세로 배치 격자와 커플 침대 점유 크기를 키우되 잠든 캐릭터 크기는 고정하고 두 사람이 이불 안에 보이도록 배치",
+    "커플 침대 수면 중 이름표·상태·ZZ를 숨기고 침대 크기 조절이 캐릭터 크기를 함께 키우지 않도록 분리",
+    "연구·업무·독서처럼 혼자 집중하는 캐릭터가 같은 장소의 다른 인물 대화 상대로 잘못 표시되는 오류 수정",
+    "캐릭터 전체 설정의 원본 책 비율·왼쪽 책등 복구, 감정 상세 페이지 통합과 인지·감각·상호작용 특성 위치 이동",
+    "다중 선택을 3열 서랍마을 테마 버튼으로 정돈하고 취향 페이지 요약에 선택한 분류와 실제 항목 표시",
+    "모호한 생활 리듬 기분 사유를 피로와 행동 속도를 설명하는 구체적인 문장으로 교체",
+    "한국어·영어·일본어 변경 문구 100% 완료, 384×854 모바일 시각 검수·회귀검사와 Android APK/AAB 빌드 완료",
+    "앱 dev이며 운영 main·사이트·Google Play 배포는 변경하지 않음"
+  ]},
   {version:"1.0.183-server-hotfix",code:196,date:"2026-09-03",items:[
     "대용량 저장본이 분할 동기화 권한 오류 뒤 단일 문서 제한에 걸리던 서버 규칙 수정",
     "로그인한 사용자가 자기 계정의 동기화 코어·캐릭터·날짜별 기록에만 접근하도록 경로 제한",
