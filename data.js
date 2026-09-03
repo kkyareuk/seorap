@@ -1022,9 +1022,17 @@ window.SEORAP_DATA.tasks.push({id:"dv-buttons-love-hotfix-201",project:"서랍�
 window.SEORAP_DATA.tasks.push({id:"dv-relationship-emotion-202",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.188(202) 공동 대화 동기화·방향별 복합 감정",summary:"한 캐릭터가 상대와 대화하는 동안 상대가 별개의 행동을 표시하던 현재 장면을 같은 사건 ID와 참여자로 동기화했어요. 감정은 양쪽에 복사하지 않고 각 인물이 상대를 보는 방향별 시선으로 계산해 애정·성가심·공격 충동·감정 오해가 섞인 복잡한 끌림, 애증, 우호적 동석의 편안함, 적대적 동석의 반감을 구분해요. 추상적인 취향 로그는 독서·음악·음식·취미의 실제 행동으로 바꾸고 수면 중에는 감정 계산 없이 수면 중으로 표시해요. 한국어·영어·일본어 검사, 브라우저 검수, APK/AAB 빌드 완료. 앱 dev이며 운영 main·사이트·Play 배포는 변경하지 않았어요."});
 window.SEORAP_DATA.tasks.push({id:"dv-language-relationship-font-203",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.189(203) 언어 전환·관계창·마을 추가·글꼴 설정",summary:"일본어에서 한국어로 돌아온 뒤 기존 생활 로그가 일본어로 남던 문제를 저장된 의미 키 기준 재번역으로 고치고, 혼자 집중하는 장면과 동행 장면이 서로 엇갈리지 않도록 보호했어요. 관계창은 먼저 고른 캐릭터를 항상 왼쪽에 두고 화살표를 그 캐릭터 대표색으로 표시하며 불신 관계 문구까지 영어·일본어로 번역했어요. 긴 외국어 때문에 겹치던 캐릭터 설정 3·6쪽을 언어별 줄바꿈과 간격으로 정돈하고 신체·접근성 선택지도 번역했어요. 마을 전환창에서 새 마을을 바로 추가할 수 있고, 설정에는 무료 OFL 일본어·한자 글꼴 M PLUS Rounded 1c와 기존 글꼴 선택을 복구했어요. Google Play 홍보 이미지 문구의 한·영·일 원고도 정리했으며 모바일 시각 검수, 전용·기존 회귀검사와 Android APK/AAB 빌드를 통과했어요. 앱 dev이며 운영 main·사이트·Google Play 배포는 변경하지 않았어요."});
 window.SEORAP_DATA.tasks.push({id:"dv-cognitive-traits-font-205",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.191(205) 생활 특성 선택·메인 글꼴 적용",summary:"자폐·ADHD 같은 진단명 선택을 없애고 집중·감각·소통·일상 방식의 구체적인 특성만 고르도록 신체·접근성 6쪽에 별도 항목을 만들었어요. 성격 쪽에는 이동 안내나 설명 문구를 남기지 않았고, 새 선택창도 제목과 선택지만 담담하게 보여줘요. 선택 결과는 내보내기에서도 성격과 분리해 표시하고 과거 진단명 값이 기분을 추정하는 데 쓰이지 않도록 했어요. 설정에서 고른 글꼴은 메인 화면을 포함한 공통 UI 전체에 적용해요. 한국어·영어·일본어 문구 완료, 모바일 시각 검수·회귀검사와 Android APK/AAB 빌드를 통과했어요. 앱 dev이며 운영 main·사이트·Google Play 배포는 변경하지 않았어요."});
+window.SEORAP_DATA.tasks.push({id:"dv-sync-rules-hotfix-196",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.183(196) 대용량 계정 동기화 서버 핫픽스",summary:"분할 동기화 기능이 서버 권한에 막힌 뒤 전체 데이터를 문서 하나로 다시 올리면서 용량 제한 오류가 나던 원인을 수정했어요. 로그인한 사용자는 자신의 동기화 코어·캐릭터·날짜별 기록에만 접근할 수 있도록 경로를 정확히 제한한 Firestore 규칙을 운영 서버에 배포했어요. 사진이나 게임 데이터는 삭제하지 않았고 기존 v1.0.183(196) 앱에서 재설치 없이 바로 사용할 수 있어요. 규칙 구조 검사와 클라우드 병합·이미지 복구·v196 정서 회귀검사를 통과했으며 앱 main/dev와 작업판 main에 반영했어요. 서버 전용 수정이라 versionCode와 번역 진행률은 바뀌지 않았어요."});
 window.SEORAP_DATA.tasks.push({id:"dv-play-games-console-ids-193",project:"서랍마을",section:"release",subsection:"play-store",completed:false,title:"Google Play 게임즈 프로젝트·업적 ID 연결",summary:"Play Console에서 com.drawervillage.app용 Play 게임즈 서비스 프로젝트와 업적 8개를 만든 뒤 프로젝트 ID와 각 업적 ID를 Android 문자열 리소스에 넣고 설정을 켜야 해요. 테스터 계정으로 로그인·오프라인 달성 후 재동기화·Google 기본 업적 화면을 실제 Play 설치본에서 확인해요."});
 window.SEORAP_DATA.tasks.push({id:"dv-home-real-save-185",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"집 진입 불가·기존 건물 복구 실계정 재확인",summary:"185 개발판의 가상 데이터에서는 집 관찰/편집 화면이 열리고 누락 건물 선택 복구도 통과했어요. 실제 계정에서의 재현과 복구 후보 유무는 확인되지 않았어요. 기존 앱 삭제나 데이터 초기화 없이 업데이트 후 확인이 필요해요."});
 window.SEORAP_DATA.updates=[
+  {version:"1.0.183-server-hotfix",code:196,date:"2026-09-03",items:[
+    "대용량 저장본이 분할 동기화 권한 오류 뒤 단일 문서 제한에 걸리던 서버 규칙 수정",
+    "로그인한 사용자가 자기 계정의 동기화 코어·캐릭터·날짜별 기록에만 접근하도록 경로 제한",
+    "사진과 기존 게임 데이터는 삭제하지 않고 v1.0.183(196) 앱에서 재설치 없이 즉시 적용",
+    "규칙 컴파일·배포, 클라우드 병합·이미지 복구·v196 정서 회귀검사 완료",
+    "서버 전용 핫픽스로 APK·AAB 및 versionCode 변경 없음; 신규 문구 없음, 영어·일본어 번역률 유지"
+  ]},
   {version:"1.0.191-dev",code:205,date:"2026-09-02",items:[
     "캐릭터 설정에서 자폐·ADHD 같은 진단명 선택을 제거하고 집중·감각·소통·일상 방식의 구체적인 특성 선택으로 교체",
     "새 특성 선택을 성격과 분리해 신체·접근성 6쪽에 배치하고 제목과 선택지만 보이는 담담한 화면으로 구성",
