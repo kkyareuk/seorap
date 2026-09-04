@@ -1029,8 +1029,17 @@ window.SEORAP_DATA.tasks.push({id:"dv-food-image-dev-208",project:"서랍마을"
 window.SEORAP_DATA.tasks.push({id:"dv-play-games-console-ids-193",project:"서랍마을",section:"release",subsection:"play-store",completed:false,title:"Google Play 게임즈 프로젝트·업적 ID 연결",summary:"Play Console에서 com.drawervillage.app용 Play 게임즈 서비스 프로젝트와 업적 8개를 만든 뒤 프로젝트 ID와 각 업적 ID를 Android 문자열 리소스에 넣고 설정을 켜야 해요. 테스터 계정으로 로그인·오프라인 달성 후 재동기화·Google 기본 업적 화면을 실제 Play 설치본에서 확인해요."});
 window.SEORAP_DATA.tasks.push({id:"dv-home-real-save-185",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"집 진입 불가·기존 건물 복구 실계정 재확인",summary:"185 개발판의 가상 데이터에서는 집 관찰/편집 화면이 열리고 누락 건물 선택 복구도 통과했어요. 실제 계정에서의 재현과 복구 후보 유무는 확인되지 않았어요. 기존 앱 삭제나 데이터 초기화 없이 업데이트 후 확인이 필요해요."});
 window.SEORAP_DATA.tasks.push({id:"dv-home-editor-209",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.194(209) 집 편집 1차 개편·반복 계산 절감",summary:"dev 전용. 집 정보·방 목록·구성원 진입점과 하단 로그/요약, 검색·분류·접기 가능한 가구창, 가구 1/4칸 세부 이동과 반전/방향 저장, 침대 선택 범위, 마을 인물 위치 순서, 옷장 페이지 넘김 간격을 반영했어요. 숨긴 로그 지연 생성과 편집 중 갱신 중지로 반복 계산을 줄였어요. 새 집 편집 문구 영어·일본어 각 100%, 전체 번역률은 미측정. 회귀검사와 Android APK/AAB 빌드 완료. 운영 main·사이트·Play 미배포."});
-window.SEORAP_DATA.tasks.push({id:"dv-home-editor-209-followup",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"집 원화 세부 재현·책 형태 확정·실기기 성능 검증",summary:"책 원본은 가로 펼침 그림이고 현행 오른쪽 페이지 자산 자체에 왼쪽 잘림이 있어요. 세로 구성 유지+책등 복구/원본 펼침 전체 사용 선택 대기이며 209에서는 책 자산을 바꾸지 않았어요. 방 편집 SVG의 소유자·출입·청결도 추가 항목과 세부 디자인, 가구 옆모습 원화 연결은 남아 있어요. SM-G991N 장시간 사용 프레임·온도 측정 전이므로 발열 해결 완료로 표시하지 않아요."});
+window.SEORAP_DATA.tasks.push({id:"dv-home-editor-209-followup",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"책 형태 확정·가구 옆모습 원화·실기기 성능 검증",summary:"210에서 집 SVG 배경·사진 프레임·방 편집 항목과 통합 구성원 화면을 반영했어요. 책 자산 형태 결정과 가구 옆모습 원화 연결은 남아 있어요. SM-G991N 장시간 사용 프레임·온도 측정 전이므로 발열 해결 완료로 표시하지 않아요."});
+window.SEORAP_DATA.tasks.push({id:"dv-home-design-210",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.195(210) 집 SVG 재구성·구성원 통합 편집",summary:"dev 전용. 구성원·반려생물·차를 한 화면에서 추가/편집하고 뒤로가면 구성원 화면으로 돌아와요. 원본 SVG의 나무/마을 배경, 사진 프레임, 기울어진 표면 샘플, 방 편집 배치를 반영했어요. 하단 로그/요약 복구, 불필요한 방 제목 색·크기·층 선택 제거, 마을과 집 사진/정보 공유. 모바일 영문/일문 화면과 저장/복귀, 회귀검사, Android APK/AAB 빌드 확인. 이번 변경 문구 영어·일본어 각 100%; 전체 번역률 미측정. 운영 main·사이트·Play 미배포."});
 window.SEORAP_DATA.updates=[
+  {version:"1.0.195-dev",code:210,date:"2026-09-04",items:[
+    "구성원 메뉴에 구성원·반려생물·차를 한 번에 표시하고 각각 추가/편집 가능; 편집 뒤로가기는 구성원 화면으로 복귀",
+    "제공 SVG의 원본 배경·사진 프레임·표면 샘플 각도·방 편집 배치 반영, 공통 스타일 충돌 정리",
+    "집 하단 로그/요약 버튼 복구, 방 제목 색·크기·층 선택 제거(기존 값 보존)",
+    "집 정보 사진과 마을 건물의 집 정보가 동일한 데이터를 사용하도록 연결",
+    "영어·일본어 이번 변경 문구 각 100%; 기존 전체 UI/로그 번역률 미측정",
+    "모바일 저장·복귀/언어별 화면·관련 회귀검사 통과, APK/AAB 생성 및 버전/서명 확인; dev 전용"
+  ]},
   {version:"1.0.194-dev",code:209,date:"2026-09-04",items:[
     "집 정보·방 정보·구성원 정보·편집모드 메뉴와 하단 로그/요약으로 집 UI 1차 재구성",
     "방 검색·층 필터·방 편집 연결, 거주자·반려생물·자동차 편집 진입점 분리",
