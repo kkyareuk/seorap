@@ -1030,6 +1030,7 @@ window.SEORAP_DATA.tasks.push({id:"dv-play-games-console-ids-193",project:"서�
 window.SEORAP_DATA.tasks.push({id:"dv-home-real-save-185",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"집 진입 불가·기존 건물 복구 실계정 재확인",summary:"185 개발판의 가상 데이터에서는 집 관찰/편집 화면이 열리고 누락 건물 선택 복구도 통과했어요. 실제 계정에서의 재현과 복구 후보 유무는 확인되지 않았어요. 기존 앱 삭제나 데이터 초기화 없이 업데이트 후 확인이 필요해요."});
 window.SEORAP_DATA.updates=[
   {version:"1.0.193-dev",code:208,date:"2026-09-03",items:[
+    "2026-09-04: v1.0.193(code 208) debug APK·서명된 release AAB 생성 완료; 음식 이미지·개발판 회귀검사와 패키지 버전·208 자산 표식 확인 후 전달",
     "Android 음식 이미지 선택 흐름의 동일 사진 재선택·앱 복귀 누락 방지 수정 반영",
     "이미지 선택 전에 전체 사전을 저장하지 않고 현재 음식 초안만 안전하게 보존",
     "main 핫픽스만 dev 기존 작업과 충돌 없이 이식하고 전용·개발판 회귀검사와 전체 앱 패키징 검사 완료",
