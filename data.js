@@ -1028,7 +1028,19 @@ window.SEORAP_DATA.tasks.push({id:"dv-food-image-hotfix-207",project:"서랍마�
 window.SEORAP_DATA.tasks.push({id:"dv-food-image-dev-208",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.193(208) 음식 이미지 핫픽스 dev 반영",summary:"main의 Android 음식 사진 선택 수정만 dev의 기존 증분 동기화·집·캐릭터 작업을 건드리지 않고 동일하게 반영했어요. 전용 검사와 개발판 회귀검사, 전체 앱 패키징 검사를 통과했으며 GitHub dev에 올렸어요. 정적 UI 번역 진행률은 영어 74.8%, 일본어 74.8%예요."});
 window.SEORAP_DATA.tasks.push({id:"dv-play-games-console-ids-193",project:"서랍마을",section:"release",subsection:"play-store",completed:false,title:"Google Play 게임즈 프로젝트·업적 ID 연결",summary:"Play Console에서 com.drawervillage.app용 Play 게임즈 서비스 프로젝트와 업적 8개를 만든 뒤 프로젝트 ID와 각 업적 ID를 Android 문자열 리소스에 넣고 설정을 켜야 해요. 테스터 계정으로 로그인·오프라인 달성 후 재동기화·Google 기본 업적 화면을 실제 Play 설치본에서 확인해요."});
 window.SEORAP_DATA.tasks.push({id:"dv-home-real-save-185",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"집 진입 불가·기존 건물 복구 실계정 재확인",summary:"185 개발판의 가상 데이터에서는 집 관찰/편집 화면이 열리고 누락 건물 선택 복구도 통과했어요. 실제 계정에서의 재현과 복구 후보 유무는 확인되지 않았어요. 기존 앱 삭제나 데이터 초기화 없이 업데이트 후 확인이 필요해요."});
+window.SEORAP_DATA.tasks.push({id:"dv-home-editor-209",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.194(209) 집 편집 1차 개편·반복 계산 절감",summary:"dev 전용. 집 정보·방 목록·구성원 진입점과 하단 로그/요약, 검색·분류·접기 가능한 가구창, 가구 1/4칸 세부 이동과 반전/방향 저장, 침대 선택 범위, 마을 인물 위치 순서, 옷장 페이지 넘김 간격을 반영했어요. 숨긴 로그 지연 생성과 편집 중 갱신 중지로 반복 계산을 줄였어요. 새 집 편집 문구 영어·일본어 각 100%, 전체 번역률은 미측정. 회귀검사와 Android APK/AAB 빌드 완료. 운영 main·사이트·Play 미배포."});
+window.SEORAP_DATA.tasks.push({id:"dv-home-editor-209-followup",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"집 원화 세부 재현·책 형태 확정·실기기 성능 검증",summary:"책 원본은 가로 펼침 그림이고 현행 오른쪽 페이지 자산 자체에 왼쪽 잘림이 있어요. 세로 구성 유지+책등 복구/원본 펼침 전체 사용 선택 대기이며 209에서는 책 자산을 바꾸지 않았어요. 방 편집 SVG의 소유자·출입·청결도 추가 항목과 세부 디자인, 가구 옆모습 원화 연결은 남아 있어요. SM-G991N 장시간 사용 프레임·온도 측정 전이므로 발열 해결 완료로 표시하지 않아요."});
 window.SEORAP_DATA.updates=[
+  {version:"1.0.194-dev",code:209,date:"2026-09-04",items:[
+    "집 정보·방 정보·구성원 정보·편집모드 메뉴와 하단 로그/요약으로 집 UI 1차 재구성",
+    "방 검색·층 필터·방 편집 연결, 거주자·반려생물·자동차 편집 진입점 분리",
+    "검색·분류·대상 방 선택 가능한 접이식 하단 가구창, 1/4칸 이동, 좌우반전·정면/좌/우 방향 저장",
+    "커플 침대 일러스트 크기는 유지하고 선택 테두리를 이미지 비율에 맞춤; 옆모습 원화는 준비 대기",
+    "마을 인물 위치 규칙과 옷장 하단 간격 반영; 마을 이벤트 캐시 재사용·숨김 로그 지연 생성·집 편집 중 갱신 중지",
+    "책 원본 사용 형태 결정, SVG 추가 방 항목·세부 디자인, 실제 Android 발열/프레임 검증은 남아 있음",
+    "새 집 편집 문구 영어·일본어 각 100%; 기존 전체 UI/로그 번역률은 이번에 다시 측정하지 않음",
+    "회귀검사 및 APK/AAB 생성 완료; 앱 dev 전용이며 운영 main·사이트·Google Play는 변경하지 않음"
+  ]},
   {version:"1.0.193-dev",code:208,date:"2026-09-03",items:[
     "2026-09-04: v1.0.193(code 208) debug APK·서명된 release AAB 생성 완료; 음식 이미지·개발판 회귀검사와 패키지 버전·208 자산 표식 확인 후 전달",
     "Android 음식 이미지 선택 흐름의 동일 사진 재선택·앱 복귀 누락 방지 수정 반영",
