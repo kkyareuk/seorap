@@ -1037,7 +1037,16 @@ window.SEORAP_DATA.tasks.push({id:"dv-audio-room-mood-212",project:"서랍마을
 window.SEORAP_DATA.tasks.push({id:"dv-room-access-behavior-212-followup",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"방 출입 설정의 방문·이동 행동 적용 후속",summary:"212는 방 주인 및 방문자·배달원·수리기사·반려생물·개별 대상의 출입 설정과 저장 UI를 제공해요. 실제 이동 AI가 새 그룹별 정책을 따르도록 하는 작업과 방문 장면 회귀 검증은 아직 완료하지 않았어요."});
 window.SEORAP_DATA.tasks.push({id:"dv-ios-project-197-build1",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.197 iOS build 1 프로젝트 준비",summary:"dev에 공식 Capacitor iOS 프로젝트, 필수 게임 파일 준비, 플랫폼별 버전/설정 검사, 업데이트 절차를 추가했어요. Android code 212 유지. Windows에서 프로젝트 준비와 실행 경로 분리 검사만 완료했고 IPA를 빌드한 것은 아니에요. 신규 준비 UI 영어·일본어 각 100%; iOS 시스템 권한 문구 현지화와 전체 로그 번역은 후속."});
 window.SEORAP_DATA.tasks.push({id:"dv-ios-store-launch-followup",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"iOS Mac 빌드·Apple 계정·로그인/결제·스토어 출시",summary:"Mac/Xcode 26+, Apple Developer Program 및 서명 Team 필요. Firebase iOS와 Apple 로그인, StoreKit/서버 구매 검증·복원, 계정 삭제, 개인정보 매니페스트, 최종 아이콘/시작 화면, 한·일 권한 문구, iPhone 실기기 검증 후 TestFlight와 심사 제출. 현재 iOS 준비판은 로컬 플레이용이며 로그인/구매 미연결."});
+window.SEORAP_DATA.tasks.push({id:"dv-home-drawer-213",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.198(213) 집 메뉴 잘림·가구창 두 분류 정리",summary:"dev에서 집 메뉴 양끝 비율과 너비 충돌을 고쳤어요. 전체 테마 설정을 없애고 검색/방 종류/가구 종류/목록으로 구분했어요. 선택 가구 도구는 두 줄로 정리해 하단창과 겹치지 않아요. ko/en/ja 모바일 크기·관련 검사 10개·APK/AAB 최종 파일 검증 완료. 이번 변경 영어·일본어 각각 100%, 전체 로그 번역률 미측정. iOS 1.0.198/build 2에도 공통 코드 준비; IPA·실기기 테스트·스토어 업로드는 미완료."});
 window.SEORAP_DATA.updates=[
+  {version:"1.0.198-dev",code:213,date:"2026-09-04",items:[
+    "집 정보·방 정보·구성원·편집 버튼 양끝이 잘리지 않도록 원화 비율과 버튼 폭 수정",
+    "전체 테마 설정 제거, 검색과 방 종류/가구 종류 두 분류 줄 및 일정한 높이의 가구 목록",
+    "검색칸·분류·가구 글자 겹침 수정, 선택 가구 편집 도구 두 줄 배치와 하단창 간격 확보",
+    "ko/en/ja 모바일 화면과 관련 자동 검사 10개, Android APK/AAB 버전·파일 확인",
+    "iOS 준비판 1.0.198/build 2에 공통 UI 반영. 신규 앱 등록 입력값 안내 작성; Apple 등록/서명/IPA/출시는 미완료",
+    "이번 변경 영어·일본어 각각 100%. 앱 dev만 반영하며 운영 main·사이트·스토어 배포 변경 없음"
+  ]},
   {version:"1.0.197-ios-preview",code:1,date:"2026-09-04",items:[
     "Android 1.0.197/code 212를 기준으로 iOS Xcode 프로젝트와 공통 게임 자산 준비; iOS build 1",
     "iOS 준비/검사 명령과 사이트·Google Play·App Store별 업데이트 절차 추가",
