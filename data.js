@@ -1035,7 +1035,16 @@ window.SEORAP_DATA.tasks.push({id:"dv-home-polish-211",project:"서랍마을",se
 window.SEORAP_DATA.tasks.push({id:"dv-home-log-locale-followup-211",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"집 생활 로그의 기존 한국어 문장 번역 후속 확인",summary:"211 일본어 UI 점검에서 우편 도착 등 일부 저장된 생활 로그가 한국어로 남는 것을 확인했어요. 이번 집 UI 변경의 메뉴 키는 한국어·영어·일본어 검사 완료이나 전체 UI/로그 번역률은 미측정이에요."});
 window.SEORAP_DATA.tasks.push({id:"dv-audio-room-mood-212",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.197(212) 발소리 패키징·방 편집·기분 내역",summary:"dev 전용. 누락된 발소리 파일을 앱에 포함하고 동시 재생을 최대 2명으로 제한했어요. 방 사진 채우기, 집 구성원 복수 주인·전체 선택, 출입 대상 설정/저장 UI와 명시적 저장 버튼을 반영했어요. 가구 이름 대비와 나무무늬 없는 하단창, 기본 테마만 표시, 버튼 잘림을 수정했어요. ‘변화가’를 분노로 오인하던 문제를 고치고 로그 인용 대신 기분 요인을 따로 표시해요. 관련 회귀검사·모바일 일본어 화면·APK/AAB 검증 완료. 실기기 청취/발열 및 새 출입 규칙의 이동 AI 적용은 별도 확인 대상. 이번 새 문구 영어·일본어 각 100%, 전체 로그 번역률 미측정."});
 window.SEORAP_DATA.tasks.push({id:"dv-room-access-behavior-212-followup",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"방 출입 설정의 방문·이동 행동 적용 후속",summary:"212는 방 주인 및 방문자·배달원·수리기사·반려생물·개별 대상의 출입 설정과 저장 UI를 제공해요. 실제 이동 AI가 새 그룹별 정책을 따르도록 하는 작업과 방문 장면 회귀 검증은 아직 완료하지 않았어요."});
+window.SEORAP_DATA.tasks.push({id:"dv-ios-project-197-build1",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.197 iOS build 1 프로젝트 준비",summary:"dev에 공식 Capacitor iOS 프로젝트, 필수 게임 파일 준비, 플랫폼별 버전/설정 검사, 업데이트 절차를 추가했어요. Android code 212 유지. Windows에서 프로젝트 준비와 실행 경로 분리 검사만 완료했고 IPA를 빌드한 것은 아니에요. 신규 준비 UI 영어·일본어 각 100%; iOS 시스템 권한 문구 현지화와 전체 로그 번역은 후속."});
+window.SEORAP_DATA.tasks.push({id:"dv-ios-store-launch-followup",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"iOS Mac 빌드·Apple 계정·로그인/결제·스토어 출시",summary:"Mac/Xcode 26+, Apple Developer Program 및 서명 Team 필요. Firebase iOS와 Apple 로그인, StoreKit/서버 구매 검증·복원, 계정 삭제, 개인정보 매니페스트, 최종 아이콘/시작 화면, 한·일 권한 문구, iPhone 실기기 검증 후 TestFlight와 심사 제출. 현재 iOS 준비판은 로컬 플레이용이며 로그인/구매 미연결."});
 window.SEORAP_DATA.updates=[
+  {version:"1.0.197-ios-preview",code:1,date:"2026-09-04",items:[
+    "Android 1.0.197/code 212를 기준으로 iOS Xcode 프로젝트와 공통 게임 자산 준비; iOS build 1",
+    "iOS 준비/검사 명령과 사이트·Google Play·App Store별 업데이트 절차 추가",
+    "미설정 iOS 로그인·구매는 준비 중으로 구분하고 Google Play 호출 차단; Android 동작 유지 검사",
+    "프로젝트/버전/필수 자산 검사 통과. Mac/Xcode 컴파일·서명·실기기 실행·IPA·TestFlight·스토어 제출은 미완료",
+    "Apple 계정·로그인·결제·개인정보·최종 아이콘 연결은 후속 작업. 운영 main·사이트·Play 배포 변경 없음"
+  ]},
   {version:"1.0.197-dev",code:212,date:"2026-09-04",items:[
     "Android 빌드에서 빠져 있던 발소리 파일 포함, 동시에 들리는 발소리를 최대 두 캐릭터로 제한",
     "방 사진을 프레임에 채우고 주인은 집 구성원 중 여러 명 또는 전체로 선택; 방 사이 중복 지정 가능",
