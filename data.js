@@ -1033,7 +1033,19 @@ window.SEORAP_DATA.tasks.push({id:"dv-home-editor-209-followup",project:"서랍�
 window.SEORAP_DATA.tasks.push({id:"dv-home-design-210",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.195(210) 집 SVG 재구성·구성원 통합 편집",summary:"dev 전용. 구성원·반려생물·차를 한 화면에서 추가/편집하고 뒤로가면 구성원 화면으로 돌아와요. 원본 SVG의 나무/마을 배경, 사진 프레임, 기울어진 표면 샘플, 방 편집 배치를 반영했어요. 하단 로그/요약 복구, 불필요한 방 제목 색·크기·층 선택 제거, 마을과 집 사진/정보 공유. 모바일 영문/일문 화면과 저장/복귀, 회귀검사, Android APK/AAB 빌드 확인. 이번 변경 문구 영어·일본어 각 100%; 전체 번역률 미측정. 운영 main·사이트·Play 미배포."});
 window.SEORAP_DATA.tasks.push({id:"dv-home-polish-211",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.196(211) 책 확대·집 목록/편집/로그 가독성",summary:"dev 전용. 책의 중앙 종이를 확장해 하단 요소까지 받치고, 집 목록을 크림색 판과 둥근 사각 사진 프레임으로 정리했어요. 방 편집·로그·요약의 중첩과 글자 넘침을 수정하고, 가구창 높이 고정·3분할 버튼·드래그 중에만 그리드를 표시해요. 모바일 일본어 화면/메뉴 3개 언어/관련 회귀검사 및 APK/AAB 확인. 운영 main·사이트·Play 미배포."});
 window.SEORAP_DATA.tasks.push({id:"dv-home-log-locale-followup-211",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"집 생활 로그의 기존 한국어 문장 번역 후속 확인",summary:"211 일본어 UI 점검에서 우편 도착 등 일부 저장된 생활 로그가 한국어로 남는 것을 확인했어요. 이번 집 UI 변경의 메뉴 키는 한국어·영어·일본어 검사 완료이나 전체 UI/로그 번역률은 미측정이에요."});
+window.SEORAP_DATA.tasks.push({id:"dv-audio-room-mood-212",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.197(212) 발소리 패키징·방 편집·기분 내역",summary:"dev 전용. 누락된 발소리 파일을 앱에 포함하고 동시 재생을 최대 2명으로 제한했어요. 방 사진 채우기, 집 구성원 복수 주인·전체 선택, 출입 대상 설정/저장 UI와 명시적 저장 버튼을 반영했어요. 가구 이름 대비와 나무무늬 없는 하단창, 기본 테마만 표시, 버튼 잘림을 수정했어요. ‘변화가’를 분노로 오인하던 문제를 고치고 로그 인용 대신 기분 요인을 따로 표시해요. 관련 회귀검사·모바일 일본어 화면·APK/AAB 검증 완료. 실기기 청취/발열 및 새 출입 규칙의 이동 AI 적용은 별도 확인 대상. 이번 새 문구 영어·일본어 각 100%, 전체 로그 번역률 미측정."});
+window.SEORAP_DATA.tasks.push({id:"dv-room-access-behavior-212-followup",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"방 출입 설정의 방문·이동 행동 적용 후속",summary:"212는 방 주인 및 방문자·배달원·수리기사·반려생물·개별 대상의 출입 설정과 저장 UI를 제공해요. 실제 이동 AI가 새 그룹별 정책을 따르도록 하는 작업과 방문 장면 회귀 검증은 아직 완료하지 않았어요."});
 window.SEORAP_DATA.updates=[
+  {version:"1.0.197-dev",code:212,date:"2026-09-04",items:[
+    "Android 빌드에서 빠져 있던 발소리 파일 포함, 동시에 들리는 발소리를 최대 두 캐릭터로 제한",
+    "방 사진을 프레임에 채우고 주인은 집 구성원 중 여러 명 또는 전체로 선택; 방 사이 중복 지정 가능",
+    "출입 대상 전체/주인만/직접 지정 및 방문자·배달원·수리기사·반려생물 등의 설정·저장 UI 추가",
+    "방·집·건물·구성원 편집에 명시적인 저장 버튼 보강, 사전/차 기존 저장 유지",
+    "가구 이름 대비 개선, 나무무늬 없는 크림색 하단 가구창과 기본 테마 설정, 가로 버튼 잘림 개선",
+    "‘변화가’를 ‘화가 남’으로 오인해 -28을 붙이던 오류 수정; 로그 인용 없이 기분 요인과 점수를 별도 표시",
+    "새 문구 영어·일본어 각 100%. 전체 로그 번역은 후속 진행; 실기기 소리 청취·발열 및 새 출입 정책 이동 AI 적용 미검증",
+    "dev APK/AAB 빌드와 관련 회귀검사 완료. 운영 main·사이트·Play 배포 변경 없음"
+  ]},
   {version:"1.0.196-dev",code:211,date:"2026-09-04",items:[
     "캐릭터 전체설정 책의 종이 영역을 확장해 아래 아이콘·페이지 넘김까지 받치도록 수정",
     "구성원·방 목록을 건물정보 스타일의 크림색 판과 둥근 사각 사진 카드로 정리, 추가/선택 버튼 대비 개선",
