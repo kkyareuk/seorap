@@ -1029,9 +1029,20 @@ window.SEORAP_DATA.tasks.push({id:"dv-food-image-dev-208",project:"서랍마을"
 window.SEORAP_DATA.tasks.push({id:"dv-play-games-console-ids-193",project:"서랍마을",section:"release",subsection:"play-store",completed:false,title:"Google Play 게임즈 프로젝트·업적 ID 연결",summary:"Play Console에서 com.drawervillage.app용 Play 게임즈 서비스 프로젝트와 업적 8개를 만든 뒤 프로젝트 ID와 각 업적 ID를 Android 문자열 리소스에 넣고 설정을 켜야 해요. 테스터 계정으로 로그인·오프라인 달성 후 재동기화·Google 기본 업적 화면을 실제 Play 설치본에서 확인해요."});
 window.SEORAP_DATA.tasks.push({id:"dv-home-real-save-185",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"집 진입 불가·기존 건물 복구 실계정 재확인",summary:"185 개발판의 가상 데이터에서는 집 관찰/편집 화면이 열리고 누락 건물 선택 복구도 통과했어요. 실제 계정에서의 재현과 복구 후보 유무는 확인되지 않았어요. 기존 앱 삭제나 데이터 초기화 없이 업데이트 후 확인이 필요해요."});
 window.SEORAP_DATA.tasks.push({id:"dv-home-editor-209",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.194(209) 집 편집 1차 개편·반복 계산 절감",summary:"dev 전용. 집 정보·방 목록·구성원 진입점과 하단 로그/요약, 검색·분류·접기 가능한 가구창, 가구 1/4칸 세부 이동과 반전/방향 저장, 침대 선택 범위, 마을 인물 위치 순서, 옷장 페이지 넘김 간격을 반영했어요. 숨긴 로그 지연 생성과 편집 중 갱신 중지로 반복 계산을 줄였어요. 새 집 편집 문구 영어·일본어 각 100%, 전체 번역률은 미측정. 회귀검사와 Android APK/AAB 빌드 완료. 운영 main·사이트·Play 미배포."});
-window.SEORAP_DATA.tasks.push({id:"dv-home-editor-209-followup",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"책 형태 확정·가구 옆모습 원화·실기기 성능 검증",summary:"210에서 집 SVG 배경·사진 프레임·방 편집 항목과 통합 구성원 화면을 반영했어요. 책 자산 형태 결정과 가구 옆모습 원화 연결은 남아 있어요. SM-G991N 장시간 사용 프레임·온도 측정 전이므로 발열 해결 완료로 표시하지 않아요."});
+window.SEORAP_DATA.tasks.push({id:"dv-home-editor-209-followup",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"가구 옆모습 원화·실기기 성능 검증",summary:"210~211에서 집 화면과 구성원 통합 편집, 책 종이 확대를 반영했어요. 가구 옆모습 원화 연결은 남아 있어요. SM-G991N 장시간 사용 프레임·온도 측정 전이므로 발열 해결 완료로 표시하지 않아요."});
 window.SEORAP_DATA.tasks.push({id:"dv-home-design-210",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.195(210) 집 SVG 재구성·구성원 통합 편집",summary:"dev 전용. 구성원·반려생물·차를 한 화면에서 추가/편집하고 뒤로가면 구성원 화면으로 돌아와요. 원본 SVG의 나무/마을 배경, 사진 프레임, 기울어진 표면 샘플, 방 편집 배치를 반영했어요. 하단 로그/요약 복구, 불필요한 방 제목 색·크기·층 선택 제거, 마을과 집 사진/정보 공유. 모바일 영문/일문 화면과 저장/복귀, 회귀검사, Android APK/AAB 빌드 확인. 이번 변경 문구 영어·일본어 각 100%; 전체 번역률 미측정. 운영 main·사이트·Play 미배포."});
+window.SEORAP_DATA.tasks.push({id:"dv-home-polish-211",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.196(211) 책 확대·집 목록/편집/로그 가독성",summary:"dev 전용. 책의 중앙 종이를 확장해 하단 요소까지 받치고, 집 목록을 크림색 판과 둥근 사각 사진 프레임으로 정리했어요. 방 편집·로그·요약의 중첩과 글자 넘침을 수정하고, 가구창 높이 고정·3분할 버튼·드래그 중에만 그리드를 표시해요. 모바일 일본어 화면/메뉴 3개 언어/관련 회귀검사 및 APK/AAB 확인. 운영 main·사이트·Play 미배포."});
+window.SEORAP_DATA.tasks.push({id:"dv-home-log-locale-followup-211",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"집 생활 로그의 기존 한국어 문장 번역 후속 확인",summary:"211 일본어 UI 점검에서 우편 도착 등 일부 저장된 생활 로그가 한국어로 남는 것을 확인했어요. 이번 집 UI 변경의 메뉴 키는 한국어·영어·일본어 검사 완료이나 전체 UI/로그 번역률은 미측정이에요."});
 window.SEORAP_DATA.updates=[
+  {version:"1.0.196-dev",code:211,date:"2026-09-04",items:[
+    "캐릭터 전체설정 책의 종이 영역을 확장해 아래 아이콘·페이지 넘김까지 받치도록 수정",
+    "구성원·방 목록을 건물정보 스타일의 크림색 판과 둥근 사각 사진 카드로 정리, 추가/선택 버튼 대비 개선",
+    "방 편집의 입력 판·사진 샘플·체크박스 줄바꿈 및 사진 오류 대체 아이콘 개선",
+    "가구창 높이 고정, 모든 테마 보기 3분할 에셋 버튼, 편집 글자 대비와 드래그 중 격자 표시",
+    "집 생활 로그·요약을 한 스크롤 화면과 종이 카드로 정리하고 긴 문장 가로 넘침 수정",
+    "한·영·일 메뉴 검사/모바일 화면/회귀검사/APK·AAB 확인. 기존 로그 일부 한국어 잔존은 후속 항목",
+    "dev 전용. 결제 키·운영 사이트·Play 배포 변경 없음"
+  ]},
   {version:"1.0.195-dev",code:210,date:"2026-09-04",items:[
     "구성원 메뉴에 구성원·반려생물·차를 한 번에 표시하고 각각 추가/편집 가능; 편집 뒤로가기는 구성원 화면으로 복귀",
     "제공 SVG의 원본 배경·사진 프레임·표면 샘플 각도·방 편집 배치 반영, 공통 스타일 충돌 정리",
