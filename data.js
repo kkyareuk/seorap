@@ -1038,7 +1038,18 @@ window.SEORAP_DATA.tasks.push({id:"dv-room-access-behavior-212-followup",project
 window.SEORAP_DATA.tasks.push({id:"dv-ios-project-197-build1",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.197 iOS build 1 프로젝트 준비",summary:"dev에 공식 Capacitor iOS 프로젝트, 필수 게임 파일 준비, 플랫폼별 버전/설정 검사, 업데이트 절차를 추가했어요. Android code 212 유지. Windows에서 프로젝트 준비와 실행 경로 분리 검사만 완료했고 IPA를 빌드한 것은 아니에요. 신규 준비 UI 영어·일본어 각 100%; iOS 시스템 권한 문구 현지화와 전체 로그 번역은 후속."});
 window.SEORAP_DATA.tasks.push({id:"dv-ios-store-launch-followup",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"iOS Mac 빌드·Apple 계정·로그인/결제·스토어 출시",summary:"Mac/Xcode 26+, Apple Developer Program 및 서명 Team 필요. Firebase iOS와 Apple 로그인, StoreKit/서버 구매 검증·복원, 계정 삭제, 개인정보 매니페스트, 최종 아이콘/시작 화면, 한·일 권한 문구, iPhone 실기기 검증 후 TestFlight와 심사 제출. 현재 iOS 준비판은 로컬 플레이용이며 로그인/구매 미연결."});
 window.SEORAP_DATA.tasks.push({id:"dv-home-drawer-213",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.198(213) 집 메뉴 잘림·가구창 두 분류 정리",summary:"dev에서 집 메뉴 양끝 비율과 너비 충돌을 고쳤어요. 전체 테마 설정을 없애고 검색/방 종류/가구 종류/목록으로 구분했어요. 선택 가구 도구는 두 줄로 정리해 하단창과 겹치지 않아요. ko/en/ja 모바일 크기·관련 검사 10개·APK/AAB 최종 파일 검증 완료. 이번 변경 영어·일본어 각각 100%, 전체 로그 번역률 미측정. iOS 1.0.198/build 2에도 공통 코드 준비; IPA·실기기 테스트·스토어 업로드는 미완료."});
+window.SEORAP_DATA.tasks.push({id:"dv-ios-cloud-preview-198",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"v1.0.198 / iOS build 3 클라우드 빌드·시뮬레이터 실행 통과",summary:"맥 구매 없이 요청할 때만 iOS를 빌드하는 설정을 dev에 추가했어요. 30분 상한과 작은 진단 파일 3일 보관 적용. build 3에서 외부 로그인 SDK를 기다리지 않고 로컬 첫 캐릭터 화면을 열도록 수정했어요. 데이터 삭제/계정 변경/구매 권한 부여 없음. 최종 Actions 33866155299 전체 성공(10분 3초): Xcode 빌드, iPhone 17 Pro/iPad Pro 13-inch(M5) 설치·실행·프로세스 검사 통과. iPhone 시작 화면 육안 확인; iPad 이미지 육안 검수와 실제 게임 기능/실기기 검사는 별도. ko/en/ja 안내·첫 화면 진입·Android auth 동일성 검사 통과. Android 213 유지, 운영 main·사이트·스토어 미배포. Apple 서명/IPA/TestFlight 미연결. 해당 안내 영어·일본어 각 100%; 전체 번역률 재측정 없음."});
+window.SEORAP_DATA.tasks.push({id:"dv-ios-signing-packet",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"TestFlight용 Apple 서명 자료 한 번에 연결",summary:"App ID와 App Store Connect 앱 레코드는 사용자 화면에서 확인했어요. 다음에는 Apple Distribution 인증서+개인키(P12와 비밀번호), com.drawervillage.app의 App Store Connect 배포 프로파일, 업로드 API 키(Key ID·Issuer ID·p8)를 GitHub Actions Secrets로 연결해야 해요. Apple 비밀번호/개인키는 채팅·Git·작업판에 올리지 않아요. 맥 없는 Windows 인증서 준비 가능. 연결 후 서명 빌드·TestFlight 테스트를 별도 진행하고, 로그인/구매/개인정보/최종 아이콘/실기기 검증은 출시 전 완료해야 해요."});
 window.SEORAP_DATA.updates=[
+  {version:"1.0.198-ios-cloud",code:3,date:"2026-09-04",items:[
+    "맥 없이 iOS 앱을 빌드하는 클라우드 검사 추가; Android 213 유지",
+    "필요할 때만 명시적으로 빌드 요청, 실행 상한 30분·진단 파일 보관 3일",
+    "build 2·3 Xcode 컴파일 성공. iOS 준비판이 외부 로그인 SDK를 기다리지 않고 첫 캐릭터 화면으로 진입하도록 수정",
+    "Apple 서명과 TestFlight 준비 자료를 한 묶음으로 문서화; 아직 IPA/스토어 업로드 아님",
+    "첫 캐릭터 진입·ko/en/ja 안내·Android auth 동일성 검사 통과. 해당 안내 영어·일본어 각 100%, 전체 번역률 재측정 없음",
+    "최종 클라우드 검사 성공: iPhone/iPad 설치·실행·프로세스 확인, iPhone 시작 화면 육안 검수. iPad 육안/실기기 기능 검증은 후속",
+    "앱 dev와 작업판 main 반영. Apple 서명/IPA/TestFlight/스토어 업로드는 아직 미완료"
+  ]},
   {version:"1.0.198-dev",code:213,date:"2026-09-04",items:[
     "집 정보·방 정보·구성원·편집 버튼 양끝이 잘리지 않도록 원화 비율과 버튼 폭 수정",
     "전체 테마 설정 제거, 검색과 방 종류/가구 종류 두 분류 줄 및 일정한 높이의 가구 목록",
