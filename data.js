@@ -2201,3 +2201,9 @@ window.SEORAP_DATA.updates=[
   {version:"1.0.59",code:61,date:"2026-08-19",items:["Android 앱 시작 직후 반복 종료될 수 있던 문제 긴급 수정"]},
   {version:"1.0.58",code:60,date:"2026-08-19",items:["캐릭터 연락 메뉴와 테마 색상 화면 정리","주간·월간 일정 분리와 집 화면 사용성 개선","손그림 음식점 기본 일러스트 반영"]}
 ];
+
+const relationshipScroll236=window.SEORAP_DATA.tasks.find(t=>t.id==="dv-relationship-scroll-hotfix-236");
+if(relationshipScroll236){relationshipScroll236.title="Android 1.0.215.1 / 236 관계 시선 설정 스크롤 긴급 수정";}
+if(android219Followup){android219Followup.summary=android219Followup.summary.replace("drawer-village-v1.0.204.4-code236-hotfix-release.aab","drawer-village-v1.0.215.1-code236-hotfix-release.aab");}
+const release236=window.SEORAP_DATA.updates.find(item=>item.code===236);
+if(release236){release236.version="1.0.215.1-production-hotfix";}
