@@ -2515,3 +2515,6 @@ window.SEORAP_DATA.tasks.push({id:'dv-review-video32',project:'서랍마을',sec
 
 window.SEORAP_DATA.tasks.push({id:'dv-block-remove-member',project:'서랍마을',section:'release',subsection:'testing',completed:false,title:'멤버 차단·퇴장 선택',summary:'305/32 이후 dev 코드 추가: 방장·관리자는 차단 또는 차단하고 퇴장 선택, 일반 멤버는 차단만. 서버 원자 처리·권한 검증·캐릭터 개인마을 복귀·타 그룹 보존. 서버 테스트와 모바일 UI 검사 통과, iOS 공통 소스 반영. 새 앱 빌드/서버 배포는 미진행. 신규 EN/JA 문구 완료.'});
 window.SEORAP_DATA.updates.unshift({version:'305/32 이후 개발 · 차단 및 퇴장 선택',date:'2026-09-09',items:['방장·관리자의 멤버 차단 시 퇴장 여부 선택 추가','퇴장한 멤버의 캐릭터 개인 마을 복귀·계정 차단 함께 처리','권한/복귀/모바일 UI 검사 통과·새 빌드와 운영 배포 대기']});
+
+Object.assign(window.SEORAP_DATA.tasks.find(t=>t.id==='dv-block-remove-member'),{summary:'dev1bf5d66 및 iOS77ecc88: 방장·관리자 차단/차단하고 퇴장 선택. 권한·원자 처리·개인마을 복귀·기존 우편 보존 검증, 모바일 UI와 공유 서비스 회귀 검사 통과. sharedTownApi 운영 서버 배포 성공. 앱 신규 빌드 대기: 현재305/32에는 새 UI 미포함. EN/JA 신규 문구 완료, 전체75.8%.'});
+Object.assign(window.SEORAP_DATA.tasks.find(t=>t.id==='dv-review-video32'),{summary:'본편 구매/신고/삭제 및 보충 영상 Apple 로그인·첫 프로필·1:53 차단 계정 목록 확인. App Store 심사 빌드32 연결,7개 메모와 본편 첨부·iPad 마을/집 스크린샷 업로드 완료. 보충 영상 회신 준비·최종 재제출 미완료.'});
