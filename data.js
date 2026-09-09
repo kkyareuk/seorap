@@ -2518,3 +2518,6 @@ window.SEORAP_DATA.updates.unshift({version:'305/32 이후 개발 · 차단 및 
 
 Object.assign(window.SEORAP_DATA.tasks.find(t=>t.id==='dv-block-remove-member'),{summary:'dev1bf5d66 및 iOS77ecc88: 방장·관리자 차단/차단하고 퇴장 선택. 권한·원자 처리·개인마을 복귀·기존 우편 보존 검증, 모바일 UI와 공유 서비스 회귀 검사 통과. sharedTownApi 운영 서버 배포 성공. 앱 신규 빌드 대기: 현재305/32에는 새 UI 미포함. EN/JA 신규 문구 완료, 전체75.8%.'});
 Object.assign(window.SEORAP_DATA.tasks.find(t=>t.id==='dv-review-video32'),{summary:'본편 구매/신고/삭제 및 보충 영상 Apple 로그인·첫 프로필·1:53 차단 계정 목록 확인. App Store 심사 빌드32 연결,7개 메모와 본편 첨부·iPad 마을/집 스크린샷 업로드 완료. 보충 영상 회신 준비·최종 재제출 미완료.'});
+
+Object.assign(window.SEORAP_DATA.tasks.find(t=>t.id==='dv-review-video32'),{completed:true,summary:'2026-09-09 23:27 KST 재심사 완료: iOS1.0.269(32)+인앱구입3개 모두 심사 대기 중 UI 확인. Apple7개 요청 Notes/회신에 작성, 본편/보충 영상2개 심사팀 첨부, 실제iPad 마을/집 스크린샷 추가. 승인 후 자동 출시. 32 이후 차단·퇴장 선택 UI는 이번 제출 미포함.'});
+window.SEORAP_DATA.updates.unshift({version:'iOS 1.0.269 (32) · Apple 재심사 접수',date:'2026-09-09',items:['23:27 앱과 인앱구입3개 모두 심사 대기 중 확인','실제iPad 본편/로그인·차단 보충 영상과 7개 요청 답변 전송','iPad 마을·집 스크린샷 및 비공개 심사 연락처 저장','승인 후 자동 출시 설정 유지·현재 승인 대기']});
