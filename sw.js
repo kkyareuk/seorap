@@ -1,4 +1,4 @@
-const CACHE="seorap-tasks-v88";
+const CACHE="seorap-tasks-v89";
 const CORE=["./","./index.html","./styles.css?v=22","./data.js?v=80","./app.js?v=22","./manifest.webmanifest"];
 self.addEventListener("install",event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener("activate",event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
