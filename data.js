@@ -2685,3 +2685,5 @@ window.SEORAP_DATA.tasks.push({"id": "dv-ios-review33", "project": "서랍마을
 window.SEORAP_DATA.tasks.push({"id": "dv-web-live-20260911", "project": "서랍마을", "section": "release", "subsection": "testing", "completed": true, "title": "운영 웹 · 라이브 결제 전환", "summary": "현재 공개본6d20a22 기준으로 라이브 클라이언트키·계정별 장바구니 전달만 반영. 배포d2e27d2/Cloudflare214ab73f. 공개도메인live/accountCart확인. 서버api 기존라이브시크릿버전3으로전환ACTIVE확인(기존테스트4). 실카드결제/카드사승인 미검증. main에는동일수정9328c9c 체리픽, 개발기능 미배포. 신규사용자문구없음."});
 
 {const t=window.SEORAP_DATA.tasks.find(t=>t.id==="dv-ios-review33");if(t){t.title="iOS 1.0.269 (33) · UI/IAP 경로만 재심사 준비";t.summary="사용자범위축소: 가격/신규기능제외. 2f6b301 iOS브랜치 반영. 안내모달 상위표시/폭/스크롤/닫기44px, 기본상점탭 우선. 로컬iPhone/iPad KO/EN/JA 구매3상품/가로넘침검사통과. Actions34499784023 Mac빌드중. Apple심사메모에구매경로저장, 빌드교체/최종제출대기. 기존영상유지.";}}
+
+{const t=window.SEORAP_DATA.tasks.find(t=>t.id==="dv-ios-review33");if(t){t.completed=true;t.title="iOS 1.0.269 (33) · 재심사 대기 중";t.summary="2026-09-11 01:28 KST Apple앱+기존인앱3상품 모두심사대기확인. 2f6b301/Actions34499784023성공. 안내모달겹침/폭/스크롤/닫기44px·기본상점우선배치만수정. 가격/지급/신규기능변경없음. 구매경로심사메모+회신접수·기존영상유지. iPhone/iPad크기KO/EN/JA화면검사와Mac iPad기동확인. 실카드결제추가검증없음. UI새문구없음, 3언어대응완료. 별도iOS브랜치유지.";}}
