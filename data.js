@@ -2836,3 +2836,5 @@ window.SEORAP_DATA.tasks.push({id:"dv-release377",project:"서랍마을",type:"�
 window.SEORAP_DATA.updates.unshift({version:"1.0.328 (377 제출 준비)",code:377,date:"2026-09-13",items:["침대·소파에서 상호작용 시작과 이름/행동표 숨김","이전 멀티 일정·저장·스크롤·가구 이동 등 누적 개선 포함","Android 최종 파일 완료 / 스토어 제출 진행"]});
 
 Object.assign(window.SEORAP_DATA.tasks.find(t=>t.id==="dv-release377"),{summary:"dev9074dcd. Android377 전체 출시 검토 요청 접수(사전검사 진행, 공개 전). iOS377 업로드 진행. 첫 iPhone 시뮬레이터 실행 명령 시간초과로 동일 소스 새 환경 재검사 중; 아직 iOS 심사 제출 안함. 가구 상호작용·숨김·효과, 멀티 일정·저장 회귀검사 통과. EN/JA 변경문구100%, 전체 미측정."});
+
+window.SEORAP_DATA.tasks.push({id:"dv-ios-startup377",project:"서랍마을",type:"오류",section:"release",subsection:"testing",completed:false,title:"377 iOS 시작 화면 실제 렌더 확인",summary:"시뮬레이터 재실행은 프로세스 검사상 성공했지만 iPhone/iPad 결과 이미지가 흰 화면. 심사 초안377 연결까지만 진행, 최종 제출 보류. CI 전용 DOM/창/초기화 오류 진단과 게임 UI 렌더 완료 검증을 추가해 확인 중. Android377은 사전검사 통과·정식 검토중."});
