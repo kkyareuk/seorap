@@ -2779,3 +2779,10 @@ window.SEORAP_DATA.tasks.push({"id":"dv-multi-roster-return363","project":"서�
 
 window.SEORAP_DATA.tasks.push({"id":"dv-membership-display364","project":"서랍마을","type":"버그","section":"release","subsection":"testing","completed":false,"title":"멤버 관리 목록·차단 콘텐츠 분리 수정 — 앱 반영 대기","summary":"dev6cfd96c: 관리 목록은 실제 서버 구성원, 방장 표시는 그룹 ownerUid 기준. 차단한 사진/캐릭터/우편 숨김과 서버 접근 제한 유지. 3계정·차단방장·일반멤버 권한·원본불변 회귀검사 통과. 실제 제보 방의 초대 코드 및 신고/차단 이력 대기, 실제 권한 복구 완료 아님. 현재 배포 Android360/iOS363에는 미포함. EN/JA 이번 추가문구 각100%,전체미산정."});
 window.SEORAP_DATA.updates.unshift({"version":"다음 테스트 준비 · 멤버 관리 목록 수정","code":360,"date":"2026-09-12","items":["차단·신고와 실제 참여 계정 목록 분리","그룹에 기록된 방장을 역할 표시에 우선 적용","코드 검증 완료 / 실제 기기·해당 그룹 확인 및 앱 반영 대기"]});
+
+// 2026-09-12 iOS approval and multiplayer travel follow-up
+for (const task of window.SEORAP_DATA.tasks) {
+ if (task.id === "dv-ios363-apple-reauth") Object.assign(task,{completed:true,title:"iOS 1.0.327 (363) 출시 확인",summary:"계정삭제 및 구매복원 사용자 확인 후 제출한81a957b3-e919-4c05-a6b9-fa76b0e05b83 승인. App Store Connect 배포 준비됨, 자동 출시 확인. 스토어 표시까지 최대24시간. Android360 유지. 이후dev 멤버표시/마을이동수정은363미포함."});
+ if (task.id === "dv-multi-roster-return363") Object.assign(task,{title:"Android360 멀티 복귀 후 지연 조사",summary:"상호 멤버누락은 사용자가 서로 신고·차단한 이력 확인. 관리목록 분리수정dev에 완료, 앱반영대기. Android360은 영구먹통이 아니라 지연으로 제보 정정. 실제기기 원인은 아직 검증 필요."});
+}
+window.SEORAP_DATA.tasks.push({"id": "dv-travel364", "project": "서랍마을", "type": "버그", "section": "release", "subsection": "testing", "completed": false, "title": "다음 업데이트 · 멀티 마을 이동 독립 규칙", "summary": "dev6ea0c74: 멀티규칙에 마을 사이 이동 허용 추가. 개인 설정과 분리, 유효한 공유 일정 목적지 보존, 규칙 변경시 장면 캐시 갱신. 독립규칙/목적지/원본보존 검사 및 멤버목록 검사 통과. 구형 마을검사는 고정버전187 조건에서 실패. 새 앱/서버 배포 및 실제마을검증 대기. EN/JA 신규문구100%, 전체미산정. 웹실구매 슬롯은 같은게임UID로 iOS에서도 유지하는 코드 확인; Apple/Google 별도계정 자동병합 없음."});
