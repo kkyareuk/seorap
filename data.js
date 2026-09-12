@@ -2834,3 +2834,5 @@ window.SEORAP_DATA.updates.unshift({version:"1.0.328 (376 배포 준비)",code:3
 
 window.SEORAP_DATA.tasks.push({id:"dv-release377",project:"서랍마을",type:"개선",section:"release",subsection:"testing",completed:false,title:"377 최종 누적 수정·스토어 제출",summary:"dev9074dcd. 스킨십 중 집 이름·행동 표시를 소파/침대/그룹 장면 모두 숨김. 가구 상대 선택과 긍정 화면효과, 거절 효과 분리 검사 통과. Android377 APK/AAB 빌드·서명 확인. Play356/iOS363 대비 누적 릴리스 준비. iOS377 업로드·시뮬레이터 진행중. EN/JA 변경문구100%, 전체 미측정."});
 window.SEORAP_DATA.updates.unshift({version:"1.0.328 (377 제출 준비)",code:377,date:"2026-09-13",items:["침대·소파에서 상호작용 시작과 이름/행동표 숨김","이전 멀티 일정·저장·스크롤·가구 이동 등 누적 개선 포함","Android 최종 파일 완료 / 스토어 제출 진행"]});
+
+Object.assign(window.SEORAP_DATA.tasks.find(t=>t.id==="dv-release377"),{summary:"dev9074dcd. Android377 전체 출시 검토 요청 접수(사전검사 진행, 공개 전). iOS377 업로드 진행. 첫 iPhone 시뮬레이터 실행 명령 시간초과로 동일 소스 새 환경 재검사 중; 아직 iOS 심사 제출 안함. 가구 상호작용·숨김·효과, 멀티 일정·저장 회귀검사 통과. EN/JA 변경문구100%, 전체 미측정."});
