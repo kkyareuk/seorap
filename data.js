@@ -2831,3 +2831,6 @@ window.SEORAP_DATA.updates.unshift({version:"1.0.328 (375)",code:375,date:"2026-
 
 window.SEORAP_DATA.tasks.push({id:"dv-release376",project:"서랍마을",type:"개선",section:"release",subsection:"testing",completed:false,title:"376 누적 수정 · Android 배포 / iOS 심사 준비",summary:"dev6a16c0b. 이전 멀티 일정 끊어진 참가자 수정/취소, 소파 두 자리·친밀도 자리선택·착석크기, 상호작용 메뉴/반응/화면효과·가구에서 시작 개선. Chrome/WebKit 화면·가구·프로필·사진·일정 스크롤 및 저장 회귀 검사 완료. Android APK/AAB376 빌드·서명 확인. 현재 Play 프로덕션356, iOS363을 비교 기준으로 누적내역 확인. iOS Mac 업로드/시뮬레이터 진행중, 스토어 제출 전. EN/JA 신규문구100%,전체미측정."});
 window.SEORAP_DATA.updates.unshift({version:"1.0.328 (376 배포 준비)",code:376,date:"2026-09-13",items:["이전 멀티 일정 수정·취소와 누적 안정성 개선","두 사람 소파 이용·친밀도 자리 선택·착석 크기/앞뒤 조정","가구에서 상대 선택·상호작용 반응·화면효과 개선","Android376 파일 완료 / iOS Mac 빌드 진행 / 스토어 제출 전"]});
+
+window.SEORAP_DATA.tasks.push({id:"dv-release377",project:"서랍마을",type:"개선",section:"release",subsection:"testing",completed:false,title:"377 최종 누적 수정·스토어 제출",summary:"dev9074dcd. 스킨십 중 집 이름·행동 표시를 소파/침대/그룹 장면 모두 숨김. 가구 상대 선택과 긍정 화면효과, 거절 효과 분리 검사 통과. Android377 APK/AAB 빌드·서명 확인. Play356/iOS363 대비 누적 릴리스 준비. iOS377 업로드·시뮬레이터 진행중. EN/JA 변경문구100%, 전체 미측정."});
+window.SEORAP_DATA.updates.unshift({version:"1.0.328 (377 제출 준비)",code:377,date:"2026-09-13",items:["침대·소파에서 상호작용 시작과 이름/행동표 숨김","이전 멀티 일정·저장·스크롤·가구 이동 등 누적 개선 포함","Android 최종 파일 완료 / 스토어 제출 진행"]});
