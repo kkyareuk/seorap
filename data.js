@@ -2874,3 +2874,6 @@ window.SEORAP_DATA.tasks.find(t=>t.id==='dv-home-room-after379').summary+=' 1.0.
 
 window.SEORAP_DATA.tasks.push({id:'dv-internal381',project:'서랍마을',type:'버그',section:'release',subsection:'testing',completed:false,title:'1.0.332 (381) · 생일 이동·침대·효과·가구 이름표',summary:'devbcc1742. 생일 후보/참석자에 마을 이동 제한 적용. 침대 object-fit 그림 범위로 깊이 계산. 예상하지 못한 연결을 충격으로 읽던 문구 검사 수정. 가구 이용 중 이름/행동을 가구 아래 별도 앞 레이어에 표시, 공유가구 두 이름표 가로 배치. Chrome/WebKit 재현검사·생활70개 검사 통과. Android381 빌드·서명 완료·내부 업로드 진행. TestFlight34759565509 진행. 공개판·서버 변경 없음. 이번 EN/JA100%, 전체 미측정.'});
 window.SEORAP_DATA.updates.unshift({version:'1.0.332 (381 내부 테스트)',code:381,date:'2026-09-13',items:['가구 사용 중 이름/행동을 가구 그림 아래에 표시','생일 모임이 전체/마을별 이동 제한을 준수','침대 실제 그림 기준으로 캐릭터 앞뒤 계산','평온한 창의적 행동에 번개가 뜨는 오인 수정','Android 내부·TestFlight 배포 진행 / 380 수정·크레딧 포함']});
+
+Object.assign(window.SEORAP_DATA.tasks.find(t=>t.id==='dv-internal381'),{completed:true,title:'1.0.332 (381) · Android 내부·TestFlight 완료',summary:'소스devbcc1742. Android 내부release283 제공 확인. TestFlight34759565509 성공·Apple86274164-cf8f-4d1e-b285-09a7abdf8606 테스트 중, 나만 테스트 내부1명 연결·안내 저장. 생일 이동제한·침대 그림 깊이·평온한 행동 번개 오인·가구 아래 이름/행동 표시 반영. 380 크레딧5명 포함. Chrome/WebKit·생활70개·크레딧3언어 검사 통과. 실물 iPhone 미검증. 프로덕션/심사/서버 변경 없음. 이번 EN/JA100%, 전체 미측정.'});
+window.SEORAP_DATA.updates.find(u=>u.code===381).items[4]='Android 내부·TestFlight381 배포 완료 / 380 수정·크레딧 포함';
