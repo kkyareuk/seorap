@@ -2867,3 +2867,7 @@ window.SEORAP_DATA.updates.unshift({version:'가구 배치·샤워 장소 수정
 
 window.SEORAP_DATA.tasks.push({id:'dv-internal380',project:'서랍마을',type:'개선',section:'release',subsection:'testing',completed:false,title:'1.0.331 (380) · 제보·크레딧 내부 배포',summary:'dev9adfeb7. 가구 배치 화면 밀림/샤워 장소 수정2fa3994 포함. 접수5건 중 공개3·대기2 확인, 신규2명은 내부380 한정 표시(서버 승인 상태 유지). 익명 문의를 함께 만든 서랍마을 바로 아래로 이동. Chrome/WebKit 저장·문의·가구·샤워 검증, KO/EN/JA 크레딧5명·공개판 제외·원격 새로고침 검사 통과. Android 서명/380 확인. Play 업로드·TestFlight34758674382 진행. 프로덕션/심사/서버 변경 없음. 이번 EN/JA100%, 전체 미측정.'});
 window.SEORAP_DATA.updates.unshift({version:'1.0.331 (380 내부 테스트)',code:380,date:'2026-09-13',items:['응원자 두 분 추가·내부 크레딧 총5명','익명 문의를 함께 만든 서랍마을 아래로 이동','가구 추가/이동 후 집 화면 밀림 수정','실제 샤워부스/욕조가 있는 방을 샤워 장소로 우선 선택','Android 내부·TestFlight 업로드 진행 / 공개판 변경 없음']});
+
+Object.assign(window.SEORAP_DATA.tasks.find(t=>t.id==='dv-internal380'),{completed:true,title:'1.0.331 (380) · Android 내부·TestFlight 완료',summary:'소스dev9adfeb7. Android 내부release282 9월13일22:03 제공 확인. TestFlight34758674382 성공, Apple6ccb509a-2820-4f19-94ae-0a7710e6b23b 테스트 준비 완료·나만 테스트 내부1명 연결·안내 저장. 미배포 가구/샤워 수정과 익명 문의 위치, 모리모·스토 포함 크레딧5명(내부380 한정) 반영. Chrome/WebKit·70개 생활검사·Android 서명 및 패키징 확인. 실물 iPhone 미검증. 프로덕션/심사/서버 승인상태 변경 없음. 이번 EN/JA100%, 전체 미측정.'});
+window.SEORAP_DATA.updates.find(u=>u.code===380).items[4]='Android 내부·TestFlight380 제공 완료 / 공개판 변경 없음';
+window.SEORAP_DATA.tasks.find(t=>t.id==='dv-home-room-after379').summary+=' 1.0.331(380) Android 내부·TestFlight에 포함·배포 완료.';
