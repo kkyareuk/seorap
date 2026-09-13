@@ -2877,3 +2877,6 @@ window.SEORAP_DATA.updates.unshift({version:'1.0.332 (381 내부 테스트)',cod
 
 Object.assign(window.SEORAP_DATA.tasks.find(t=>t.id==='dv-internal381'),{completed:true,title:'1.0.332 (381) · Android 내부·TestFlight 완료',summary:'소스devbcc1742. Android 내부release283 제공 확인. TestFlight34759565509 성공·Apple86274164-cf8f-4d1e-b285-09a7abdf8606 테스트 중, 나만 테스트 내부1명 연결·안내 저장. 생일 이동제한·침대 그림 깊이·평온한 행동 번개 오인·가구 아래 이름/행동 표시 반영. 380 크레딧5명 포함. Chrome/WebKit·생활70개·크레딧3언어 검사 통과. 실물 iPhone 미검증. 프로덕션/심사/서버 변경 없음. 이번 EN/JA100%, 전체 미측정.'});
 window.SEORAP_DATA.updates.find(u=>u.code===381).items[4]='Android 내부·TestFlight381 배포 완료 / 380 수정·크레딧 포함';
+
+window.SEORAP_DATA.tasks.push({id:'dv-production381',project:'서랍마을',type:'배포',section:'release',subsection:'testing',completed:false,title:'1.0.332 정식 승격·누적 인게임 공지',summary:'9월13일 사용자 명시 요청. 공개판 양쪽377 확인. Android381 승격 저장, iOS382 정식용 CI34760574688 진행. 마지막 발송 공지340 확인하여340 이후 누적 안내 작성. 새 가격·미반영 서버 일정 복구 제외. 앱dev, 웹main 유지. 공지 푸시 없음.'});
+window.SEORAP_DATA.updates.unshift({version:'1.0.332 (정식 배포 준비)',code:382,date:'2026-09-13',items:['Android381을 검증한 그대로 프로덕션 승격','iOS는 같은 수정 내용으로 App Store용382 준비','377 이후 변경 비교·340 이후 누적 인게임 공지 준비','새 슬롯 가격·서버 미반영 항목 제외']});
