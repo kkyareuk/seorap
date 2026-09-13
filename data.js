@@ -2880,3 +2880,10 @@ window.SEORAP_DATA.updates.find(u=>u.code===381).items[4]='Android 내부·TestF
 
 window.SEORAP_DATA.tasks.push({id:'dv-production381',project:'서랍마을',type:'배포',section:'release',subsection:'testing',completed:false,title:'1.0.332 정식 승격·누적 인게임 공지',summary:'9월13일 사용자 명시 요청. 공개판 양쪽377 확인. Android381 승격 저장, iOS382 정식용 CI34760574688 진행. 마지막 발송 공지340 확인하여340 이후 누적 안내 작성. 새 가격·미반영 서버 일정 복구 제외. 앱dev, 웹main 유지. 공지 푸시 없음.'});
 window.SEORAP_DATA.updates.unshift({version:'1.0.332 (정식 배포 준비)',code:382,date:'2026-09-13',items:['Android381을 검증한 그대로 프로덕션 승격','iOS는 같은 수정 내용으로 App Store용382 준비','377 이후 변경 비교·340 이후 누적 인게임 공지 준비','새 슬롯 가격·서버 미반영 항목 제외']});
+
+Object.assign(window.SEORAP_DATA.tasks.find(t=>t.id==='dv-production381'),{summary:'공개377 대비 누적381. Android381 전체 출시 검토 중·사전검사 완료. iOS1.0.332(382)22:54 심사 대기 접수4af331fe-17ef-42f3-8509-a0521340ad46, CI34760574688 성공. 승인 후 자동공개. 공통 공지함release-347 본문351을 마지막 안내 기준으로 정정하여351 이후 누적 공지711계정 발송 중. 새 가격/서버 일정 복구 제외, 푸시 없음. 앱dev831d0a9, 웹main 유지.'});
+window.SEORAP_DATA.updates.find(u=>u.code===382).items=['Android381 정식 전체 출시 검토 중','iOS382 정식 심사 대기 · 승인 후 자동공개','기존 공개377 이후 생활로그·가구·저장·문의·크레딧 수정 누적','마지막 공지351 이후 누적 인게임 안내711계정 발송 중'];
+
+Object.assign(window.SEORAP_DATA.tasks.find(t=>t.id==='dv-production381'),{completed:true,title:'1.0.332 양대 스토어 심사 제출·공지711건 완료',summary:'기존 공개377 대비 Android381 정식100% 출시 검토 중(사전검사 완료), iOS382 22:54 심사 대기 접수4af331fe-17ef-42f3-8509-a0521340ad46. 승인 후 자동공개, 아직 공개 완료 아님. iOS CI34760574688 성공 소스176612e, Android소스bcc1742. 마지막 공통공지351 이후 누적update-351-381-20260913-v1 711건 발송·전수내용/수신자/우편함조회 검증, KO697 EN8 JA6, 푸시0. 새 가격·서버 미반영 복구 제외. 앱dev 반영·웹main 유지, 작업판main. 이번 EN/JA100%, 전체 미측정.'});
+window.SEORAP_DATA.updates.find(u=>u.code===382).version='1.0.332 (정식 심사 접수·공지 완료)';
+window.SEORAP_DATA.updates.find(u=>u.code===382).items[3]='351 이후 누적 인게임 공지711건 발송 완료 · 푸시0';
