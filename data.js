@@ -4,6 +4,7 @@ window.SEORAP_DATA={
     concept:"전체 인상",silhouette:"형태와 실루엣",facade:"정면 배치",palette:"색과 재질",details:"구체적인 소품과 생활감",small:"작은 지도에서 반드시 남길 것",avoid:"피해야 할 것"
   },
   tasks:[
+    {id:"public411-hotfix",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"공개 411 핫픽스 / 개발 412 반영",summary:"할 일 정하기·팝업·금지행동 저장·알림 목록·그룹 정리·침대 및 이름표/의자 수정. 검증 및 서명 AAB 완료, 공개 제출과 Apple 업로드 진행 중."},
     {
       id:"dv-draw-cafe",project:"서랍마을",type:"그림",title:"카페 건물 그리기",checkLabel:"그렸어요",image:"assets/buildings/cafe.png",completed:true,
       summary:"사용자가 완성한 카페 원화와 별도 불빛 레이어를 v1.0.168(181) 개발판에 반영했어요. 건물과 불빛이 함께 이동·확대·반전되고, 현실 시간에 따라 켜져요.",
