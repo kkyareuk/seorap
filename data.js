@@ -4,7 +4,7 @@ window.SEORAP_DATA={
     concept:"전체 인상",silhouette:"형태와 실루엣",facade:"정면 배치",palette:"색과 재질",details:"구체적인 소품과 생활감",small:"작은 지도에서 반드시 남길 것",avoid:"피해야 할 것"
   },
   tasks:[
-    {id:"internal414-mafia-notebook",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"내부 414 · 마피아 수첩 및 전체 화면",summary:"1.0.362(414) Android 내부 테스터 제공 완료. Apple 414 빌드 진행 중. 일과 임무 왼쪽 상시 표시, 카드 UI 제거와 기록 수첩 통합, 마을 비율 유지, 캐릭터 아이콘/집 그림 연결, 의심·증언 중심 회의 및 현장 기록. 카드 없는 대화 기록·증거 중복 방지 검증. KO/EN/JA 신규 문구 완료. 새 가구 에셋은 추후 전달 예정."},
+    {id:"internal414-mafia-notebook",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"내부 414 · 마피아 수첩 및 전체 화면",summary:"1.0.362(414) Android 내부 테스터 제공 완료. Apple 414 서명·업로드 성공, Apple 처리 중(설치 가능 아직 미확인). 일과 임무 왼쪽 상시 표시, 카드 UI 제거와 기록 수첩 통합, 마을 비율 유지, 캐릭터 아이콘/집 그림 연결, 의심·증언 중심 회의 및 현장 기록. 카드 없는 대화 기록·증거 중복 방지 검증. KO/EN/JA 신규 문구 완료. 새 가구 에셋은 추후 전달 예정."},
     {id:"public411-hotfix",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"공개 411 핫픽스 제출 / 개발 412 배포",summary:"할 일 정하기·팝업·금지행동 저장·알림 목록·그룹 정리·침대 및 이름표/의자 수정·검증 완료. Android/Apple 공개411 심사 제출(승인 대기), 내부412 제공. 웹web411·멀티 서버 반영. main/dev 커밋 완료."},
     {
       id:"dv-draw-cafe",project:"서랍마을",type:"그림",title:"카페 건물 그리기",checkLabel:"그렸어요",image:"assets/buildings/cafe.png",completed:true,
