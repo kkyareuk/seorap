@@ -4,6 +4,7 @@ window.SEORAP_DATA={
     concept:"전체 인상",silhouette:"형태와 실루엣",facade:"정면 배치",palette:"색과 재질",details:"구체적인 소품과 생활감",small:"작은 지도에서 반드시 남길 것",avoid:"피해야 할 것"
   },
   tasks:[
+    {id:"internal415-activities-needs",project:"서랍마을",section:"release",subsection:"testing",completed:false,title:"내부 415 · 전체 할 일 복구·욕구·가구·추리 화면",summary:"1.0.363(415) · 앱 dev edaf80d. 건물/가구의 다른 행동과 캐릭터 창에서 전체 할 일 복구, 교류 상대·주제·비용 선택. 새 1인 침대·TV·화분·책장, 변기와 욕구 행동·금지 욕구100, 관계 변화를 게임플레이로 이동, 침대·북쪽 의자 배치 및 추리 SVG 비율 조정. Chrome/WebKit 3언어·전체 활동·포옹 실행·욕구/로그·30판 검증, AAB 서명 통과. Play 게시 상태 확인 중, Apple Actions35057778466 빌드 중. 신규 EN/JA100%, 전체 번역률 미측정. 공개 main 유지."},
     {id:"internal414-mafia-notebook",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"내부 414 · 마피아 수첩 및 전체 화면",summary:"1.0.362(414) Android 내부 테스터 제공 완료. Apple 414 서명·업로드 성공, Apple 처리 중(설치 가능 아직 미확인). 일과 임무 왼쪽 상시 표시, 카드 UI 제거와 기록 수첩 통합, 마을 비율 유지, 캐릭터 아이콘/집 그림 연결, 의심·증언 중심 회의 및 현장 기록. 카드 없는 대화 기록·증거 중복 방지 검증. KO/EN/JA 신규 문구 완료. 새 가구 에셋은 추후 전달 예정."},
     {id:"public411-hotfix",project:"서랍마을",section:"release",subsection:"testing",completed:true,title:"공개 411 핫픽스 제출 / 개발 412 배포",summary:"할 일 정하기·팝업·금지행동 저장·알림 목록·그룹 정리·침대 및 이름표/의자 수정·검증 완료. Android/Apple 공개411 심사 제출(승인 대기), 내부412 제공. 웹web411·멀티 서버 반영. main/dev 커밋 완료."},
     {
