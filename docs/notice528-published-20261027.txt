@@ -1,0 +1,41 @@
+안녕하세요, 서랍마을입니다.
+1.0.476 업데이트를 Android와 iOS에서 이용하실 수 있어요. 지난 1.0.403 업데이트 안내 이후 공개된 주요 변경사항을 함께 전해 드립니다.
+
+• 더 풍성해진 주민의 일상
+주민의 감정과 관계, 신분에 따른 일상 기록을 추가했어요. 궁정 마을에서는 친밀도와 입장에 따라 대화가 달라지고, 같은 만남이 두 주민 각자의 관점으로 남아요. 마을 설정에서 궁정 이야기를 선택할 수 있어요.
+
+• 직업과 생활 계획
+캐릭터의 직업·급여·지갑 설정과 직업별 일상을 보강했어요. 하루 시간표와 함께하는 모임을 이용할 수 있고, 출근·귀가와 이동 흐름을 다듬었어요.
+
+• 집 꾸미기와 마을 생활
+건물 내부 편집과 가구 배치를 개선하고, 방의 바닥·벽 사진과 가구 표시를 더 세밀하게 설정할 수 있도록 했어요. 요리·식재료 보관·독서 등 일상 활동도 다양해졌어요.
+
+• 더 편해진 조작과 설정
+집·마을 이동과 캐릭터 설정, 화면 반응을 다듬었어요. 설정 화면의 스크롤과 광고 영역 때문에 항목을 보기 어려웠던 문제를 수정했어요. 자아만들기 질문을 불러오는 동안 캐릭터를 바꿨을 때 질문이 보이지 않던 문제도 개선했어요.
+
+• 저장과 이용 안정성
+시작할 때 저장을 읽지 못하는 경우 앱 안에 남아 있는 현재 계정의 저장본을 찾아 확인할 수 있어요. 추가 마을이 동기화에서 누락되는 일부 상황과 구매 후 이용 권한 확인을 개선했어요. 복구 가능 여부는 남아 있는 저장 데이터에 따라 달라집니다.
+
+앱을 최신 버전으로 업데이트해 주세요. 서랍마을을 함께 만들어 주셔서 감사합니다!
+
+──── English ────
+Version 1.0.476 is available on Android and iOS. Here are the main updates released since our 1.0.403 announcement.
+
+• Richer daily life: new reflections shaped by feelings, relationships and rank. In court towns, conversations reflect closeness and differing views, with a record from each resident’s perspective. Choose Court story in town settings.
+• Work and planning: expanded career, salary and wallet settings, work activities, daily timetables and gatherings. Improved commuting and movement.
+• Homes and village life: improved building interiors, furniture placement, room surface photos and furniture visibility, plus more cooking, ingredient storage and reading activities.
+• Controls and settings: smoother navigation and character setup; fixes for settings scrolling and ad-area layout. Self-discovery questions remain visible when switching characters while a question loads.
+• Save and access reliability: when startup cannot read a save, search for remaining saves for the current account inside the app. Improved additional-town synchronization and purchase access checks. Recovery depends on the saved data still available.
+
+Please update the app. Thank you for being part of Drawer Village!
+
+──── 日本語 ────
+バージョン1.0.476をAndroidとiOSで公開しました。前回の1.0.403のお知らせ以降に公開した主な変更をご紹介します。
+
+• 住人の日常が豊かに：感情・関係・身分に応じた日常の記録を追加しました。宮廷の村では親密さや立場によって会話が変わり、双方の視点で記録されます。村の設定から宮廷物語を選べます。
+• 仕事と生活の予定：職業・給与・財布の設定と仕事の日常を充実させました。一日の時間割や集まりを利用でき、出勤・帰宅・移動の流れも改善しました。
+• 家づくりと村の暮らし：建物の内装編集、家具配置、床や壁の写真、家具の表示を改善しました。料理・食材の保管・読書などの日常活動も増えました。
+• 操作と設定：移動やキャラクター設定、画面の反応を調整しました。設定のスクロールや広告領域で項目が見づらくなる問題、質問の読み込み中にキャラクターを切り替えると質問が表示されない問題を修正しました。
+• 保存と利用の安定性：起動時に保存を読み込めない場合、アプリ内に残る現在のアカウントの保存を探して確認できます。追加の村の同期や購入後の利用権限の確認も改善しました。復元できるかどうかは残っている保存データによって異なります。
+
+アプリを最新バージョンに更新してください。いつも遊んでくださり、ありがとうございます！
