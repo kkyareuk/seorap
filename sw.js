@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 const CACHE="seorap-weekly20261101";
 const CORE=["./","./index.html","./styles.css?v=22","./data.js?v=weekly20261101","./app.js?v=22","./manifest.webmanifest"];
+=======
+const CACHE="seorap-recoveryinspection20261103";
+const CORE=["./","./index.html","./styles.css?v=22","./data.js?v=recoveryinspection20261103","./app.js?v=22","./manifest.webmanifest"];
+>>>>>>> 25326d1 (Record read-only recovery evidence and remaining device mismatch)
 self.addEventListener("install",event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener("activate",event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
 self.addEventListener("fetch",event=>{if(event.request.method!=="GET")return;event.respondWith(fetch(event.request).then(response=>{const copy=response.clone();caches.open(CACHE).then(cache=>cache.put(event.request,copy));return response}).catch(()=>caches.match(event.request).then(cached=>cached||caches.match("./index.html"))))});
